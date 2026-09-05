@@ -1,0 +1,22 @@
+{
+  "backupName": "backup-2026-09-05T15-34-05-121Z",
+  "createdAt": "2026-09-05T15:34:06.021Z",
+  "databaseStats": {
+    "places": 454,
+    "feedbacks": 0,
+    "chatlogs": 0,
+    "crafts": 60,
+    "traditions": 51,
+    "states": 36,
+    "users": 2,
+    "food": 64
+  },
+  "sourceDirectories": [
+    "frontend",
+    "backend"
+  ],
+  "restorationGuide": {
+    "step1": "Database restore: import json files in mongodb_data using mongoimport or node script.",
+    "step2": "Source code restore: files preserved under source_code directory."
+  }
+}

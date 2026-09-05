@@ -1,0 +1,2 @@
+# Netlify: serve the SPA for every route so /state/:slug, /item/... work on refresh
+/*    /index.html   200

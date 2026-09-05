@@ -1,0 +1,578 @@
+[
+  {
+    "_id": "6a9c1806a4512c419e9f55b2",
+    "name_en": "Rajasthan",
+    "name_hi": "राजस्थान",
+    "slug": "rajasthan",
+    "geoJsonName": "Rajasthan",
+    "mapCoordinates": {
+      "lat": 27.0238,
+      "lng": 74.2179
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hawa_Mahal_2011.jpg?width=1200",
+    "description_en": "Rajasthan is the Land of Kings, famous for its grand forts, colourful palaces and the golden Thar Desert. Its folk music, dance and handicrafts are loved across the world.",
+    "description_hi": "राजस्थान राजाओं की भूमि है, जो अपने विशाल किलों, रंगीन महलों और सुनहरे थार मरुस्थल के लिए प्रसिद्ध है। इसका लोक संगीत, नृत्य और हस्तशिल्प दुनिया भर में पसंद किए जाते हैं।",
+    "createdAt": "2026-09-05T13:24:22.945Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55c3",
+    "name_en": "Uttar Pradesh",
+    "name_hi": "उत्तर प्रदेश",
+    "slug": "uttar-pradesh",
+    "geoJsonName": "Uttar Pradesh",
+    "mapCoordinates": {
+      "lat": 26.8467,
+      "lng": 80.9462
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal%2C_Agra%2C_India_edit3.jpg?width=1200",
+    "description_en": "Uttar Pradesh is the spiritual heartland of India, home to the Taj Mahal, the holy cities of Varanasi and Mathura, and ancient pilgrim sites along the Ganges.",
+    "description_hi": "उत्तर प्रदेश भारत का आध्यात्मिक हृदय है — ताजमहल, वाराणसी और मथुरा की पावन नगरियाँ और गंगा के तट पर अनगिनत तीर्थस्थल यहाँ हैं।",
+    "createdAt": "2026-09-05T13:24:22.976Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Tamil Nadu",
+    "name_hi": "तमिलनाडु",
+    "slug": "tamil-nadu",
+    "geoJsonName": "Tamil Nadu",
+    "mapCoordinates": {
+      "lat": 11.1271,
+      "lng": 78.6569
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Meenakshi_Amman_Temple_-_Madurai.jpg?width=1200",
+    "description_en": "Tamil Nadu is the land of towering Dravidian temples, classical Bharatanatyam dance and one of the oldest living languages in the world. Its coastline, hill stations and filter coffee are equally famous.",
+    "description_hi": "तमिलनाडु ऊँचे द्रविड़ मंदिरों, शास्त्रीय भरतनाट्यम नृत्य और दुनिया की सबसे पुरानी जीवित भाषाओं में से एक की भूमि है।",
+    "createdAt": "2026-09-05T13:24:22.994Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55f0",
+    "name_en": "Kerala",
+    "name_hi": "केरल",
+    "slug": "kerala",
+    "geoJsonName": "Kerala",
+    "mapCoordinates": {
+      "lat": 10.8505,
+      "lng": 76.2711
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Kerala_Backwaters.jpg?width=1200",
+    "description_en": "Kerala, called God's Own Country, is known for its calm backwaters, coconut palms, Ayurveda and the colourful Kathakali dance. Its spice trade attracted travellers for over 2000 years.",
+    "description_hi": "केरल, जिसे ईश्वर का अपना देश कहा जाता है, अपने शांत बैकवाटर, नारियल के पेड़ों, आयुर्वेद और रंगीन कथकली नृत्य के लिए जाना जाता है। इसके मसाले 2000 से अधिक वर्षों से यात्रियों को आकर्षित करते रहे हैं।",
+    "createdAt": "2026-09-05T13:24:23.015Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5600",
+    "name_en": "Delhi",
+    "name_hi": "दिल्ली",
+    "slug": "delhi",
+    "geoJsonName": "NCT of Delhi",
+    "mapCoordinates": {
+      "lat": 28.6139,
+      "lng": 77.209
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Qutub_Minar_in_the_monsoons.jpg?width=1200",
+    "description_en": "Delhi, the capital of India, has been the seat of empires for over a thousand years. Mughal monuments, Sufi shrines, colonial buildings and legendary street food sit side by side here.",
+    "description_hi": "भारत की राजधानी दिल्ली एक हज़ार से अधिक वर्षों से साम्राज्यों का केंद्र रही है। यहाँ मुग़ल स्मारक, सूफी दरगाहें, औपनिवेशिक इमारतें और मशहूर स्ट्रीट फूड साथ-साथ मिलते हैं।",
+    "createdAt": "2026-09-05T13:24:23.026Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5616",
+    "name_en": "Maharashtra",
+    "name_hi": "महाराष्ट्र",
+    "slug": "maharashtra",
+    "geoJsonName": "Maharashtra",
+    "mapCoordinates": {
+      "lat": 19.7515,
+      "lng": 75.7139
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Gateway_of_India_2013-09-17_06-18-25.jpg?width=1200",
+    "description_en": "Maharashtra is India's richest state and home to Mumbai, the financial capital. It blends Maratha warrior heritage, ancient Buddhist cave art and vibrant film culture.",
+    "description_hi": "महाराष्ट्र भारत का सबसे समृद्ध राज्य है और वित्तीय राजधानी मुंबई का घर है। यह मराठा योद्धा विरासत, प्राचीन बौद्ध गुफा कला और जीवंत फिल्म संस्कृति का संगम है।",
+    "createdAt": "2026-09-05T13:24:23.041Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5628",
+    "name_en": "Gujarat",
+    "name_hi": "गुजरात",
+    "slug": "gujarat",
+    "geoJsonName": "Gujarat",
+    "mapCoordinates": {
+      "lat": 22.2587,
+      "lng": 71.1924
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Somnath_temple%2C_Saurashtra%2C_Gujarat%2C_India.jpg?width=1200",
+    "description_en": "Gujarat is the birthplace of Mahatma Gandhi and home to the world's largest salt desert. It has some of India's oldest cities, vibrant textile traditions and wild Asiatic lions.",
+    "description_hi": "गुजरात महात्मा गांधी की जन्मभूमि और दुनिया के सबसे बड़े नमक रेगिस्तान का घर है। यहाँ भारत के कुछ सबसे पुराने शहर, जीवंत कपड़ा परंपराएँ और जंगली एशियाई शेर हैं।",
+    "createdAt": "2026-09-05T13:24:23.052Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5639",
+    "name_en": "West Bengal",
+    "name_hi": "पश्चिम बंगाल",
+    "slug": "west-bengal",
+    "geoJsonName": "West Bengal",
+    "mapCoordinates": {
+      "lat": 22.9868,
+      "lng": 87.855
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria_Memorial_in_Kolkata.jpg?width=1200",
+    "description_en": "West Bengal is the cultural capital of India, home to Kolkata — the City of Joy. It gave the world Rabindranath Tagore, Mother Teresa and the vibrant Durga Puja. The Sundarbans is the world's largest mangrove forest.",
+    "description_hi": "पश्चिम बंगाल भारत की सांस्कृतिक राजधानी है, जो \"सिटी ऑफ जॉय\" कोलकाता का घर है। यह रवींद्रनाथ टैगोर, मदर टेरेसा और जीवंत दुर्गा पूजा की भूमि है। सुंदरबन दुनिया का सबसे बड़ा मैंग्रोव वन है।",
+    "createdAt": "2026-09-05T13:24:23.061Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f564a",
+    "name_en": "Karnataka",
+    "name_hi": "कर्नाटक",
+    "slug": "karnataka",
+    "geoJsonName": "Karnataka",
+    "mapCoordinates": {
+      "lat": 15.3173,
+      "lng": 75.7139
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hampi_Virupaksha_Temple.jpg?width=1200",
+    "description_en": "Karnataka is home to the ruins of Hampi, the glorious Mysore Palace and the lush coffee estates of Coorg. It is a land of Carnatic music, classical dance and ancient Hoysala temples.",
+    "description_hi": "कर्नाटक हम्पी के खंडहरों, शानदार मैसूर महल और कूर्ग के हरे-भरे कॉफी बागानों का घर है। यह कर्नाटक संगीत, शास्त्रीय नृत्य और प्राचीन होयसला मंदिरों की भूमि है।",
+    "createdAt": "2026-09-05T13:24:23.070Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f565b",
+    "name_en": "Madhya Pradesh",
+    "name_hi": "मध्य प्रदेश",
+    "slug": "madhya-pradesh",
+    "geoJsonName": "Madhya Pradesh",
+    "mapCoordinates": {
+      "lat": 22.9734,
+      "lng": 78.6569
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Khajuraho_western_temple.jpg?width=1200",
+    "description_en": "Madhya Pradesh is the heart of India. It has more UNESCO World Heritage Sites than any other state — Khajuraho, Sanchi and Bhimbetka — and is home to tigers, historic Gwalior Fort and the city of Ujjain.",
+    "description_hi": "मध्य प्रदेश भारत का हृदय है। इसमें किसी भी अन्य राज्य से अधिक यूनेस्को विश्व धरोहर स्थल हैं — खजुराहो, सांची और भीमबेटका — और यह बाघों, ऐतिहासिक ग्वालियर किले और उज्जैन का घर है।",
+    "createdAt": "2026-09-05T13:24:23.082Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f566c",
+    "name_en": "Punjab",
+    "name_hi": "पंजाब",
+    "slug": "punjab",
+    "geoJsonName": "Punjab",
+    "mapCoordinates": {
+      "lat": 31.1471,
+      "lng": 75.3412
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Temple_Amritsar.jpg?width=1200",
+    "description_en": "Punjab is the land of five rivers, vibrant Bhangra music and the holiest Sikh shrine — the Golden Temple. It is the breadbasket of India and a land of courageous history and warm hospitality.",
+    "description_hi": "पंजाब पाँच नदियों की भूमि है, जीवंत भाँगड़ा संगीत और सबसे पवित्र सिख मंदिर — स्वर्ण मंदिर का घर है। यह भारत का अन्न-भंडार और साहसी इतिहास तथा गर्मजोशी से स्वागत की भूमि है।",
+    "createdAt": "2026-09-05T13:24:23.091Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f567d",
+    "name_en": "Odisha",
+    "name_hi": "ओडिशा",
+    "slug": "odisha",
+    "geoJsonName": "Odisha",
+    "mapCoordinates": {
+      "lat": 20.9517,
+      "lng": 85.0985
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Konarka_Temple.jpg?width=1200",
+    "description_en": "Odisha is the land of the Sun Temple at Konark, the sacred city of Puri and the tribal heartland of India. Its classical Odissi dance and exquisite stone sculptures rank among the greatest artistic traditions of the world.",
+    "description_hi": "ओडिशा कोणार्क के सूर्य मंदिर, पवित्र शहर पुरी और भारत के जनजातीय केंद्र की भूमि है। इसका शास्त्रीय ओडिसी नृत्य और उत्कृष्ट पत्थर की मूर्तियाँ दुनिया की महानतम कलात्मक परंपराओं में से हैं।",
+    "createdAt": "2026-09-05T13:24:23.101Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f568e",
+    "name_en": "Himachal Pradesh",
+    "name_hi": "हिमाचल प्रदेश",
+    "slug": "himachal-pradesh",
+    "geoJsonName": "Himachal Pradesh",
+    "mapCoordinates": {
+      "lat": 31.1048,
+      "lng": 77.1734
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadimba_Temple_Manali.jpg?width=1200",
+    "description_en": "Himachal Pradesh, the \"Land of the Gods\", nestled in the western Himalayas, is famed for snow-clad peaks, pine valleys, ancient wooden temples, and vibrant folk traditions.",
+    "description_hi": "देवभूमि हिमाचल प्रदेश पश्चिमी हिमालय की गोद में बसा है, जो बर्फीली चोटियों, चीड़ की वादियों, प्राचीन काष्ठ मंदिरों और समृद्ध लोक परंपराओं के लिए जाना जाता है।",
+    "createdAt": "2026-09-05T13:24:23.110Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f569e",
+    "name_en": "Goa",
+    "name_hi": "गोवा",
+    "slug": "goa",
+    "geoJsonName": "Goa",
+    "mapCoordinates": {
+      "lat": 15.2993,
+      "lng": 74.124
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilica_of_Bom_Jesus_Goa.jpg?width=1200",
+    "description_en": "Goa, India’s coastal paradise, blends 450 years of Portuguese architecture with Konkani traditions, Baroque churches, golden sand beaches, and lush spice plantations.",
+    "description_hi": "गोवा का तटीय स्वर्ग 450 वर्षों की पुर्तगाली वास्तुकला, कोंकणी संस्कृति, बारोक चर्चों, सुनहरे समुद्र तटों और मसालों के बागानों का सुंदर संगम है।",
+    "createdAt": "2026-09-05T13:24:23.119Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56ad",
+    "name_en": "Jammu and Kashmir",
+    "name_hi": "जम्मू और कश्मीर",
+    "slug": "jammu-and-kashmir",
+    "geoJsonName": "Jammu and Kashmir",
+    "mapCoordinates": {
+      "lat": 33.7782,
+      "lng": 76.5762
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Dal_Lake_Srinagar.jpg?width=1200",
+    "description_en": "Celebrated as \"Paradise on Earth\", Jammu & Kashmir features the serene waters of Dal Lake, snow-capped Pir Panjal ranges, Mughal gardens, sacred shrines, and masterful handcrafts.",
+    "description_hi": "धरती का स्वर्ग कहे जाने वाले जम्मू और कश्मीर में डल झील का शांत जल, पीर पंजाल की बर्फीली चोटियाँ, मुग़ल बाग़, पवित्र तीर्थ और बेजोड़ हस्तकलाएं हैं।",
+    "createdAt": "2026-09-05T13:24:23.131Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56bd",
+    "name_en": "Uttarakhand",
+    "name_hi": "उत्तराखंड",
+    "slug": "uttarakhand",
+    "geoJsonName": "Uttarakhand",
+    "mapCoordinates": {
+      "lat": 30.0668,
+      "lng": 79.0193
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Kedarnath_Temple_Uttarakhand.jpg?width=1200",
+    "description_en": "Known as \"Devbhoomi\" (Land of the Gods), Uttarakhand is home to the sacred Char Dham, towering snow-capped Himalayan peaks, the source of Mother Ganga, and pristine alpine valleys.",
+    "description_hi": "देवभूमि के रूप में विख्यात उत्तराखंड पवित्र चार धाम, हिमालय की गगनचुंबी बर्फीली चोटियों, माँ गंगा के उद्गम स्थल और शांत अल्पाइन घाटियों का पावन स्थल है।",
+    "createdAt": "2026-09-05T13:24:23.140Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56cd",
+    "name_en": "Bihar",
+    "name_hi": "बिहार",
+    "slug": "bihar",
+    "geoJsonName": "Bihar",
+    "mapCoordinates": {
+      "lat": 25.0961,
+      "lng": 85.3131
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahabodhi_Temple_Bodhgaya.jpg?width=1200",
+    "description_en": "Bihar, the cradle of ancient Indian civilization, gave birth to Buddhism and Jainism, hosted the ancient world-renowned universities of Nalanda and Vikramshila, and preserves sacred spiritual traditions.",
+    "description_hi": "प्राचीन भारतीय सभ्यता का उद्गम स्थल बिहार, जहाँ बौद्ध और जैन धर्म का प्रादुर्भाव हुआ; जिसने नालंदा और विक्रमशिला जैसे महान विश्वविद्यालय दुनिया को दिए।",
+    "createdAt": "2026-09-05T13:24:23.150Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56dd",
+    "name_en": "Assam",
+    "name_hi": "असम",
+    "slug": "assam",
+    "geoJsonName": "Assam",
+    "mapCoordinates": {
+      "lat": 26.2006,
+      "lng": 92.9376
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaziranga_Rhinoceros_Assam.jpg?width=1200",
+    "description_en": "Assam, the jewel of Northeast India along the mighty Brahmaputra river, is renowned for the world-famous one-horned rhinoceros, sprawling tea gardens, golden Muga silk, and the sacred Kamakhya shrine.",
+    "description_hi": "पूर्वोत्तर भारत का सिरमौर असम ब्रह्मपुत्र नदी की हरी-भरी घाटी में स्थित है; जो एक सींग वाले गैंडे, चाय के विशाल बागानों, सुनहरे मूगा सिल्क और कामाख्या शक्तिपीठ के लिए प्रसिद्ध है।",
+    "createdAt": "2026-09-05T13:24:23.158Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56ed",
+    "name_en": "Telangana",
+    "name_hi": "तेलंगाना",
+    "slug": "telangana",
+    "geoJsonName": "Telangana",
+    "mapCoordinates": {
+      "lat": 17.8749,
+      "lng": 78.1008
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Charminar_Hyderabad.jpg?width=1200",
+    "description_en": "Telangana, the land of the historic Kakatiya and Qutb Shahi dynasties, bridges North and South Indian cultures with world-renowned pearls, impregnable stone citadels, floating-brick UNESCO temples, and legendary Hyderabadi cuisine.",
+    "description_hi": "काकतीय और कुतुब शाही राजवंशों की ऐतिहासिक भूमि तेलंगाना उत्तर और दक्षिण भारतीय संस्कृतियों का संगम है; जो चारमीनार, गोलकोंडा क़िले और विश्व प्रसिद्ध हैदराबादी बिरयानी के लिए विख्यात है।",
+    "createdAt": "2026-09-05T13:24:23.166Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56fd",
+    "name_en": "Andhra Pradesh",
+    "name_hi": "आंध्र प्रदेश",
+    "slug": "andhra-pradesh",
+    "geoJsonName": "Andhra Pradesh",
+    "mapCoordinates": {
+      "lat": 15.9129,
+      "lng": 79.74
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Tirumala_Venkateswara_Temple.jpg?width=1200",
+    "description_en": "Andhra Pradesh, bounded by the Bay of Bengal and the Eastern Ghats, is home to Tirumala Tirupati — the sacred abode of Lord Venkateswara, the classical dance of Kuchipudi, rock-cut Buddhist caves, and centuries-old Kalamkari textile arts.",
+    "description_hi": "बंगाल की खाड़ी और पूर्वी घाट की गोद में बसा आंध्र प्रदेश भगवान वेंकटेश्वर के तिरुपति धाम, शास्त्रीय कुचिपुड़ी नृत्य, बौद्ध गुफाओं और कलमकारी कला का प्रसिद्ध केंद्र है।",
+    "createdAt": "2026-09-05T13:24:23.174Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f570d",
+    "name_en": "Sikkim",
+    "name_hi": "सिक्किम",
+    "slug": "sikkim",
+    "geoJsonName": "Sikkim",
+    "mapCoordinates": {
+      "lat": 27.533,
+      "lng": 88.5122
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Khangchendzonga_Sikkim_Himalayas.jpg?width=1200",
+    "description_en": "Sikkim, nestled in the Eastern Himalayas under the guardian shadow of Mount Khangchendzonga (the world’s 3rd highest peak), is renowned for sacred glacial lakes, ancient Buddhist monasteries, rich orchid biodiversity, and vibrant Himalayan culture.",
+    "description_hi": "पूर्वी हिमालय की गोद में कंचनजंगा पर्वत की छांव में बसा सिक्किम पवित्र हिमनद झीलों, प्राचीन बौद्ध गोम्पाओं, रंग-बिरंगे आर्किड और समृद्ध तिब्बती-हिमालयी संस्कृति के लिए जाना जाता है।",
+    "createdAt": "2026-09-05T13:24:23.182Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f571d",
+    "name_en": "Arunachal Pradesh",
+    "name_hi": "अरुणाचल प्रदेश",
+    "slug": "arunachal-pradesh",
+    "geoJsonName": "Arunachal Pradesh",
+    "mapCoordinates": {
+      "lat": 28.218,
+      "lng": 94.7278
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Tawang_Monastery.jpg?width=1200",
+    "description_en": "Arunachal Pradesh, the Land of the Dawn-Lit Mountains, is a pristine paradise of high mountain monasteries, raging rivers, dense forests and over 26 major tribal communities.",
+    "description_hi": "अरुणाचल प्रदेश, उगते सूरज की रोशनी में नहाए पहाड़ों की भूमि, ऊँचे पहाड़ी मठों, तेज़ नदियों, घने जंगलों और 26 से अधिक जनजातियों का एक अनछुआ स्वर्ग है।",
+    "createdAt": "2026-09-05T13:24:23.192Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f572e",
+    "name_en": "Chhattisgarh",
+    "name_hi": "छत्तीसगढ़",
+    "slug": "chhattisgarh",
+    "geoJsonName": "Chhattisgarh",
+    "mapCoordinates": {
+      "lat": 21.2787,
+      "lng": 81.8661
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Chitrakote_waterfall.jpg?width=1200",
+    "description_en": "Chhattisgarh, the Rice Bowl of India, is a state of ancient temples, magnificent waterfalls, dense Bastar forests, tribal heritage and some of the least-explored archaeological sites.",
+    "description_hi": "छत्तीसगढ़, भारत का धान का कटोरा, प्राचीन मंदिरों, विशाल झरनों, बस्तर के घने वनों, जनजातीय विरासत और अनछुए पुरातात्विक स्थलों की भूमि है।",
+    "createdAt": "2026-09-05T13:24:23.203Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f573f",
+    "name_en": "Haryana",
+    "name_hi": "हरियाणा",
+    "slug": "haryana",
+    "geoJsonName": "Haryana",
+    "mapCoordinates": {
+      "lat": 29.0588,
+      "lng": 76.0856
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Kurukshetra_Brahma_Sarovar.jpg?width=1200",
+    "description_en": "Haryana is the land of the Mahabharata, milk and wrestlers. Kurukshetra, where the great war was fought, Surajkund crafts fair, and the ancient Sthaneshwar temple define its rich heritage.",
+    "description_hi": "हरियाणा महाभारत की भूमि है — कुरुक्षेत्र जहाँ महायुद्ध हुआ, सूरजकुंड शिल्प मेला और प्राचीन स्थाणेश्वर मंदिर इसकी समृद्ध विरासत की पहचान हैं।",
+    "createdAt": "2026-09-05T13:24:23.212Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f574e",
+    "name_en": "Jharkhand",
+    "name_hi": "झारखंड",
+    "slug": "jharkhand",
+    "geoJsonName": "Jharkhand",
+    "mapCoordinates": {
+      "lat": 23.6102,
+      "lng": 85.2799
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hundru_Falls.jpg?width=1200",
+    "description_en": "Jharkhand — the Land of Forests — is blessed with stunning waterfalls, ancient Jain pilgrim sites, sacred tribal groves and rich mineral wealth in the Chota Nagpur Plateau.",
+    "description_hi": "झारखंड — जंगलों की भूमि — शानदार झरनों, प्राचीन जैन तीर्थस्थलों, पवित्र जनजातीय वनों और छोटा नागपुर पठार के खनिज भंडार से समृद्ध है।",
+    "createdAt": "2026-09-05T13:24:23.220Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f575d",
+    "name_en": "Manipur",
+    "name_hi": "मणिपुर",
+    "slug": "manipur",
+    "geoJsonName": "Manipur",
+    "mapCoordinates": {
+      "lat": 24.6637,
+      "lng": 93.9063
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Loktak_Lake.jpg?width=1200",
+    "description_en": "Manipur, the Jewelled Land, is celebrated for classical Manipuri dance, the serene Loktak Lake with its unique floating islands (phumdis), and fierce traditional polo — said to be the birthplace of the game.",
+    "description_hi": "मणिपुर, रत्नों की भूमि, शास्त्रीय मणिपुरी नृत्य, अनूठे तैरते द्वीपों (फुमदी) वाली शांत लोकटक झील और पारंपरिक पोलो के लिए प्रसिद्ध है।",
+    "createdAt": "2026-09-05T13:24:23.229Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f576c",
+    "name_en": "Meghalaya",
+    "name_hi": "मेघालय",
+    "slug": "meghalaya",
+    "geoJsonName": "Meghalaya",
+    "mapCoordinates": {
+      "lat": 25.467,
+      "lng": 91.3662
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Living_root_bridge_Meghalaya.jpg?width=1200",
+    "description_en": "Meghalaya, the Abode of Clouds, is home to the wettest place on Earth, extraordinary living root bridges, sacred groves and the matrilineal Khasi, Jaintia and Garo tribal cultures.",
+    "description_hi": "मेघालय, बादलों का निवास, पृथ्वी के सबसे अधिक वर्षा वाले स्थान, असाधारण जीवित जड़ पुलों, पवित्र वनों और मातृसत्तात्मक खासी, जयंतिया और गारो जनजातीय संस्कृतियों का घर है।",
+    "createdAt": "2026-09-05T13:24:23.240Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f577b",
+    "name_en": "Nagaland",
+    "name_hi": "नागालैंड",
+    "slug": "nagaland",
+    "geoJsonName": "Nagaland",
+    "mapCoordinates": {
+      "lat": 26.1584,
+      "lng": 94.5624
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Hornbill_festival_Nagaland.jpg?width=1200",
+    "description_en": "Nagaland, the Land of Festivals, is home to 16 Naga tribes, the world-famous Hornbill Festival, pristine highland jungles, and warriors' heritage carved in every village gateway.",
+    "description_hi": "नागालैंड, त्योहारों की भूमि, 16 नागा जनजातियों, विश्व प्रसिद्ध हॉर्नबिल महोत्सव, अनछुए पहाड़ी जंगलों और हर गाँव के द्वार पर उकेरी योद्धाओं की विरासत का घर है।",
+    "createdAt": "2026-09-05T13:24:23.248Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f578a",
+    "name_en": "Mizoram",
+    "name_hi": "मिज़ोरम",
+    "slug": "mizoram",
+    "geoJsonName": "Mizoram",
+    "mapCoordinates": {
+      "lat": 23.1645,
+      "lng": 92.9376
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Aizawl_Mizoram.jpg?width=1200",
+    "description_en": "Mizoram — the Land of the Hill People — is one of India's most literate and Christian states, known for its breathtaking blue Phawngpui Peak, the Mizo singing tradition and vibrant bamboo dance.",
+    "description_hi": "मिज़ोरम — पहाड़ी लोगों की भूमि — भारत के सबसे साक्षर और ईसाई राज्यों में से एक है जो अपने नीले फ़ावंगपुई शिखर, मिज़ो गायन परंपरा और जीवंत बाँस नृत्य के लिए प्रसिद्ध है।",
+    "createdAt": "2026-09-05T13:24:23.257Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5797",
+    "name_en": "Tripura",
+    "name_hi": "त्रिपुरा",
+    "slug": "tripura",
+    "geoJsonName": "Tripura",
+    "mapCoordinates": {
+      "lat": 23.9408,
+      "lng": 91.9882
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Ujjayanta_Palace_Tripura.jpg?width=1200",
+    "description_en": "Tripura is a hidden gem of Northeast India — home to the magnificent Ujjayanta Palace, sacred Tripura Sundari temple, ancient stone-cut Unakoti rock reliefs and the vibrant Garia Puja festival.",
+    "description_hi": "त्रिपुरा पूर्वोत्तर भारत का छुपा हुआ रत्न है — भव्य उज्जयंता महल, पवित्र त्रिपुर सुंदरी मंदिर, प्राचीन उनाकोटी शैल मूर्तियाँ और जीवंत गरिया पूजा उत्सव यहाँ की पहचान हैं।",
+    "createdAt": "2026-09-05T13:24:23.265Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57a4",
+    "name_en": "Ladakh",
+    "name_hi": "लद्दाख",
+    "slug": "ladakh",
+    "geoJsonName": "Ladakh",
+    "mapCoordinates": {
+      "lat": 34.1526,
+      "lng": 77.5771
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Pangong_Lake_Ladakh.jpg?width=1200",
+    "description_en": "Ladakh — the Land of High Passes — is India's newest Union Territory, a high-altitude plateau famed for the brilliant turquoise Pangong Lake, ancient Tibetan Buddhist monasteries, Zanskar river, and some of the highest motorable roads on Earth.",
+    "description_hi": "लद्दाख — ऊँचे दर्रों की भूमि — भारत का नवीनतम केंद्र शासित प्रदेश है जो चमकीले फ़िरोज़ी पैंगोंग झील, प्राचीन तिब्बती बौद्ध मठों, ज़ांस्कर नदी और पृथ्वी की सबसे ऊँची मोटर योग्य सड़कों के लिए प्रसिद्ध है।",
+    "createdAt": "2026-09-05T13:24:23.274Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57b4",
+    "name_en": "Andaman & Nicobar Islands",
+    "name_hi": "अंडमान और निकोबार द्वीप समूह",
+    "slug": "andaman-nicobar",
+    "geoJsonName": "Andaman and Nicobar",
+    "mapCoordinates": {
+      "lat": 11.7401,
+      "lng": 92.6586
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Radhanagar_Beach_Andaman.jpg?width=1200",
+    "description_en": "The Andaman & Nicobar Islands are India's most remote and pristine tropical paradise — crystal-clear waters, white sand beaches, coral reefs, indigenous Andamanese tribes and the haunting Cellular Jail.",
+    "description_hi": "अंडमान और निकोबार द्वीप समूह भारत का सबसे दूरस्थ और अनछुआ उष्णकटिबंधीय स्वर्ग है — स्वच्छ जल, सफेद रेतीले समुद्र तट, प्रवाल भित्तियाँ, स्वदेशी जनजातियाँ और भयावह सेलुलर जेल।",
+    "createdAt": "2026-09-05T13:24:23.284Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57c2",
+    "name_en": "Lakshadweep",
+    "name_hi": "लक्षद्वीप",
+    "slug": "lakshadweep",
+    "geoJsonName": "Lakshadweep",
+    "mapCoordinates": {
+      "lat": 10.5593,
+      "lng": 72.6358
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Agatti_Island_Lakshadweep.jpg?width=1200",
+    "description_en": "Lakshadweep — the Hundred Thousand Islands — is India's smallest UT, comprising 36 coral islands in the Arabian Sea. Its pristine lagoons, white sand beaches, crystal water and endangered hawksbill turtles make it one of the world's most stunning marine ecosystems.",
+    "description_hi": "लक्षद्वीप — एक लाख द्वीप — अरब सागर में 36 प्रवाल द्वीपों से बना भारत का सबसे छोटा केंद्र शासित प्रदेश है। इसके अनछुए लैगून, सफेद रेतीले तट और बेशकीमती समुद्री कछुए इसे विश्व के सबसे शानदार समुद्री पारिस्थितिकी तंत्रों में से एक बनाते हैं।",
+    "createdAt": "2026-09-05T13:24:23.292Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57cf",
+    "name_en": "Puducherry (Pondicherry)",
+    "name_hi": "पुदुचेरी (पांडिचेरी)",
+    "slug": "puducherry",
+    "geoJsonName": "Puducherry",
+    "mapCoordinates": {
+      "lat": 11.9416,
+      "lng": 79.8083
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Pondicherry_French_Quarter.jpg?width=1200",
+    "description_en": "Puducherry (Pondicherry) is India's French Riviera — a former French colonial territory on the Coromandel Coast with yellow colonial buildings, a spiritual aura from Auroville, Tamil temples and serene beaches.",
+    "description_hi": "पुदुचेरी (पांडिचेरी) भारत की फ्रेंच रिवेरा है — कोरोमंडल तट पर एक पूर्व फ्रेंच उपनिवेश जिसमें पीले औपनिवेशिक भवन, ऑरोविले की आध्यात्मिक आभा, तमिल मंदिर और शांत समुद्र तट हैं।",
+    "createdAt": "2026-09-05T13:24:23.302Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57dd",
+    "name_en": "Chandigarh",
+    "name_hi": "चंडीगढ़",
+    "slug": "chandigarh",
+    "geoJsonName": "Chandigarh",
+    "mapCoordinates": {
+      "lat": 30.7333,
+      "lng": 76.7794
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock_Garden_Chandigarh.jpg?width=1200",
+    "description_en": "Chandigarh is India's first planned city, designed by the legendary architect Le Corbusier. Its iconic Capitol Complex (UNESCO World Heritage), the whimsical Rock Garden and the tranquil Sukhna Lake define a modern urban oasis.",
+    "description_hi": "चंडीगढ़ भारत का पहला नियोजित शहर है, जिसे महान वास्तुकार ले कोर्बुज़िए ने डिज़ाइन किया था। इसका प्रतिष्ठित कैपिटल कॉम्प्लेक्स (यूनेस्को विश्व धरोहर), रॉक गार्डन और सुखना झील इसे एक आधुनिक शहरी नखलिस्तान बनाते हैं।",
+    "createdAt": "2026-09-05T13:24:23.315Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57ea",
+    "name_en": "Dadra & Nagar Haveli and Daman & Diu",
+    "name_hi": "दादरा नगर हवेली और दमण दीव",
+    "slug": "dadra-nagar-haveli-daman-diu",
+    "geoJsonName": "Dadra and Nagar Haveli",
+    "mapCoordinates": {
+      "lat": 20.3974,
+      "lng": 72.8328
+    },
+    "thumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Daman_Fort.jpg?width=1200",
+    "description_en": "Dadra & Nagar Haveli and Daman & Diu is a coastal Union Territory on India's west coast — a former Portuguese enclave with colonial-era forts, beaches, tribal Varli culture and the serene Damanganga river.",
+    "description_hi": "दादरा नगर हवेली और दमण दीव भारत के पश्चिमी तट पर एक पूर्व पुर्तगाली परिक्षेत्र है जिसमें औपनिवेशिक किले, समुद्र तट, आदिवासी वारली संस्कृति और शांत दमणगंगा नदी है।",
+    "createdAt": "2026-09-05T13:24:23.323Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,818 @@
+[
+  {
+    "_id": "6a9c1806a4512c419e9f55bb",
+    "stateId": "6a9c1806a4512c419e9f55b2",
+    "name_en": "Ghoomar Dance",
+    "name_hi": "घूमर नृत्य",
+    "description_en": "Ghoomar is a graceful folk dance performed by women in flowing ghagras. Dancers spin in circles, and the swirl of colourful skirts gives the dance its name.",
+    "description_hi": "घूमर महिलाओं द्वारा लहराते घाघरों में किया जाने वाला सुंदर लोक नृत्य है। नृत्यांगनाएँ गोल घूमती हैं, और रंगीन घाघरों के घूमने से इसका नाम पड़ा।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ghoomar_dance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.966Z",
+    "likesCount": 1025,
+    "viewCount": 5826
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55bc",
+    "stateId": "6a9c1806a4512c419e9f55b2",
+    "name_en": "Pushkar Camel Fair",
+    "name_hi": "पुष्कर ऊँट मेला",
+    "description_en": "Every November thousands of camels, horses and traders gather at Pushkar for one of the largest livestock fairs in the world, with music, races and competitions.",
+    "description_hi": "हर नवंबर हज़ारों ऊँट, घोड़े और व्यापारी पुष्कर में दुनिया के सबसे बड़े पशु मेलों में से एक के लिए जुटते हैं, जहाँ संगीत, दौड़ और प्रतियोगिताएँ होती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pushkar_Camel_Fair.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.966Z",
+    "likesCount": 1175,
+    "viewCount": 5735
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55cf",
+    "stateId": "6a9c1806a4512c419e9f55c3",
+    "name_en": "Ganga Aarti, Varanasi",
+    "name_hi": "गंगा आरती, वाराणसी",
+    "description_en": "Every evening at Dashashwamedh Ghat in Varanasi, priests perform the spectacular Ganga Aarti — a ritual of fire, incense and chanting that draws thousands of devotees and tourists.",
+    "description_hi": "वाराणसी के दशाश्वमेध घाट पर हर संध्या पुजारी भव्य गंगा आरती करते हैं — अग्नि, धूप और मंत्रों का यह अनुष्ठान हजारों श्रद्धालुओं और पर्यटकों को आकर्षित करता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ganga_Aarti_Varanasi.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.986Z",
+    "likesCount": 695,
+    "viewCount": 5155
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55d0",
+    "stateId": "6a9c1806a4512c419e9f55c3",
+    "name_en": "Kumbh Mela",
+    "name_hi": "कुंभ मेला",
+    "description_en": "The Kumbh Mela at Prayagraj is the world's largest peaceful gathering. Held every 12 years at the Triveni Sangam of Ganga, Yamuna and mythical Saraswati, it draws over 100 million pilgrims.",
+    "description_hi": "प्रयागराज का कुंभ मेला विश्व का सबसे बड़ा शांतिपूर्ण जनसमूह है। 12 वर्षों में एक बार गंगा-यमुना-सरस्वती के त्रिवेणी संगम पर 10 करोड़ से अधिक तीर्थयात्री आते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kumbh_Mela_Prayagraj.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.986Z",
+    "likesCount": 594,
+    "viewCount": 2858
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55e6",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Bharatanatyam",
+    "name_hi": "भरतनाट्यम",
+    "description_en": "Bharatanatyam is one of the oldest classical dance forms of India, born in the temples of Tamil Nadu. It tells stories through precise footwork, hand gestures and facial expressions.",
+    "description_hi": "भरतनाट्यम भारत के सबसे पुराने शास्त्रीय नृत्यों में से एक है, जिसका जन्म तमिलनाडु के मंदिरों में हुआ।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bharatanatyam.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.003Z",
+    "likesCount": 1249,
+    "viewCount": 8114
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55e7",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Pongal Festival",
+    "name_hi": "पोंगल त्योहार",
+    "description_en": "Pongal is the four-day harvest festival of Tamil Nadu in mid-January. Families cook sweet rice in new pots, decorate homes with kolam and thank the sun, cattle and farmers.",
+    "description_hi": "पोंगल जनवरी के मध्य में मनाया जाने वाला तमिलनाडु का चार दिन का फसल उत्सव है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pongal_festival.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.004Z",
+    "likesCount": 218,
+    "viewCount": 1082
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55e8",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Jallikattu Bull Taming",
+    "name_hi": "जल्लीकट्टू बुल टेमिंग",
+    "description_en": "Jallikattu is a traditional bull-taming sport practised during Pongal festivals in Madurai, Tiruchirappalli and Pudukkottai districts, dating back over 2,500 years.",
+    "description_hi": "जल्लीकट्टू पोंगल उत्सव के दौरान मदुरै, तिरुचिरापल्ली और पुदुक्कोट्टई जिलों में प्रचलित पारंपरिक बुल-टेमिंग खेल है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Jallikattu.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.004Z",
+    "likesCount": 1524,
+    "viewCount": 6804
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55f8",
+    "stateId": "6a9c1807a4512c419e9f55f0",
+    "name_en": "Kathakali",
+    "name_hi": "कथकली",
+    "description_en": "Kathakali is a classical dance-drama with elaborate face paint, huge headgear and powerful eye movements. Performers tell stories from the Ramayana and Mahabharata without speaking a word.",
+    "description_hi": "कथकली एक शास्त्रीय नृत्य-नाट्य है जिसमें विस्तृत चेहरे की सजावट, बड़े मुकुट और प्रभावशाली नेत्र भाव होते हैं। कलाकार बिना बोले रामायण और महाभारत की कथाएँ सुनाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kathakali.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.021Z",
+    "likesCount": 466,
+    "viewCount": 2759
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55f9",
+    "stateId": "6a9c1807a4512c419e9f55f0",
+    "name_en": "Onam and Vallam Kali",
+    "name_hi": "ओणम और वल्लम कली",
+    "description_en": "Onam is the harvest festival of Kerala celebrated with flower carpets, the grand Onam Sadya feast and Vallam Kali, the thrilling snake boat races with 100 rowers per boat.",
+    "description_hi": "ओणम केरल का फसल उत्सव है जो फूलों की रंगोली, भव्य ओणम साद्या भोज और वल्लम कली के साथ मनाया जाता है, जिसमें हर साँप नाव में 100 खेवैये होते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Vallam_Kali.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.021Z",
+    "likesCount": 990,
+    "viewCount": 5966
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f560e",
+    "stateId": "6a9c1807a4512c419e9f5600",
+    "name_en": "Phool Walon Ki Sair",
+    "name_hi": "फूल वालों की सैर",
+    "description_en": "Phool Walon Ki Sair is a 200-year-old festival in Mehrauli where flower sellers offer floral fans (pankhas) at both a Hindu temple and a Sufi dargah, celebrating communal harmony.",
+    "description_hi": "फूल वालों की सैर महरौली का 200 साल पुराना उत्सव है जिसमें फूल विक्रेता एक हिंदू मंदिर और एक सूफी दरगाह दोनों पर फूलों के पंखे चढ़ाते हैं, जो सांप्रदायिक सद्भाव का प्रतीक है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Phool_Walon_Ki_Sair.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.034Z",
+    "likesCount": 1605,
+    "viewCount": 8069
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f560f",
+    "stateId": "6a9c1807a4512c419e9f5600",
+    "name_en": "Republic Day Parade",
+    "name_hi": "गणतंत्र दिवस परेड",
+    "description_en": "Every 26 January, Kartavya Path hosts the Republic Day Parade with marching regiments, tableaux from every state and a fly-past by the Air Force, watched by the whole nation.",
+    "description_hi": "हर 26 जनवरी को कर्तव्य पथ पर गणतंत्र दिवस परेड होती है जिसमें सेना की टुकड़ियाँ, हर राज्य की झाँकियाँ और वायु सेना का फ्लाई पास्ट होता है, जिसे पूरा देश देखता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Republic_Day_Parade.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.034Z",
+    "likesCount": 371,
+    "viewCount": 2927
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5620",
+    "stateId": "6a9c1807a4512c419e9f5616",
+    "name_en": "Ganesh Chaturthi",
+    "name_hi": "गणेश चतुर्थी",
+    "description_en": "Ganesh Chaturthi is an 11-day festival celebrating the birth of Lord Ganesha. Mumbai's Lalbaugcha Raja draws over a million devotees. Huge processions immerse clay Ganesha idols in the sea.",
+    "description_hi": "गणेश चतुर्थी भगवान गणेश के जन्म का 11 दिवसीय उत्सव है। मुंबई के लालबागचा राजा में दस लाख से अधिक भक्त आते हैं। विशाल जुलूस मिट्टी की गणेश मूर्तियों को समुद्र में विसर्जित करते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ganesh_chaturthi_mumbai.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.046Z",
+    "likesCount": 1256,
+    "viewCount": 5662
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5621",
+    "stateId": "6a9c1807a4512c419e9f5616",
+    "name_en": "Lavani Dance",
+    "name_hi": "लावणी नृत्य",
+    "description_en": "Lavani is a combination of song and dance performed to the beat of the dholki drum. It is performed by women in nine-yard nauvari sarees and is part of Maharashtra's folk theatre (Tamasha).",
+    "description_hi": "लावणी ढोलकी की थाप पर गाई और नाची जाने वाली लोककला है। इसे नौ गज की नौवारी साड़ी पहनी महिलाएँ करती हैं और यह महाराष्ट्र के लोक नाटक (तमाशा) का हिस्सा है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Lavani_performance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.046Z",
+    "likesCount": 1288,
+    "viewCount": 5725
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5631",
+    "stateId": "6a9c1807a4512c419e9f5628",
+    "name_en": "Navratri Garba",
+    "name_hi": "नवरात्रि गरबा",
+    "description_en": "Navratri in Gujarat is a 9-night festival where millions dance Garba and Dandiya-Raas in honour of Goddess Durga. The Vadodara and Ahmedabad celebrations are among the world's largest.",
+    "description_hi": "गुजरात में नवरात्रि 9 रातों का उत्सव है जहाँ लाखों लोग देवी दुर्गा के सम्मान में गरबा और डांडिया-रास नाचते हैं। वडोदरा और अहमदाबाद के उत्सव दुनिया के सबसे बड़े हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Navratri-Garba.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.057Z",
+    "likesCount": 1200,
+    "viewCount": 6524
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5632",
+    "stateId": "6a9c1807a4512c419e9f5628",
+    "name_en": "Kite Festival – Uttarayan",
+    "name_hi": "उत्तरायण पतंग महोत्सव",
+    "description_en": "On 14 January (Makar Sankranti), the sky over every city in Gujarat fills with thousands of kites. The International Kite Festival in Ahmedabad draws participants from over 40 countries.",
+    "description_hi": "14 जनवरी (मकर संक्रांति) को गुजरात के हर शहर का आसमान हज़ारों पतंगों से भर जाता है। अहमदाबाद का अंतर्राष्ट्रीय पतंग महोत्सव 40 से अधिक देशों के प्रतिभागियों को आकर्षित करता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/International_Kite_Festival_Ahmedabad.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.057Z",
+    "likesCount": 1538,
+    "viewCount": 6806
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5642",
+    "stateId": "6a9c1807a4512c419e9f5639",
+    "name_en": "Durga Puja",
+    "name_hi": "दुर्गा पूजा",
+    "description_en": "Kolkata's Durga Puja is a 5-day festival where elaborate pandals (temporary temples) house artistic clay idols of Goddess Durga. It is a UNESCO Intangible Cultural Heritage.",
+    "description_hi": "कोलकाता की दुर्गा पूजा 5 दिवसीय उत्सव है जहाँ विस्तृत पंडालों (अस्थायी मंदिरों) में देवी दुर्गा की कलात्मक मिट्टी की मूर्तियाँ होती हैं। यह यूनेस्को अमूर्त सांस्कृतिक विरासत है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Durga_puja_kolkata.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.065Z",
+    "likesCount": 1280,
+    "viewCount": 7237
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5643",
+    "stateId": "6a9c1807a4512c419e9f5639",
+    "name_en": "Rabindra Jayanti",
+    "name_hi": "रबींद्र जयंती",
+    "description_en": "Rabindra Jayanti celebrates the birth anniversary of Rabindranath Tagore on 25 Baishakh (May). It is celebrated with singing of Rabindrasangeet, dance and recitations across Bengal.",
+    "description_hi": "रबींद्र जयंती 25 बैशाख (मई) को रबींद्रनाथ टैगोर की जयंती मनाती है। इसे बंगाल में रबींद्रसंगीत, नृत्य और कविता पाठ के साथ मनाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rabindranath_Tagore.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.065Z",
+    "likesCount": 344,
+    "viewCount": 1658
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5653",
+    "stateId": "6a9c1807a4512c419e9f564a",
+    "name_en": "Mysore Dasara",
+    "name_hi": "मैसूर दशहरा",
+    "description_en": "Mysore Dasara is a 10-day festival in October where the city comes alive with processions, cultural events and the illumination of Mysore Palace. The Jumbo Savari elephant procession is the highlight.",
+    "description_hi": "मैसूर दशहरा अक्टूबर में 10 दिवसीय उत्सव है जहाँ शहर जुलूस, सांस्कृतिक कार्यक्रमों और मैसूर महल की रोशनी से जीवंत हो उठता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mysore_Dasara_procession.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.076Z",
+    "likesCount": 1507,
+    "viewCount": 6309
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5654",
+    "stateId": "6a9c1807a4512c419e9f564a",
+    "name_en": "Yakshagana",
+    "name_hi": "यक्षगान",
+    "description_en": "Yakshagana is a traditional theatre form of coastal Karnataka combining dance, music, dialogue, costume and make-up. Stories from the Ramayana, Mahabharata and Puranas are enacted through the night.",
+    "description_hi": "यक्षगान तटीय कर्नाटक का पारंपरिक थिएटर रूप है जो नृत्य, संगीत, संवाद, वेशभूषा और श्रृंगार का संयोजन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yakshagana_performance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.076Z",
+    "likesCount": 203,
+    "viewCount": 1333
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5664",
+    "stateId": "6a9c1807a4512c419e9f565b",
+    "name_en": "Tansen Music Festival",
+    "name_hi": "तानसेन संगीत समारोह",
+    "description_en": "Held every December in Gwalior near the tomb of the legendary musician Tansen, this classical music festival attracts India's finest musicians for three days of Hindustani classical performances.",
+    "description_hi": "हर दिसंबर में ग्वालियर में महान संगीतकार तानसेन की कब्र के पास आयोजित यह शास्त्रीय संगीत समारोह तीन दिनों के हिंदुस्तानी शास्त्रीय प्रदर्शनों के लिए भारत के बेहतरीन संगीतकारों को आकर्षित करता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tansen_festival.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.087Z",
+    "likesCount": 415,
+    "viewCount": 2884
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5665",
+    "stateId": "6a9c1807a4512c419e9f565b",
+    "name_en": "Simhastha Kumbh Mela – Ujjain",
+    "name_hi": "सिंहस्थ कुंभ मेला – उज्जैन",
+    "description_en": "The Simhastha Kumbh Mela held in Ujjain every 12 years on the banks of the Shipra River is one of the world's largest religious gatherings, drawing over 30 million pilgrims.",
+    "description_hi": "शिप्रा नदी के किनारे उज्जैन में हर 12 साल में आयोजित सिंहस्थ कुंभ मेला दुनिया के सबसे बड़े धार्मिक आयोजनों में से एक है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kumbh_Mela_Ujjain.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.087Z",
+    "likesCount": 844,
+    "viewCount": 4719
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5675",
+    "stateId": "6a9c1807a4512c419e9f566c",
+    "name_en": "Baisakhi",
+    "name_hi": "बैसाखी",
+    "description_en": "Baisakhi on 13–14 April celebrates the Punjabi New Year and the Sikh New Year (Khalsa Sajna Diwas). The Golden Temple is the centre of celebrations with prayers, processions and Bhangra-Gidda performances.",
+    "description_hi": "बैसाखी 13-14 अप्रैल को पंजाबी नए साल और सिख नए साल (खालसा सजना दिवस) का जश्न मनाती है। स्वर्ण मंदिर प्रार्थनाओं, जुलूसों और भाँगड़ा-गिद्दा प्रदर्शनों के साथ उत्सव का केंद्र है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Baisakhi_celebration.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.096Z",
+    "likesCount": 319,
+    "viewCount": 2422
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5676",
+    "stateId": "6a9c1807a4512c419e9f566c",
+    "name_en": "Bhangra Dance",
+    "name_hi": "भाँगड़ा नृत्य",
+    "description_en": "Bhangra is a high-energy harvest folk dance from Punjab, originally performed during the Baisakhi wheat harvest. With dhol drums and exuberant jumps, it has become a global symbol of Punjab's spirit.",
+    "description_hi": "भाँगड़ा पंजाब का उत्साहपूर्ण फसल लोक नृत्य है, जो मूल रूप से बैसाखी गेहूँ की कटाई के दौरान किया जाता था। ढोल की थाप और उत्साही छलाँगों के साथ यह पंजाब की भावना का वैश्विक प्रतीक बन गया है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bhangra_dance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.096Z",
+    "likesCount": 219,
+    "viewCount": 1159
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5686",
+    "stateId": "6a9c1807a4512c419e9f567d",
+    "name_en": "Rath Yatra",
+    "name_hi": "रथ यात्रा",
+    "description_en": "The Rath Yatra (Chariot Festival) of Puri is one of the largest religious festivals in the world. Three massive wooden chariots carry the deities Jagannath, Balabhadra and Subhadra through the streets, pulled by thousands of devotees.",
+    "description_hi": "पुरी की रथ यात्रा दुनिया के सबसे बड़े धार्मिक उत्सवों में से एक है। तीन विशाल लकड़ी के रथ जगन्नाथ, बलभद्र और सुभद्रा देवताओं को हज़ारों भक्तों द्वारा खींचकर सड़कों पर ले जाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rath_Yatra_puri.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.106Z",
+    "likesCount": 1116,
+    "viewCount": 7862
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5687",
+    "stateId": "6a9c1807a4512c419e9f567d",
+    "name_en": "Odissi Dance",
+    "name_hi": "ओडिसी नृत्य",
+    "description_en": "Odissi is one of India's classical dance forms, originating from the temple dancers (Maharis) of Odisha. Its fluid movements, expressive mudras and stories from Jayadeva's Gita Govinda make it a mesmerizing art form.",
+    "description_hi": "ओडिसी भारत के शास्त्रीय नृत्य रूपों में से एक है, जो ओडिशा की मंदिर नर्तकियों (महारियों) से उत्पन्न हुई है। इसकी तरल गतिविधियाँ, अभिव्यंजक मुद्राएँ और जयदेव की गीत गोविंद की कहानियाँ इसे मनोरम कला बनाती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Odissi_dance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.106Z",
+    "likesCount": 749,
+    "viewCount": 4237
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5697",
+    "stateId": "6a9c1807a4512c419e9f568e",
+    "name_en": "Kullu Dussehra",
+    "name_hi": "कुल्लू दशहरा",
+    "description_en": "A week-long century-old festival celebrated at Dhalpur Maidan in Kullu where over 200 local deities converge to pay homage to Lord Raghunath.",
+    "description_hi": "कुल्लू के ढालपुर मैदान में मनाया जाने वाला सदियों पुराना सात दिवसीय उत्सव जहाँ 200 से अधिक स्थानीय देवी-देवता एकत्र होते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kullu_Dussehra_Procession.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.115Z",
+    "likesCount": 1115,
+    "viewCount": 6336
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56a6",
+    "stateId": "6a9c1807a4512c419e9f569e",
+    "name_en": "Goa Carnival",
+    "name_hi": "गोवा कार्निवल",
+    "description_en": "A vibrant pre-Lenten festival introduced in the 18th century featuring King Momo, colorful street parades, brass bands, and energetic folk dances.",
+    "description_hi": "18वीं सदी से मनाया जाने वाला उल्लासपूर्ण उत्सव जिसमें राजा मोमो, रंग-बिरंगी झांकियां और संगीत प्रस्तुतियां होती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Goa_Carnival_Parade.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.124Z",
+    "likesCount": 393,
+    "viewCount": 2592
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56b6",
+    "stateId": "6a9c1807a4512c419e9f56ad",
+    "name_en": "Sufiana Kalam",
+    "name_hi": "सूफियाना कलाम",
+    "description_en": "The classical music tradition of Kashmir accompanied by the santoor, saaz, and tabla, reciting the mystic poetry of Lal Ded and Sheikh Noor-ud-Din.",
+    "description_hi": "कश्मीर की शास्त्रीय संगीत परंपरा जो संतूर, साज़ और तबले के साथ सूफी संतों के वचनों का गायन करती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Santoor_Kashmir_Music.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.136Z",
+    "likesCount": 1741,
+    "viewCount": 7881
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56c6",
+    "stateId": "6a9c1807a4512c419e9f56bd",
+    "name_en": "Ganga Dussehra & Maha Aarti",
+    "name_hi": "गंगा दशहरा और महाआरती",
+    "description_en": "Celebration marking the descent of River Ganga from heaven to Earth, accompanied by Vedic chants, conch blowing, and spectacular brass lamp rituals.",
+    "description_hi": "गंगा जी के स्वर्ग से धरती पर अवतरण का पावन पर्व, जिसमें वैदिक मंत्रोच्चार, शंखनाद और भव्य दीप आरती की जाती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Haridwar_Ganga_Aarti_Night.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.145Z",
+    "likesCount": 894,
+    "viewCount": 6390
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56d6",
+    "stateId": "6a9c1807a4512c419e9f56cd",
+    "name_en": "Chhath Puja",
+    "name_hi": "छठ पूजा",
+    "description_en": "The grandest solar festival of Vedic origin dedicated to Lord Surya and Chhathi Maiya, observed with extreme purity, river fasting, and Arghya offerings at sunrise and sunset.",
+    "description_hi": "भगवान सूर्य और छठी मइया को समर्पित महापर्व, जिसमें नदियों और सरोवरों के तट पर अस्त होते और उगते सूर्य को अर्घ्य दिया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chhath_Puja_Arghya.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.154Z",
+    "likesCount": 297,
+    "viewCount": 1934
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56e6",
+    "stateId": "6a9c1807a4512c419e9f56dd",
+    "name_en": "Rongali Bihu Dance",
+    "name_hi": "रोंगाली बिहू नृत्य",
+    "description_en": "The celebration of Assamese New Year and springtime harvest, featuring energetic folk dancing with the Dhol drum, Pepa buffalo horn trumpet, and Taal cymbals.",
+    "description_hi": "असमिया नववर्ष और वसंत ऋतु का उल्लासमय पर्व, जिसमें ढोल, पेपा और ताल की थाप पर युवक-युवतियां मनमोहक बिहू नृत्य करते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bihu_Dance_Assam.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.162Z",
+    "likesCount": 668,
+    "viewCount": 3672
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56f6",
+    "stateId": "6a9c1807a4512c419e9f56ed",
+    "name_en": "Bathukamma Flower Festival",
+    "name_hi": "बथुकम्मा पुष्प उत्सव",
+    "description_en": "A vibrant 9-day floral festival celebrated by women during Navratri, arranging conical towers of seasonal blossoms and singing melodic folk hymns.",
+    "description_hi": "नवरात्रि के दौरान महिलाओं द्वारा मौसमी फूलों से शंक्वाकार पिरामिड बनाकर मनाया जाने वाला तेलंगाना का भव्य राजकीय पुष्प उत्सव।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bathukamma_Festival_Flowers.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.170Z",
+    "likesCount": 921,
+    "viewCount": 5488
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5706",
+    "stateId": "6a9c1807a4512c419e9f56fd",
+    "name_en": "Kuchipudi Classical Dance",
+    "name_hi": "कुचिपुड़ी शास्त्रीय नृत्य",
+    "description_en": "One of the eight major Indian classical dance forms, originating in the Krishna district, distinguished by dramatic storytelling, footwork on a brass plate (Tarangam), and expressive eyes.",
+    "description_hi": "आंध्र प्रदेश का प्रसिद्ध शास्त्रीय नृत्य जो अपने लास्य और तांडव, पीतल की थाली के किनारों पर थिरकते पैरों (तरंगम) और भावपूर्ण अभिनय के लिए विख्यात है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kuchipudi_Dance_Performance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.178Z",
+    "likesCount": 1046,
+    "viewCount": 4417
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5716",
+    "stateId": "6a9c1807a4512c419e9f570d",
+    "name_en": "Cham Sacred Mask Dance",
+    "name_hi": "छाम पवित्र मुखौटा नृत्य",
+    "description_en": "A dramatic monastic dance performed by Buddhist lamas wearing ornate masks and silk brocade robes, depicting the triumph of good over evil during Losar and Pang Lhabsol.",
+    "description_hi": "रंग-बिरंगे मुखौटों और रेशमी वस्त्रों में बौद्ध लामाओं द्वारा मठों के प्रांगण में प्रस्तुत किया जाने वाला पावन अनुष्ठानिक नृत्य।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cham_Mask_Dance_Sikkim.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.187Z",
+    "likesCount": 802,
+    "viewCount": 5146
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5727",
+    "stateId": "6a9c1807a4512c419e9f571d",
+    "name_en": "Losar Festival",
+    "name_hi": "लोसर उत्सव",
+    "description_en": "Losar is the Tibetan Buddhist New Year celebrated with Cham masked dances, butter lamp offerings and traditional thukpa feasts in Tawang monasteries.",
+    "description_hi": "लोसर तिब्बती बौद्ध नव वर्ष है जिसे तवांग मठों में छाम नृत्य, मक्खन के दीपक और पारंपरिक थुकपा दावतों के साथ मनाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Losar_festival.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.198Z",
+    "likesCount": 745,
+    "viewCount": 4873
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5738",
+    "stateId": "6a9c1807a4512c419e9f572e",
+    "name_en": "Goncha Festival, Bastar",
+    "name_hi": "गोंचा उत्सव, बस्तर",
+    "description_en": "Goncha is the Bastar equivalent of Rath Yatra, where the tribal deity is taken on a processional chariot pulled by thousands of devotees through the streets of Jagdalpur.",
+    "description_hi": "गोंचा बस्तर का रथ यात्रा के समकक्ष उत्सव है, जिसमें जनजातीय देवता को जगदलपुर की सड़कों से हजारों भक्त रथ पर ले जाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Goncha_festival_Bastar.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.208Z",
+    "likesCount": 1271,
+    "viewCount": 5319
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5747",
+    "stateId": "6a9c1807a4512c419e9f573f",
+    "name_en": "Geeta Jayanti Mahotsava",
+    "name_hi": "गीता जयंती महोत्सव",
+    "description_en": "Geeta Jayanti is celebrated in Kurukshetra on the day the Bhagavad Gita was preached by Lord Krishna to Arjuna before the Mahabharata war — a grand international festival of spirituality.",
+    "description_hi": "कुरुक्षेत्र में गीता जयंती उस दिन मनाई जाती है जब भगवान कृष्ण ने महाभारत युद्ध से पहले अर्जुन को भगवद्गीता का उपदेश दिया था।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Geeta_Jayanti_Kurukshetra.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.217Z",
+    "likesCount": 1047,
+    "viewCount": 5134
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5756",
+    "stateId": "6a9c1807a4512c419e9f574e",
+    "name_en": "Sarhul Festival",
+    "name_hi": "सरहुल उत्सव",
+    "description_en": "Sarhul is the most important festival of the Munda and Oraon tribes, celebrating the blooming of Sal trees (the sacred tree of nature). Tribal priests worship the earth goddess in sacred groves.",
+    "description_hi": "सरहुल मुंडा और उरांव जनजातियों का सबसे महत्वपूर्ण त्योहार है, जिसमें साल के पेड़ों के खिलने पर प्रकृति पूजा होती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sarhul_festival_Jharkhand.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.225Z",
+    "likesCount": 1343,
+    "viewCount": 6749
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5765",
+    "stateId": "6a9c1807a4512c419e9f575d",
+    "name_en": "Manipuri Ras Lila Dance",
+    "name_hi": "मणिपुरी रास लीला नृत्य",
+    "description_en": "Manipuri dance is one of eight classical dances of India. The Ras Lila performed in moonlit courtyards depicts the divine love of Radha and Krishna through lyrical, devotional movements.",
+    "description_hi": "मणिपुरी नृत्य भारत के आठ शास्त्रीय नृत्यों में से एक है। चाँदनी आँगन में रास लीला राधा और कृष्ण के दिव्य प्रेम को दर्शाती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Manipuri_dance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.234Z",
+    "likesCount": 1352,
+    "viewCount": 7862
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5766",
+    "stateId": "6a9c1807a4512c419e9f575d",
+    "name_en": "Yaosang Festival (Manipuri Holi)",
+    "name_hi": "याओसांग उत्सव (मणिपुरी होली)",
+    "description_en": "Yaosang is Manipur's five-day spring festival combining Vaishnavite traditions with indigenous Meitei customs — thabal chongba (moonlit folk dance) is its highlight.",
+    "description_hi": "याओसांग मणिपुर का पाँच दिवसीय वसंत उत्सव है जिसमें वैष्णव परंपराएँ और स्थानीय मेइतेई रीतियाँ जुड़ती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yaosang_festival_Manipur.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.234Z",
+    "likesCount": 1020,
+    "viewCount": 6497
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5774",
+    "stateId": "6a9c1807a4512c419e9f576c",
+    "name_en": "Nongkrem Dance Festival",
+    "name_hi": "नोंगक्रेम नृत्य उत्सव",
+    "description_en": "Nongkrem is the most important festival of the Khasi tribe, a five-day thanksgiving harvest festival with men and women performing traditional dances wearing elaborate costumes and silver jewellery.",
+    "description_hi": "नोंगक्रेम खासी जनजाति का सबसे महत्वपूर्ण पाँच दिवसीय कटाई धन्यवाद उत्सव है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nongkrem_dance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.244Z",
+    "likesCount": 1360,
+    "viewCount": 5766
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5775",
+    "stateId": "6a9c1807a4512c419e9f576c",
+    "name_en": "Wangala Harvest Festival (100 Drums)",
+    "name_hi": "वांगाला फसल उत्सव (100 ढोल)",
+    "description_en": "Wangala is the grandest festival of the Garo tribe, also called the Festival of 100 Drums. Garos thank their god Saljong (Sun God) for a bountiful harvest with energetic drumming and dance.",
+    "description_hi": "वांगाला गारो जनजाति का सबसे भव्य उत्सव है, जिसे 100 ढोल का उत्सव भी कहते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Wangala_festival_Meghalaya.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.244Z",
+    "likesCount": 278,
+    "viewCount": 1202
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5783",
+    "stateId": "6a9c1807a4512c419e9f577b",
+    "name_en": "Sekrenyi Festival (Angami)",
+    "name_hi": "सेक्रेन्यी उत्सव (अंगामी)",
+    "description_en": "Sekrenyi is the purification festival of the Angami Naga tribe, celebrated for 10 days with traditional games, feasts and rituals of community cleansing and rejuvenation.",
+    "description_hi": "सेक्रेन्यी अंगामी नागा जनजाति का शुद्धिकरण उत्सव है जिसे 10 दिनों तक पारंपरिक खेलों, भोज और सामुदायिक स्वच्छता अनुष्ठानों के साथ मनाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sekrenyi_festival.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.252Z",
+    "likesCount": 1492,
+    "viewCount": 8026
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5791",
+    "stateId": "6a9c1807a4512c419e9f578a",
+    "name_en": "Cheraw (Bamboo Dance)",
+    "name_hi": "चेराव (बाँस नृत्य)",
+    "description_en": "Cheraw — the Bamboo Dance — is Mizoram's most famous cultural performance. Dancers step in and out between rhythmically clapping bamboo poles with elegant footwork and colorful costumes.",
+    "description_hi": "चेराव — बाँस नृत्य — मिज़ोरम का सबसे प्रसिद्ध सांस्कृतिक प्रदर्शन है। नर्तक लयबद्ध रूप से थपथपाते बाँस के खंभों के बीच सुंदर पैर चाल और रंगीन वेशभूषा के साथ नृत्य करते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cheraw_bamboo_dance.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.261Z",
+    "likesCount": 209,
+    "viewCount": 1527
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f579e",
+    "stateId": "6a9c1807a4512c419e9f5797",
+    "name_en": "Garia Puja Festival",
+    "name_hi": "गरिया पूजा उत्सव",
+    "description_en": "Garia Puja is the most important festival of the Tripuri tribal community, celebrating the god Garia — giver of prosperity, food and forest — with five days of traditional music, dance and rituals.",
+    "description_hi": "गरिया पूजा त्रिपुरी जनजातीय समुदाय का सबसे महत्वपूर्ण उत्सव है जिसमें समृद्धि देने वाले देवता गरिया का पाँच दिनों तक उत्सव मनाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Garia_puja_Tripura.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.269Z",
+    "likesCount": 247,
+    "viewCount": 1687
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57ad",
+    "stateId": "6a9c1807a4512c419e9f57a4",
+    "name_en": "Hemis Tsechu Festival",
+    "name_hi": "हेमिस त्सेछु उत्सव",
+    "description_en": "Hemis Tsechu is a two-day monastic festival with elaborate Cham masked dances by monks portraying deities defeating evil, performed in the Hemis monastery courtyard.",
+    "description_hi": "हेमिस त्सेछु दो दिवसीय मठवासी उत्सव है जिसमें हेमिस मठ के आँगन में भिक्षु छाम मुखौटा नृत्य से देवताओं द्वारा बुराई की हार दर्शाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hemis_festival.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.279Z",
+    "likesCount": 1094,
+    "viewCount": 6596
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57bc",
+    "stateId": "6a9c1807a4512c419e9f57b4",
+    "name_en": "Island Tourism Festival",
+    "name_hi": "द्वीप पर्यटन महोत्सव",
+    "description_en": "The Island Tourism Festival in January–February is Andaman's biggest cultural event with boat races, tribal dances, indigenous craft displays, water sports and culinary events.",
+    "description_hi": "जनवरी-फरवरी में द्वीप पर्यटन महोत्सव अंडमान का सबसे बड़ा सांस्कृतिक कार्यक्रम है जिसमें नाव दौड़, जनजातीय नृत्य और जल खेल होते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Andaman_festival.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.288Z",
+    "likesCount": 1454,
+    "viewCount": 8080
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57c9",
+    "stateId": "6a9c1807a4512c419e9f57c2",
+    "name_en": "Kolkali Dance",
+    "name_hi": "कोलकली नृत्य",
+    "description_en": "Kolkali is a traditional folk dance of Lakshadweep performed by men who strike decorated sticks together while dancing in a circle to drum beats and songs.",
+    "description_hi": "कोलकली लक्षद्वीप का पारंपरिक लोक नृत्य है जिसमें पुरुष ढोल की थाप और गीतों पर वृत्ताकार में नृत्य करते हुए सजावटी डंडे एक-दूसरे से मारते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kolkali_dance_Lakshadweep.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.297Z",
+    "likesCount": 386,
+    "viewCount": 2903
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57d7",
+    "stateId": "6a9c1807a4512c419e9f57cf",
+    "name_en": "Bastille Day Parade",
+    "name_hi": "बैस्टिल डे परेड",
+    "description_en": "Puducherry uniquely celebrates France's Bastille Day on July 14 with a grand march-past, reflecting its unique Franco-Tamil identity distinct from the rest of India.",
+    "description_hi": "पुदुचेरी अपनी विशिष्ट फ्रेंको-तमिल पहचान को दर्शाते हुए 14 जुलाई को फ्रांस का बैस्टिल डे धूमधाम से मनाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bastille_Day_Pondicherry.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.311Z",
+    "likesCount": 1012,
+    "viewCount": 7613
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57e4",
+    "stateId": "6a9c1807a4512c419e9f57dd",
+    "name_en": "Chandigarh Carnival",
+    "name_hi": "चंडीगढ़ कार्निवाल",
+    "description_en": "The Chandigarh Carnival is an annual multi-day cultural festival celebrating the city's cosmopolitan identity with folk dances, music performances, food stalls and light shows.",
+    "description_hi": "चंडीगढ़ कार्निवाल एक वार्षिक बहु-दिवसीय सांस्कृतिक उत्सव है जो लोक नृत्यों, संगीत प्रदर्शन, खाने की दुकानों और प्रकाश शो के साथ शहर की महानगरीय पहचान का उत्सव मनाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chandigarh_Carnival.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.319Z",
+    "likesCount": 1336,
+    "viewCount": 6923
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57f1",
+    "stateId": "6a9c1807a4512c419e9f57ea",
+    "name_en": "Tarpa Dance (Varli Tribe)",
+    "name_hi": "तारपा नृत्य (वारली जनजाति)",
+    "description_en": "Tarpa Dance is performed by the Varli tribe to the sound of the tarpa (a wind instrument) — dancers form a spiral pattern around the tarpa player in an ancient harvest celebration.",
+    "description_hi": "तारपा नृत्य वारली जनजाति द्वारा तारपा (एक वायु वाद्ययंत्र) की ध्वनि पर किया जाता है — नर्तक तारपा वादक के चारों ओर सर्पिल पैटर्न बनाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tarpa_dance_Warli.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=vYqMUehWH-g",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.327Z",
+    "likesCount": 677,
+    "viewCount": 3164
+  }
+]

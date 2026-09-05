@@ -1,0 +1,962 @@
+[
+  {
+    "_id": "6a9c1806a4512c419e9f55b9",
+    "stateId": "6a9c1806a4512c419e9f55b2",
+    "name_en": "Blue Pottery of Jaipur",
+    "name_hi": "जयपुर की नीली मिट्टी कला",
+    "description_en": "Blue Pottery is made from quartz powder instead of clay and painted in bright blue and white. It is used for plates, tiles, vases and door knobs.",
+    "description_hi": "ब्लू पॉटरी मिट्टी के बजाय क्वार्ट्ज़ पाउडर से बनाई जाती है और चमकीले नीले-सफ़ेद रंग से सजाई जाती है। इससे प्लेट, टाइल, फूलदान और दरवाज़े के हैंडल बनते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Blue_Pottery_Jaipur.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.965Z",
+    "likesCount": 211,
+    "viewCount": 1630
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55ba",
+    "stateId": "6a9c1806a4512c419e9f55b2",
+    "name_en": "Bandhani Tie and Dye",
+    "name_hi": "बंधेज",
+    "description_en": "Bandhani is a tie-and-dye technique where cloth is tied into tiny knots before dyeing to create dotted patterns. Jaipur, Sikar and Jodhpur are its main centres.",
+    "description_hi": "बंधेज में कपड़े को रंगने से पहले छोटी-छोटी गाँठों में बाँधा जाता है, जिससे बिंदुओं वाले सुंदर पैटर्न बनते हैं। जयपुर, सीकर और जोधपुर इसके मुख्य केंद्र हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bandhani.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.965Z",
+    "likesCount": 267,
+    "viewCount": 1771
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55cd",
+    "stateId": "6a9c1806a4512c419e9f55c3",
+    "name_en": "Varanasi Silk Weaving (Banarasi)",
+    "name_hi": "वाराणसी रेशम (बनारसी)",
+    "description_en": "Banarasi silk sarees woven in Varanasi are famous worldwide for their intricate gold and silver zari patterns inspired by Mughal floral motifs. A GI-tagged craft of great cultural significance.",
+    "description_hi": "वाराणसी में बुनी जाने वाली बनारसी रेशम साड़ियाँ मुगल पुष्प प्रेरणा से बनी जटिल सोने-चाँदी की ज़री के काम के लिए विश्व प्रसिद्ध हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Banarasi_Silk_Saree.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.985Z",
+    "likesCount": 1384,
+    "viewCount": 7446
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55ce",
+    "stateId": "6a9c1806a4512c419e9f55c3",
+    "name_en": "Lucknow Chikankari",
+    "name_hi": "लखनऊ चिकनकारी",
+    "description_en": "Chikankari is a delicate shadow embroidery style developed in Lucknow under Nawabi patronage. The fine white thread work on muslin creates ethereal floral designs.",
+    "description_hi": "चिकनकारी लखनऊ में नवाबी संरक्षण में विकसित नाजुक छाया कढ़ाई है। मलमल पर सफेद धागे का बारीक काम अलौकिक पुष्प डिज़ाइन बनाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chikankari_embroidery_lucknow.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.986Z",
+    "likesCount": 305,
+    "viewCount": 1574
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55e3",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Tanjore Painting",
+    "name_hi": "तंजौर चित्रकला",
+    "description_en": "Tanjore paintings are rich, glowing artworks of gods and goddesses decorated with gold foil, glass beads and precious stones. They began in Thanjavur in the 16th century.",
+    "description_hi": "तंजौर चित्र देवी-देवताओं की चमकदार कलाकृतियाँ हैं जिन्हें सोने की पन्नी, काँच के मोती और कीमती पत्थरों से सजाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tanjore_painting.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.003Z",
+    "likesCount": 892,
+    "viewCount": 4003
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55e4",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Kanchipuram Silk",
+    "name_hi": "कांचीपुरम रेशम",
+    "description_en": "Kanchipuram silk sarees are woven from pure mulberry silk with heavy gold zari borders. They are known for their strength, bright colours and temple-inspired designs.",
+    "description_hi": "कांचीपुरम रेशमी साड़ियाँ शुद्ध शहतूत रेशम और भारी सोने की ज़री किनारी से बुनी जाती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kanchipuram_silk.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.003Z",
+    "likesCount": 374,
+    "viewCount": 2947
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55e5",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Chettinad Stone Carvings",
+    "name_hi": "चेट्टिनाड पत्थर नक्काशी",
+    "description_en": "Chettinad artisans carve intricate patterns on black stone using age-old techniques. These carvings adorn temple pillars, doorways and traditional mansions.",
+    "description_hi": "चेट्टिनाड के कारीगर पारंपरिक तकनीकों से काले पत्थर पर जटिल नक्काशी करते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chettinad_Mansion.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.003Z",
+    "likesCount": 927,
+    "viewCount": 3898
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55f6",
+    "stateId": "6a9c1807a4512c419e9f55f0",
+    "name_en": "Aranmula Kannadi",
+    "name_hi": "अरनमुला कन्नाडी",
+    "description_en": "Aranmula Kannadi is a handmade metal mirror, not glass, polished from a secret alloy of copper and tin. Only a few families in Aranmula village know the exact recipe.",
+    "description_hi": "अरनमुला कन्नाडी काँच नहीं बल्कि तांबे और टिन की एक गुप्त मिश्रधातु से बना हस्तनिर्मित धातु दर्पण है। इसका सही नुस्खा अरनमुला गाँव के कुछ ही परिवार जानते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Aranmula_Kannadi.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.020Z",
+    "likesCount": 612,
+    "viewCount": 2688
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55f7",
+    "stateId": "6a9c1807a4512c419e9f55f0",
+    "name_en": "Coir Craft",
+    "name_hi": "नारियल जटा शिल्प",
+    "description_en": "Coir is fibre taken from coconut husks and spun into ropes, mats, carpets and wall hangings. Alappuzha is the coir capital of India.",
+    "description_hi": "कॉयर नारियल के छिलके से निकाला गया रेशा है जिससे रस्सी, चटाई, कालीन और दीवार सजावट बनाए जाते हैं। अलप्पुझा भारत की कॉयर राजधानी है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Coir_products.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.020Z",
+    "likesCount": 532,
+    "viewCount": 2549
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f560c",
+    "stateId": "6a9c1807a4512c419e9f5600",
+    "name_en": "Zardozi Embroidery",
+    "name_hi": "ज़रदोज़ी",
+    "description_en": "Zardozi is heavy embroidery with gold and silver threads, pearls and beads, once used to decorate the robes of Mughal royalty. Today it shines on bridal wear and wall hangings.",
+    "description_hi": "ज़रदोज़ी सोने-चाँदी के धागों, मोतियों और मणियों की भारी कढ़ाई है, जो कभी मुग़ल शाही पोशाकों को सजाती थी। आज यह दुल्हन के परिधान और दीवार सजावट पर चमकती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Zardozi.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.034Z",
+    "likesCount": 739,
+    "viewCount": 6062
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f560d",
+    "stateId": "6a9c1807a4512c419e9f5600",
+    "name_en": "Meenakari Jewellery of Dariba Kalan",
+    "name_hi": "दरीबा कलां की मीनाकारी",
+    "description_en": "Dariba Kalan in Old Delhi is a 17th-century street of silversmiths. Its artisans are known for meenakari, the art of filling engraved metal with bright coloured enamel.",
+    "description_hi": "पुरानी दिल्ली का दरीबा कलां 17वीं सदी की सुनारों की गली है। यहाँ के कारीगर मीनाकारी के लिए प्रसिद्ध हैं, जिसमें उकेरे गए धातु में चमकीले रंग भरे जाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Meenakari_jewellery.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.034Z",
+    "likesCount": 557,
+    "viewCount": 2669
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f561e",
+    "stateId": "6a9c1807a4512c419e9f5616",
+    "name_en": "Paithani Silk Saree",
+    "name_hi": "पैठणी रेशमी साड़ी",
+    "description_en": "Paithani is a handloom silk saree from Paithan, Aurangabad, woven with zari in vibrant colours. Each saree has a peacock-motif border and can take months to weave.",
+    "description_hi": "पैठणी पैठण, औरंगाबाद की हाथकरघा रेशमी साड़ी है, जो ज़री से चमकीले रंगों में बुनी जाती है। प्रत्येक साड़ी की मोर-आकृति की बॉर्डर होती है और इसे बुनने में महीने लग सकते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Paithani_weaving.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.046Z",
+    "likesCount": 790,
+    "viewCount": 6423
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f561f",
+    "stateId": "6a9c1807a4512c419e9f5616",
+    "name_en": "Warli Painting",
+    "name_hi": "वारली चित्रकला",
+    "description_en": "Warli is a tribal art form from the Warli tribe of Palghar district. It uses geometric shapes — circles, triangles and squares — in white on red or brown backgrounds to depict village life.",
+    "description_hi": "वारली पालघर जिले की वारली जनजाति की जनजातीय कला है। यह लाल या भूरे पृष्ठभूमि पर सफेद रंग में वृत्त, त्रिभुज और वर्ग जैसी ज्यामितीय आकृतियों से ग्रामीण जीवन को चित्रित करती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Warli_painting.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.046Z",
+    "likesCount": 351,
+    "viewCount": 1814
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f562f",
+    "stateId": "6a9c1807a4512c419e9f5628",
+    "name_en": "Kutchi Embroidery",
+    "name_hi": "कच्छी कढ़ाई",
+    "description_en": "Kutchi embroidery uses mirrors, silk threads and bold geometric patterns to decorate clothes, bags and home furnishings. Each community in Kutch has its own distinct style.",
+    "description_hi": "कच्छी कढ़ाई में दर्पण, रेशमी धागे और बोल्ड ज्यामितीय पैटर्न का उपयोग कपड़ों, बैग और घरेलू सजावट को सजाने के लिए किया जाता है। कच्छ में प्रत्येक समुदाय की अपनी अलग शैली है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kutchi_embroidery.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.056Z",
+    "likesCount": 362,
+    "viewCount": 2486
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5630",
+    "stateId": "6a9c1807a4512c419e9f5628",
+    "name_en": "Patola Silk Saree",
+    "name_hi": "पटोला रेशमी साड़ी",
+    "description_en": "Patola sarees from Patan are double-ikat woven silk where both warp and weft threads are dyed before weaving to create a reversible pattern. A single saree can take 6 months to make.",
+    "description_hi": "पाटण की पटोला साड़ियाँ डबल-इकत बुनी हुई रेशमी साड़ियाँ हैं जहाँ बुनाई से पहले ताना और बाना दोनों धागों को रंगा जाता है। एक साड़ी बनाने में 6 महीने लग सकते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Patola_silk_sarees.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.056Z",
+    "likesCount": 566,
+    "viewCount": 3235
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5640",
+    "stateId": "6a9c1807a4512c419e9f5639",
+    "name_en": "Kantha Embroidery",
+    "name_hi": "कांथा कढ़ाई",
+    "description_en": "Kantha is a simple running-stitch embroidery traditionally done by women using old saris. The stitches create wavy textures and stories from mythology, birds and flowers.",
+    "description_hi": "कांथा महिलाओं द्वारा पुरानी साड़ियों का उपयोग करके की जाने वाली सरल रनिंग-स्टिच कढ़ाई है। टाँकों से लहरदार बनावट और पौराणिक कथाओं, पक्षियों और फूलों की कहानियाँ बनती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kantha_embroidery_Bengal.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.065Z",
+    "likesCount": 807,
+    "viewCount": 3755
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5641",
+    "stateId": "6a9c1807a4512c419e9f5639",
+    "name_en": "Baluchari Silk Saree",
+    "name_hi": "बलुचरी रेशमी साड़ी",
+    "description_en": "Baluchari sarees from Bishnupur are woven with scenes from the Ramayana and Mahabharata on their pallus (end-panels), created using a traditional draw-loom technique.",
+    "description_hi": "बिष्णुपुर की बलुचरी साड़ियों के पल्लू (अंत-पैनल) पर पारंपरिक ड्रॉ-लूम तकनीक से रामायण और महाभारत के दृश्य बुने जाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Baluchari_saree.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.065Z",
+    "likesCount": 1327,
+    "viewCount": 6737
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5651",
+    "stateId": "6a9c1807a4512c419e9f564a",
+    "name_en": "Mysore Silk Saree",
+    "name_hi": "मैसूर रेशमी साड़ी",
+    "description_en": "Mysore silk sarees are made from pure Mysore silk with a distinctive gold zari border. The Karnataka Silk Industries Corporation (KSIC) produces them using government-regulated processes.",
+    "description_hi": "मैसूर रेशमी साड़ियाँ शुद्ध मैसूर रेशम से एक विशिष्ट सोने की ज़री बॉर्डर के साथ बनाई जाती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mysore_silk_saree.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.076Z",
+    "likesCount": 305,
+    "viewCount": 1364
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5652",
+    "stateId": "6a9c1807a4512c419e9f564a",
+    "name_en": "Channapatna Toys",
+    "name_hi": "चन्नपट्ना खिलौने",
+    "description_en": "Channapatna town near Bengaluru is famous for its colourful lacquered wooden toys made from ivory wood (aale mara). They are GI-tagged and known globally as Karnataka's toy town.",
+    "description_hi": "बेंगलुरु के पास चन्नपट्ना शहर हाथीदाँत की लकड़ी से बने रंगीन लाख के खिलौनों के लिए प्रसिद्ध है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Channapatna_toys.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.076Z",
+    "likesCount": 945,
+    "viewCount": 4129
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5662",
+    "stateId": "6a9c1807a4512c419e9f565b",
+    "name_en": "Chanderi Silk",
+    "name_hi": "चंदेरी रेशम",
+    "description_en": "Chanderi silk from Chanderi town is a fine, lightweight fabric with a glossy transparency, woven with traditional motifs of coins, flowers and peacocks in gold or silver zari.",
+    "description_hi": "चंदेरी शहर से चंदेरी रेशम एक बारीक, हल्का कपड़ा है जिसमें सोने या चाँदी की ज़री में पारंपरिक सिक्के, फूल और मोर के रूपांकन होते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chanderi_fabric.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.086Z",
+    "likesCount": 610,
+    "viewCount": 2577
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5663",
+    "stateId": "6a9c1807a4512c419e9f565b",
+    "name_en": "Gond Painting",
+    "name_hi": "गोंड चित्रकला",
+    "description_en": "Gond painting is a folk and tribal art of the Gond people of Madhya Pradesh. It uses dots and dashes to fill animal and nature forms in vivid colours inspired by the forest.",
+    "description_hi": "गोंड चित्रकला मध्य प्रदेश के गोंड लोगों की लोक और जनजातीय कला है। यह जंगल से प्रेरित चमकीले रंगों में पशु और प्रकृति रूपों को बिंदुओं और रेखाओं से भरती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gond_painting.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.086Z",
+    "likesCount": 872,
+    "viewCount": 4341
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5673",
+    "stateId": "6a9c1807a4512c419e9f566c",
+    "name_en": "Phulkari Embroidery",
+    "name_hi": "फुलकारी कढ़ाई",
+    "description_en": "Phulkari (flower work) is a vibrant embroidery from Punjab done with silk floss on coarse cotton cloth. Traditionally made by women for daughters' wedding trousseaux, it blooms in geometric floral patterns.",
+    "description_hi": "फुलकारी (फूल कार्य) पंजाब से मोटे सूती कपड़े पर रेशमी धागे से की जाने वाली जीवंत कढ़ाई है। परंपरागत रूप से महिलाओं द्वारा बेटियों के विवाह के दहेज के लिए बनाई जाती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Phulkari_embroidery.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.096Z",
+    "likesCount": 214,
+    "viewCount": 1412
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5674",
+    "stateId": "6a9c1807a4512c419e9f566c",
+    "name_en": "Jutti – Traditional Footwear",
+    "name_hi": "जूती – पारंपरिक जूते",
+    "description_en": "Punjabi Jutti is a traditional leather footwear made with intricate embroidery using silk or golden thread. Worn during festivals and weddings, Patiala and Amritsar are the main production centres.",
+    "description_hi": "पंजाबी जूती पारंपरिक चमड़े का जूता है जो रेशमी या सुनहरे धागे से जटिल कढ़ाई के साथ बना होता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Punjabi_jutti.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.096Z",
+    "likesCount": 1367,
+    "viewCount": 6976
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5684",
+    "stateId": "6a9c1807a4512c419e9f567d",
+    "name_en": "Pattachitra",
+    "name_hi": "पट्टचित्र",
+    "description_en": "Pattachitra is a cloth-based scroll painting from Odisha depicting stories of Jagannath, Krishna and mythological themes. Artists from Raghurajpur village are renowned for this traditional craft.",
+    "description_hi": "पट्टचित्र ओडिशा की कपड़े पर बनी स्क्रॉल चित्रकला है जो जगन्नाथ, कृष्ण और पौराणिक विषयों की कहानियाँ चित्रित करती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pattachitra_painting.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.106Z",
+    "likesCount": 1317,
+    "viewCount": 6619
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5685",
+    "stateId": "6a9c1807a4512c419e9f567d",
+    "name_en": "Dhokra Metal Craft",
+    "name_hi": "ढोकरा धातु शिल्प",
+    "description_en": "Dhokra is a non-ferrous metal casting using the lost-wax technique, one of the earliest known methods of metal casting (over 4,000 years old). Tribal craftsmen make horses, elephants and Goddess figures.",
+    "description_hi": "ढोकरा लॉस्ट-वैक्स तकनीक का उपयोग करके गैर-लौह धातु ढलाई है, जो धातु ढलाई की सबसे पुरानी ज्ञात विधियों में से एक है (4,000 से अधिक वर्ष पुरानी)।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dhokra_craft.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.106Z",
+    "likesCount": 1350,
+    "viewCount": 5697
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5695",
+    "stateId": "6a9c1807a4512c419e9f568e",
+    "name_en": "Kullu Shawl Weaving",
+    "name_hi": "कुल्लू शॉल बुनाई",
+    "description_en": "World-famous woolen shawls adorned with intricate geometric border patterns woven with vegetable dyes on handlooms, holding GI status.",
+    "description_hi": "हथकरघे पर ज्यामितीय बॉर्डर डिज़ाइनों से बुने जाने वाले विश्व प्रसिद्ध ऊनी शॉल, जिन्हें जीआई टैग प्राप्त है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kullu_Shawl_Design.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.115Z",
+    "likesCount": 461,
+    "viewCount": 2975
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5696",
+    "stateId": "6a9c1807a4512c419e9f568e",
+    "name_en": "Chamba Rumal Embroidery",
+    "name_hi": "चंबा रूमाल कढ़ाई",
+    "description_en": "A double-sided silk embroidery tradition resembling fine miniature paintings where both sides of the cloth look completely identical.",
+    "description_hi": "रेशम के धागों से दोनों तरफ एक समान दिखने वाली अनूठी कढ़ाई परंपरा जो सूक्ष्म चित्रों जैसी सुंदर लगती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chamba_Rumal_Art.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.115Z",
+    "likesCount": 1028,
+    "viewCount": 7046
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56a5",
+    "stateId": "6a9c1807a4512c419e9f569e",
+    "name_en": "Azulejos Ceramic Tiles",
+    "name_hi": "अजुलेजोज चीनी मिट्टी की टाइलें",
+    "description_en": "Hand-painted tin-glazed ceramic tiles brought during the Portuguese era, depicting coastal scenes, folklore, and ornate floral motifs.",
+    "description_hi": "हाथ से चित्रित चीनी मिट्टी की टाइलें जो तटीय दृश्यों, लोककथाओं और फूलों के डिजाइनों को प्रदर्शित करती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Goa_Azulejos_Tiles.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.124Z",
+    "likesCount": 658,
+    "viewCount": 2814
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56b4",
+    "stateId": "6a9c1807a4512c419e9f56ad",
+    "name_en": "Pashmina Shawl Weaving",
+    "name_hi": "पश्मीना शॉल बुनाई",
+    "description_en": "Hand-spun cashmere fleece from Changthangi goats of Ladakh woven on traditional wooden looms in Srinagar, known for feather-light warmth.",
+    "description_hi": "लद्दाख की चांगथांगी बकरियों के ऊन से श्रीनगर के पारंपरिक करघों पर हाथ से बुने जाने वाले अत्यंत मुलायम और गर्म शॉल।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kashmir_Pashmina_Shawl.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.135Z",
+    "likesCount": 349,
+    "viewCount": 1813
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56b5",
+    "stateId": "6a9c1807a4512c419e9f56ad",
+    "name_en": "Kashmiri Papier-Mâché",
+    "name_hi": "कश्मीरी पेपर-मैशी",
+    "description_en": "A Persian-influenced decorative art using layered paper pulp molded and painted with intricate floral motifs and gold leaf.",
+    "description_hi": "कागज की लुगदी से सुंदर वस्तुएं बनाकर उन पर सोने के वर्क और बारीक फूलों के चित्रों से सजाई जाने वाली कला।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kashmir_Paper_Mache.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.135Z",
+    "likesCount": 1167,
+    "viewCount": 5782
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56c4",
+    "stateId": "6a9c1807a4512c419e9f56bd",
+    "name_en": "Aipan Folk Art",
+    "name_hi": "ऐपण लोक कला",
+    "description_en": "A ritualistic folk art of Kumaon drawn with rice flour paste (Biswar) over a red ochre (Geru) foundation, featuring sacred geometric symbols.",
+    "description_hi": "कुमाऊँ की पारंपरिक अनुष्ठानिक लोक कला जिसमें गेरू की लाल पृष्ठभूमि पर चावल के आटे (बिस्वार) से मांगलिक आकृतियाँ बनाई जाती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Aipan_Art_Uttarakhand.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.144Z",
+    "likesCount": 632,
+    "viewCount": 2917
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56c5",
+    "stateId": "6a9c1807a4512c419e9f56bd",
+    "name_en": "Ringal Bamboo Handicraft",
+    "name_hi": "रिंगाल बाँस हस्तशिल्प",
+    "description_en": "Traditional weaving of mountain dwarf bamboo (Ringal) by Himalayan artisans into intricate baskets, mats, and decorative household items.",
+    "description_hi": "पहाड़ी बौने बाँस (रिंगाल) से स्थानीय कारीगरों द्वारा सुंदर टोकरियां, चटाइयां और कलात्मक वस्तुएं बनाने की सदियों पुरानी कला।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ringal_Craft_Uttarakhand.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.144Z",
+    "likesCount": 805,
+    "viewCount": 6661
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56d4",
+    "stateId": "6a9c1807a4512c419e9f56cd",
+    "name_en": "Madhubani (Mithila) Painting",
+    "name_hi": "मधुबनी (मिथिला) चित्रकला",
+    "description_en": "Centuries-old folk art traditionally done by women using natural pigments and twigs/fingers, illustrating mythological scenes and cosmic symbols, GI protected.",
+    "description_hi": "मिथिलांचल की प्राचीन लोक कला जिसमें प्राकृतिक रंगों और तीलियों से पौराणिक आख्यानों और मांगलिक प्रतीकों का सुंदर अंकन किया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Madhubani_Art_Painting.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.154Z",
+    "likesCount": 261,
+    "viewCount": 1768
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56d5",
+    "stateId": "6a9c1807a4512c419e9f56cd",
+    "name_en": "Sikki Grass Golden Craft",
+    "name_hi": "सिक्की घास हस्तशिल्प",
+    "description_en": "Handcrafting using the naturally golden wild Sikki grass into durable decorative baskets, toys, boxes, and festive motifs.",
+    "description_hi": "प्राकृतिक सुनहरी सिक्की घास से हाथ से बुनी जाने वाली आकर्षक और टिकाऊ टोकरियां, खिलौने और आभूषण बक्से।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sikki_Grass_Craft.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.154Z",
+    "likesCount": 857,
+    "viewCount": 5263
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56e4",
+    "stateId": "6a9c1807a4512c419e9f56dd",
+    "name_en": "Muga Golden Silk Weaving",
+    "name_hi": "मूगा गोल्डन सिल्क बुनाई",
+    "description_en": "Endemic solely to Assam, Muga is a natural golden-hued wild silk that grows more glossy with every wash and was traditionally reserved for Ahom royalty.",
+    "description_hi": "असम की अनूठी प्राकृतिक सुनहरी रेशम (मूगा), जो धोने पर और अधिक चमकदार होती है; इसे जीआई टैग प्राप्त है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Muga_Silk_Assam.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.162Z",
+    "likesCount": 716,
+    "viewCount": 4422
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56e5",
+    "stateId": "6a9c1807a4512c419e9f56dd",
+    "name_en": "Assamese Jaapi",
+    "name_hi": "असमिया जापी",
+    "description_en": "Traditional conical hat woven from tightly woven bamboo, cane, and large dried Tokou leaves, adorned with red and white felt designs.",
+    "description_hi": "बाँस, बेंत और तोकौ के पत्तों से बनी पारंपरिक शंक्वाकार टोपी, जो असमिया सम्मान और आतिथ्य का सर्वोच्च प्रतीक है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Assam_Jaapi_Hat.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.162Z",
+    "likesCount": 955,
+    "viewCount": 4245
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56f4",
+    "stateId": "6a9c1807a4512c419e9f56ed",
+    "name_en": "Bidriware Metal Inlay",
+    "name_hi": "बिदरी हस्तशिल्प",
+    "description_en": "A centuries-old craft of engraving fine pure silver designs into a blackened zinc-copper alloy foundation, utilizing soil from historic fort grounds for the deep black patina.",
+    "description_hi": "काली धातु पर शुद्ध चांदी के बारीक तारों से नक्काशी करने की सदियों पुरानी कला, जिसे जीआई टैग प्राप्त है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bidriware_Silver_Art.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.170Z",
+    "likesCount": 858,
+    "viewCount": 5613
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56f5",
+    "stateId": "6a9c1807a4512c419e9f56ed",
+    "name_en": "Pochampally Ikat Silk",
+    "name_hi": "पोचमपल्ली इकत सिल्क",
+    "description_en": "A globally recognized tie-dye weaving technique where warp and weft silk threads are precisely dyed prior to weaving into complex geometric patterns.",
+    "description_hi": "जटिल ज्यामितीय डिजाइनों में बुनी जाने वाली विश्व प्रसिद्ध पारंपरिक टाई-एंड-डाई रेशमी साड़ी, जिसे भारत का पहला जीआई टैग मिला था।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pochampally_Ikat_Silk.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.170Z",
+    "likesCount": 1299,
+    "viewCount": 6733
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5704",
+    "stateId": "6a9c1807a4512c419e9f56fd",
+    "name_en": "Srikalahasti Kalamkari",
+    "name_hi": "श्रीकालहस्ती कलमकारी",
+    "description_en": "Ancient textile art executed entirely by hand using a sharp bamboo reed pen (Kalam) and natural mineral and vegetable dyes, depicting scenes from the Ramayana and Mahabharata.",
+    "description_hi": "बाँस की कलम और प्राकृतिक वानस्पतिक रंगों से सूती वस्त्रों पर रामायण और महाभारत के प्रसंगों का सजीव चित्रांकन करने की जीआई-प्रमाणित हस्तकला।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kalamkari_Fabric_Art.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.178Z",
+    "likesCount": 1348,
+    "viewCount": 6740
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5705",
+    "stateId": "6a9c1807a4512c419e9f56fd",
+    "name_en": "Kondapalli Wooden Toys",
+    "name_hi": "कोंडापल्ली लकड़ी के खिलौने",
+    "description_en": "Artisanal handcrafted wooden toys sculpted from lightweight Tella Poniki wood and finished with organic vegetable dyes by hereditary craftsmen (Aryakshatriyas).",
+    "description_hi": "तेल्ला पोनिकी की हल्की लकड़ी से हाथ से तराशे गए पारंपरिक खिलौने, जिन्हें प्राकृतिक रंगों से रंगा जाता है; जीआई मान्यता प्राप्त।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kondapalli_Toys_Andhra.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.178Z",
+    "likesCount": 1029,
+    "viewCount": 4948
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5714",
+    "stateId": "6a9c1807a4512c419e9f570d",
+    "name_en": "Thangka Buddhist Painting",
+    "name_hi": "थांगका बौद्ध चित्रकला",
+    "description_en": "Sacred Tibetan Buddhist scroll paintings executed with mineral pigments and gold dust on fine cotton or silk, illustrating Buddhist deities, mandalas, and spiritual journeys.",
+    "description_hi": "सूती या रेशमी वस्त्र पर सोने की भस्म और खनिज रंगों से बौद्ध देवी-देवताओं और मंडलों को चित्रित करने वाली पावन हिमालयी कला।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Thangka_Painting_Sikkim.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.187Z",
+    "likesCount": 772,
+    "viewCount": 5481
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5715",
+    "stateId": "6a9c1807a4512c419e9f570d",
+    "name_en": "Choktse Carved Wooden Tables",
+    "name_hi": "चोकत्से नक्काशीदार काष्ठ मेज",
+    "description_en": "Exquisitely carved folding wooden prayer tables lacquered with rich Tibetan floral and dragon motifs, handcrafted by master Sikkimese artisans.",
+    "description_hi": "ड्रैगन और पारंपरिक तिब्बती रूपांकनों से सजी हाथ से तराशी गई तह करने योग्य सुंदर प्रार्थना मेजें।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Choktse_Table_Sikkim.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.187Z",
+    "likesCount": 463,
+    "viewCount": 2862
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5725",
+    "stateId": "6a9c1807a4512c419e9f571d",
+    "name_en": "Apatani Weaving",
+    "name_hi": "अपातानी बुनाई",
+    "description_en": "The Apatani tribe of Ziro weave distinctive black and red striped fabric using backstrap looms, worn as traditional garments during festivals.",
+    "description_hi": "ज़ीरो की अपातानी जनजाति बैकस्ट्रैप करघों पर काली और लाल धारियों वाले विशिष्ट वस्त्र बुनती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Apatani_weaving.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.198Z",
+    "likesCount": 1387,
+    "viewCount": 6513
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5726",
+    "stateId": "6a9c1807a4512c419e9f571d",
+    "name_en": "Thanka Painting",
+    "name_hi": "थांका चित्रकला",
+    "description_en": "Tawang monks create intricate Thanka paintings — sacred Buddhist scrolls depicting deities, mandalas and teaching narratives on cotton canvas with mineral pigments.",
+    "description_hi": "तवांग के भिक्षु सूती कैनवास पर खनिज रंगों से जटिल थांका चित्र बनाते हैं — देवताओं, मंडलों और शिक्षण आख्यानों के पवित्र बौद्ध स्क्रॉल।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Thanka_painting.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.198Z",
+    "likesCount": 1417,
+    "viewCount": 6750
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5736",
+    "stateId": "6a9c1807a4512c419e9f572e",
+    "name_en": "Bastar Dhokra Art",
+    "name_hi": "बस्तर ढोकरा कला",
+    "description_en": "Dhokra art is an ancient lost-wax casting technique used by Bastar tribes to create striking brass figurines of deities, animals and tribal motifs — one of the oldest metal casting traditions.",
+    "description_hi": "ढोकरा कला बस्तर की जनजातियों की प्राचीन लॉस्ट-वैक्स कास्टिंग तकनीक है जिससे देवताओं, जानवरों और जनजातीय आकृतियों की पीतल की मूर्तियाँ बनाई जाती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dhokra_art.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.208Z",
+    "likesCount": 245,
+    "viewCount": 1649
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5737",
+    "stateId": "6a9c1807a4512c419e9f572e",
+    "name_en": "Bastar Tribal Jewellery",
+    "name_hi": "बस्तर जनजातीय आभूषण",
+    "description_en": "Bastar women wear distinctive brass and bead jewellery — heavy neck rings, anklets and earrings — crafted by local artisans using traditional techniques passed down generations.",
+    "description_hi": "बस्तर की महिलाएँ पीतल और मनकों से बने विशिष्ट आभूषण पहनती हैं — भारी गर्दन की अंगूठियाँ, पायल और कान की बालियाँ — जो पीढ़ियों से चली आ रही परंपरागत तकनीक से बनाई जाती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bastar_tribal_jewellery.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.208Z",
+    "likesCount": 447,
+    "viewCount": 2185
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5746",
+    "stateId": "6a9c1807a4512c419e9f573f",
+    "name_en": "Phulkari Embroidery",
+    "name_hi": "फुलकारी कढ़ाई",
+    "description_en": "Phulkari meaning \"flower work\" is a vibrant embroidery tradition of Haryana and Punjab. Women embroider bright geometric floral patterns on cotton and silk using silk floss thread.",
+    "description_hi": "फुलकारी यानी \"फूलों का काम\" हरियाणा और पंजाब की जीवंत कढ़ाई परंपरा है। महिलाएँ रेशमी धागे से सूती और रेशमी कपड़े पर रंगीन ज्यामितीय फूल बनाती हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Phulkari_embroidery.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.216Z",
+    "likesCount": 777,
+    "viewCount": 4205
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5755",
+    "stateId": "6a9c1807a4512c419e9f574e",
+    "name_en": "Sohrai and Khovar Painting",
+    "name_hi": "सोहराई और खोवर चित्रकला",
+    "description_en": "Sohrai and Khovar are tribal wall painting traditions of Jharkhand, inscribed on UNESCO's Intangible Cultural Heritage list. Women paint during harvest (Sohrai) and weddings (Khovar) using earth pigments.",
+    "description_hi": "सोहराई और खोवर झारखंड की जनजातीय दीवार चित्रकला परंपराएँ हैं, जो यूनेस्को की अमूर्त सांस्कृतिक विरासत सूची में हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sohrai_painting_Jharkhand.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.224Z",
+    "likesCount": 1374,
+    "viewCount": 6163
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5764",
+    "stateId": "6a9c1807a4512c419e9f575d",
+    "name_en": "Moirang Phee Weaving",
+    "name_hi": "मोइरांग फी बुनाई",
+    "description_en": "Traditional Manipuri hand-woven fabric with ancient geometric and floral designs, practiced by women on loin-loom using silk and cotton.",
+    "description_hi": "पारंपरिक मणिपुरी हाथ से बुने कपड़े जिसमें प्राचीन ज्यामितीय और फूलों के डिज़ाइन होते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Manipuri_handloom.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.234Z",
+    "likesCount": 320,
+    "viewCount": 1477
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5773",
+    "stateId": "6a9c1807a4512c419e9f576c",
+    "name_en": "Bamboo and Cane Craft",
+    "name_hi": "बाँस और बेंत शिल्प",
+    "description_en": "Meghalaya artisans weave intricate baskets, furniture and musical instruments from locally harvested bamboo and cane.",
+    "description_hi": "मेघालय के कारीगर स्थानीय बाँस और बेंत से जटिल टोकरियाँ, फर्नीचर और संगीत वाद्ययंत्र बुनते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bamboo_craft_Meghalaya.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.244Z",
+    "likesCount": 1042,
+    "viewCount": 5761
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5781",
+    "stateId": "6a9c1807a4512c419e9f577b",
+    "name_en": "Naga Shawl Weaving",
+    "name_hi": "नागा शॉल बुनाई",
+    "description_en": "Each of the 16 Naga tribes has a distinctive traditional shawl design with specific motifs, colours and patterns that denote clan identity, social status and ceremonial occasions.",
+    "description_hi": "सभी 16 नागा जनजातियों की अपनी विशिष्ट पारंपरिक शॉल डिज़ाइन होती है जो कुल पहचान, सामाजिक दर्जे और समारोही अवसरों को दर्शाती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Naga_shawl_weaving.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.252Z",
+    "likesCount": 431,
+    "viewCount": 3195
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5782",
+    "stateId": "6a9c1807a4512c419e9f577b",
+    "name_en": "Naga Wood Carving",
+    "name_hi": "नागा लकड़ी नक्काशी",
+    "description_en": "Naga wood carvers create intricate log-drums (morung), warrior totems, house posts and ceremonial objects with animal motifs — mithan (gaur) heads are a recurring symbol of prosperity.",
+    "description_hi": "नागा लकड़ी शिल्पी जटिल लॉग-ड्रम (मोरुंग), योद्धा टोटेम, घर के खंभे और पशु रूपांकनों वाली आनुष्ठानिक वस्तुएँ बनाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Naga_wood_carving.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.252Z",
+    "likesCount": 325,
+    "viewCount": 1801
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5790",
+    "stateId": "6a9c1807a4512c419e9f578a",
+    "name_en": "Puanchei Textile Weaving",
+    "name_hi": "पुआनचेई वस्त्र बुनाई",
+    "description_en": "Puanchei is the colourful ceremonial shawl of Mizo women, woven on traditional looms with intricate multicoloured geometric patterns worn during festivals and celebrations.",
+    "description_hi": "पुआनचेई मिज़ो महिलाओं का रंगीन समारोही शॉल है जिसे पारंपरिक करघों पर जटिल बहुरंगी ज्यामितीय पैटर्न के साथ बुना जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Puanchei_shawl_Mizoram.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.261Z",
+    "likesCount": 848,
+    "viewCount": 6197
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f579d",
+    "stateId": "6a9c1807a4512c419e9f5797",
+    "name_en": "Risa (Traditional Tripuri Fabric)",
+    "name_hi": "रीसा (पारंपरिक त्रिपुरी वस्त्र)",
+    "description_en": "Risa is a handwoven cotton fabric made by Tripuri women used as ceremonial scarves, waistbands and head covers. Its bold red and white stripes carry cultural significance.",
+    "description_hi": "रीसा त्रिपुरी महिलाओं द्वारा हाथ से बुना सूती कपड़ा है जिसका उपयोग समारोही दुपट्टों, कमरबंदों और सिर के आवरण के रूप में किया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Risa_fabric_Tripura.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.269Z",
+    "likesCount": 318,
+    "viewCount": 1907
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57ac",
+    "stateId": "6a9c1807a4512c419e9f57a4",
+    "name_en": "Pashmina Shawl Weaving",
+    "name_hi": "पश्मीना शॉल बुनाई",
+    "description_en": "Pashmina wool from Changthangi goats in Ladakh's Changthang plateau is the world's finest cashmere. Weavers in Leh hand-spin and hand-weave it into incredibly soft shawls.",
+    "description_hi": "लद्दाख के चांगथांग पठार में चांगथांगी बकरियों का पश्मीना ऊन विश्व का सबसे बारीक कश्मीरी है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pashmina_shawl.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.279Z",
+    "likesCount": 1289,
+    "viewCount": 6382
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57bb",
+    "stateId": "6a9c1807a4512c419e9f57b4",
+    "name_en": "Shell Craft",
+    "name_hi": "शैल शिल्प",
+    "description_en": "Andaman artisans craft exquisite jewellery, decorations and showpieces from the shells of conch, cowrie, nautilus and other sea molluscs found on the island beaches.",
+    "description_hi": "अंडमान के कारीगर शंख, कौड़ी, नॉटिलस और समुद्री घोंघों के कोशों से उत्कृष्ट आभूषण, सजावट और शोपीस बनाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shell_craft_Andaman.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.288Z",
+    "likesCount": 486,
+    "viewCount": 3097
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57c8",
+    "stateId": "6a9c1807a4512c419e9f57c2",
+    "name_en": "Coir Mat Weaving",
+    "name_hi": "कॉयर चटाई बुनाई",
+    "description_en": "Lakshadweep women weave colourful mats from coconut coir — an age-old craft that transforms the island's most abundant natural resource into beautiful functional art.",
+    "description_hi": "लक्षद्वीप की महिलाएँ नारियल की जटा (कॉयर) से रंगीन चटाईयाँ बुनती हैं — एक पुरानी परंपरा जो द्वीप के सबसे प्रचुर संसाधन को सुंदर कला में बदलती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Coir_mat_Lakshadweep.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.297Z",
+    "likesCount": 332,
+    "viewCount": 1696
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57d6",
+    "stateId": "6a9c1807a4512c419e9f57cf",
+    "name_en": "Puducherry Pottery & Terracotta",
+    "name_hi": "पुदुचेरी मिट्टी के बर्तन",
+    "description_en": "The village potters (Kumbhars) of Puducherry create terracotta pots, lamps and decorative figurines in ancient traditional designs.",
+    "description_hi": "पुदुचेरी के कुम्हार (कुम्भार) प्राचीन पारंपरिक डिज़ाइनों में मिट्टी के बर्तन, दीपक और सजावटी मूर्तियाँ बनाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pondicherry_pottery.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.310Z",
+    "likesCount": 888,
+    "viewCount": 4230
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57e3",
+    "stateId": "6a9c1807a4512c419e9f57dd",
+    "name_en": "Phulkari and Traditional Craft Fair",
+    "name_hi": "फुलकारी और पारंपरिक शिल्प मेला",
+    "description_en": "Chandigarh's craft fairs showcase Phulkari embroidery, Patiala jutti (leather footwear), Punjabi pottery and handloom fabric from across Punjab and Haryana.",
+    "description_hi": "चंडीगढ़ के शिल्प मेलों में फुलकारी कढ़ाई, पटियाला जूती, पंजाबी मिट्टी के बर्तन और पंजाब-हरियाणा के हथकरघा का प्रदर्शन होता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Phulkari_embroidery.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.318Z",
+    "likesCount": 735,
+    "viewCount": 3851
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57f0",
+    "stateId": "6a9c1807a4512c419e9f57ea",
+    "name_en": "Warli Tribal Painting",
+    "name_hi": "वारली जनजातीय चित्रकला",
+    "description_en": "Warli painting from the tribal communities of Dadra & Nagar Haveli uses simple geometric shapes — circles, triangles, squares — to depict scenes of daily life, harvest and ritual.",
+    "description_hi": "दादरा नगर हवेली की वारली जनजातीय समुदायों की चित्रकला सरल ज्यामितीय आकृतियों से दैनिक जीवन, कटाई और अनुष्ठान के दृश्य बनाती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Warli_painting.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.327Z",
+    "likesCount": 1105,
+    "viewCount": 6354
+  }
+]

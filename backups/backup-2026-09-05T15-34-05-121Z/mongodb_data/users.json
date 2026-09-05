@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "6a9be993ccaf8317484dcef4",
+    "email": "admin@bharatdarshan.local",
+    "__v": 0,
+    "createdAt": "2026-09-05T10:06:11.724Z",
+    "favorites": [],
+    "name": "Admin",
+    "passwordHash": "$2a$10$WKGRlgdeQhIpbTJByJ/r.uQTMMi/DfS5LUp/luFh.SSz6hb4LpLda",
+    "role": "admin"
+  },
+  {
+    "_id": "6a9c0123bf4bd9a1bc63685b",
+    "name": "Krish",
+    "email": "krish@gmail.com",
+    "passwordHash": "$2a$10$PbRs7E5dpIM7ZCCGmRFswepfGoNQ5l7mfzdWSAPnFkqwnHH.YI17C",
+    "role": "user",
+    "favorites": [
+      "6a9bff893953c24e9c876845"
+    ],
+    "createdAt": "2026-09-05T11:46:43.385Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,48 @@
+image: node:20-bullseye
+
+stages:
+  - verify
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_BRANCH
+
+# `npm ci` needs a committed package-lock.json. Until both lockfiles are committed,
+# fall back to `npm install` so the pipeline still verifies lint/tests/build.
+.install: &install
+  - if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else echo "No package-lock.json found, running npm install"; npm install --no-audit --no-fund; fi
+
+backend:
+  stage: verify
+  cache:
+    key: backend-$CI_COMMIT_REF_SLUG
+    paths:
+      - backend/node_modules/
+      - .cache/mongodb-binaries/
+  variables:
+    MONGOMS_DOWNLOAD_DIR: $CI_PROJECT_DIR/.cache/mongodb-binaries
+    JWT_SECRET: ci-test-secret
+  script:
+    - cd backend
+    - *install
+    - npm run lint
+    - npm test
+
+frontend:
+  stage: verify
+  cache:
+    key: frontend-$CI_COMMIT_REF_SLUG
+    paths:
+      - frontend/node_modules/
+  script:
+    - cd frontend
+    - *install
+    - npm run lint
+    - npm run check-geojson
+    - npm run build
+  artifacts:
+    paths:
+      - frontend/dist/
+    expire_in: 1 week

@@ -1,0 +1,1026 @@
+[
+  {
+    "_id": "6a9c1806a4512c419e9f55bd",
+    "stateId": "6a9c1806a4512c419e9f55b2",
+    "name_en": "Dal Baati Churma",
+    "name_hi": "दाल बाटी चूरमा",
+    "description_en": "Dal Baati Churma is the signature dish of Rajasthan: hard baked wheat balls (baati) served with spicy lentils (dal) and sweet crushed wheat (churma) with ghee.",
+    "description_hi": "दाल बाटी चूरमा राजस्थान का प्रमुख व्यंजन है: सिकी हुई गेहूँ की बाटी, मसालेदार दाल और घी के साथ मीठा चूरमा।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dal_Baati_Churma.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.966Z",
+    "likesCount": 449,
+    "viewCount": 2706
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55be",
+    "stateId": "6a9c1806a4512c419e9f55b2",
+    "name_en": "Laal Maas",
+    "name_hi": "लाल मांस",
+    "description_en": "Laal Maas is a fiery red mutton curry cooked with Mathania red chillies, garlic and yoghurt. It was originally a royal hunting dish.",
+    "description_hi": "लाल मांस मथानिया लाल मिर्च, लहसुन और दही के साथ पकाया गया तीखा लाल रंग का मटन करी है। यह मूल रूप से राजघरानों का शिकार व्यंजन था।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Laal_Maas.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.966Z",
+    "likesCount": 1325,
+    "viewCount": 7751
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55d1",
+    "stateId": "6a9c1806a4512c419e9f55c3",
+    "name_en": "Kachori Sabzi",
+    "name_hi": "कचोरी सब्ज़ी",
+    "description_en": "Crispy deep-fried kachoris stuffed with spiced urad dal, served with a tangy aloo sabzi, tamarind chutney and fresh coriander. The quintessential Uttar Pradesh breakfast.",
+    "description_hi": "उड़द दाल और मसालों से भरी खस्ता कचोरी, खट्टी आलू सब्जी, इमली की चटनी और ताज़े धनिये के साथ — उत्तर प्रदेश का क्विंटेशेंशल नाश्ता।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kachori_sabzi_UP.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.986Z",
+    "likesCount": 643,
+    "viewCount": 2995
+  },
+  {
+    "_id": "6a9c1806a4512c419e9f55d2",
+    "stateId": "6a9c1806a4512c419e9f55c3",
+    "name_en": "Lucknowi Biryani (Dum Pukht)",
+    "name_hi": "लखनवी बिरयानी (दम पुख़्त)",
+    "description_en": "Lucknowi biryani, prepared by the Dum Pukht slow-cooking method, uses fragrant basmati rice, saffron, rose water and slow-cooked meat sealed in a dough-covered handi for maximum flavour.",
+    "description_hi": "लखनवी बिरयानी दम पुख़्त विधि से बनती है — सुगंधित बासमती, केसर, गुलाब जल और आटे से बंद हांडी में धीमी आँच पर पकाया गया मांस।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Lucknawi_Biryani.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:22.986Z",
+    "likesCount": 994,
+    "viewCount": 7591
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55e9",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Chettinad Chicken",
+    "name_hi": "चेट्टिनाड चिकन",
+    "description_en": "Chettinad Chicken is a spicy, aromatic curry made with freshly ground pepper, fennel, star anise and coconut. It is best enjoyed with rice or dosa.",
+    "description_hi": "चेट्टिनाड चिकन ताज़ी पिसी काली मिर्च, सौंफ, चक्र फूल और नारियल से बनी मसालेदार करी है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chettinad_chicken.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.004Z",
+    "likesCount": 536,
+    "viewCount": 3532
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55ea",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Idli Sambar",
+    "name_hi": "इडली सांभर",
+    "description_en": "Idli is a soft steamed rice cake eaten with sambar (lentil and vegetable stew) and coconut chutney. The everyday healthy breakfast of Tamil homes.",
+    "description_hi": "इडली भाप में पका नरम चावल का केक है जिसे सांभर और नारियल की चटनी के साथ खाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Idli_Sambar.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.004Z",
+    "likesCount": 437,
+    "viewCount": 2035
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55eb",
+    "stateId": "6a9c1806a4512c419e9f55d7",
+    "name_en": "Kothu Parotta",
+    "name_hi": "कोत्तु परोटा",
+    "description_en": "Kothu Parotta is a street food made by shredding layered flatbread and stir-frying with egg, meat or vegetables with onions, spices and kari sauce on a hot griddle.",
+    "description_hi": "कोत्तु परोटा एक स्ट्रीट फूड है जिसे परतदार फ्लैटब्रेड को अंडे, मांस या सब्जियों के साथ मसाले और करी सॉस में भूनकर बनाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kothu_Parotta.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.004Z",
+    "likesCount": 170,
+    "viewCount": 1238
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55fa",
+    "stateId": "6a9c1807a4512c419e9f55f0",
+    "name_en": "Appam with Stew",
+    "name_hi": "अप्पम और स्टू",
+    "description_en": "Appam is a lacy rice pancake with a soft centre and crisp edges, cooked in a special pan. It is served with a mild coconut milk stew of vegetables or chicken.",
+    "description_hi": "अप्पम चावल का जालीदार पैनकेक है जिसका बीच नरम और किनारे कुरकुरे होते हैं। इसे सब्ज़ी या चिकन के नारियल दूध वाले हल्के स्टू के साथ परोसा जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Appam.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.021Z",
+    "likesCount": 1521,
+    "viewCount": 8950
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f55fb",
+    "stateId": "6a9c1807a4512c419e9f55f0",
+    "name_en": "Onam Sadya",
+    "name_hi": "ओणम साद्या",
+    "description_en": "Sadya is a grand vegetarian feast of 20 or more dishes served on a banana leaf, including sambar, avial, thoran, pickles and payasam. It is eaten sitting on the floor with the right hand.",
+    "description_hi": "साद्या केले के पत्ते पर परोसा जाने वाला 20 से अधिक व्यंजनों का भव्य शाकाहारी भोज है, जिसमें सांभर, अवियल, थोरन, अचार और पायसम शामिल हैं। इसे ज़मीन पर बैठकर दाहिने हाथ से खाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sadya.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.021Z",
+    "likesCount": 1838,
+    "viewCount": 8282
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5610",
+    "stateId": "6a9c1807a4512c419e9f5600",
+    "name_en": "Chole Bhature",
+    "name_hi": "छोले भटूरे",
+    "description_en": "Chole Bhature is the ultimate Delhi breakfast: spicy chickpea curry served with puffy deep-fried bread, pickled onions and a glass of lassi.",
+    "description_hi": "छोले भटूरे दिल्ली का सबसे मशहूर नाश्ता है: मसालेदार छोले, फूले हुए तले भटूरे, सिरके वाले प्याज़ और एक गिलास लस्सी।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chole_Bhature.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.035Z",
+    "likesCount": 1305,
+    "viewCount": 5651
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5611",
+    "stateId": "6a9c1807a4512c419e9f5600",
+    "name_en": "Paranthe Wali Gali Paranthas",
+    "name_hi": "परांठे वाली गली के परांठे",
+    "description_en": "Paranthe Wali Gali in Chandni Chowk has served stuffed, deep-fried paranthas since the 1870s. Fillings range from potato and paneer to rabri, banana and dry fruits.",
+    "description_hi": "चांदनी चौक की परांठे वाली गली 1870 के दशक से भरवाँ, तले परांठे परोस रही है। इनमें आलू और पनीर से लेकर रबड़ी, केला और मेवे तक की भरावट मिलती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Paratha.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.035Z",
+    "likesCount": 979,
+    "viewCount": 4555
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5622",
+    "stateId": "6a9c1807a4512c419e9f5616",
+    "name_en": "Vada Pav",
+    "name_hi": "वड़ा पाव",
+    "description_en": "Vada Pav is Mumbai's favourite street food — a spiced potato fritter (vada) in a bread roll (pav) with green chutney and dry garlic chutney. It is called the \"Mumbai Burger\".",
+    "description_hi": "वड़ा पाव मुंबई का पसंदीदा स्ट्रीट फूड है — ब्रेड रोल (पाव) में मसालेदार आलू की कटलेट (वड़ा) हरी चटनी और सूखी लहसुन की चटनी के साथ। इसे \"मुंबई बर्गर\" कहा जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Vada_pav.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.046Z",
+    "likesCount": 1381,
+    "viewCount": 5779
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5623",
+    "stateId": "6a9c1807a4512c419e9f5616",
+    "name_en": "Puran Poli",
+    "name_hi": "पूरण पोळी",
+    "description_en": "Puran Poli is a sweet flatbread stuffed with a filling of jaggery and chana dal (Bengal gram), flavoured with cardamom and nutmeg. It is an essential dish at Holi and Diwali.",
+    "description_hi": "पूरण पोळी गुड़ और चना दाल से भरी मीठी रोटी है, जिसमें इलायची और जायफल का स्वाद होता है। यह होली और दीवाली पर अनिवार्य व्यंजन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Puran_poli.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.046Z",
+    "likesCount": 1480,
+    "viewCount": 6953
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5633",
+    "stateId": "6a9c1807a4512c419e9f5628",
+    "name_en": "Dhokla",
+    "name_hi": "ढोकला",
+    "description_en": "Dhokla is a steamed savory cake made from fermented rice and chickpea batter, tempered with mustard seeds, green chilli and curry leaves. It is Gujarat's most iconic snack.",
+    "description_hi": "ढोकला किण्वित चावल और चने के घोल से बना भाप में पका नमकीन केक है, जिसे राई, हरी मिर्च और करी पत्ते से तड़का लगाया जाता है। यह गुजरात का सबसे प्रतिष्ठित नाश्ता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dhokla.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.057Z",
+    "likesCount": 1147,
+    "viewCount": 6555
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5634",
+    "stateId": "6a9c1807a4512c419e9f5628",
+    "name_en": "Thepla",
+    "name_hi": "थेपला",
+    "description_en": "Thepla is a thin flatbread made from whole wheat flour, methi (fenugreek) leaves and spices. It stays fresh for days making it perfect for travel — Gujarat's answer to the packed lunch.",
+    "description_hi": "थेपला साबुत गेहूँ के आटे, मेथी के पत्तों और मसालों से बनी पतली रोटी है। यह कई दिनों तक ताज़ी रहती है जिससे यात्रा के लिए आदर्श है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Methi_thepla.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.057Z",
+    "likesCount": 1180,
+    "viewCount": 9149
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5644",
+    "stateId": "6a9c1807a4512c419e9f5639",
+    "name_en": "Rosogolla",
+    "name_hi": "रसगुल्ला",
+    "description_en": "Rosogolla is a soft, spongy ball of chhena (cottage cheese) soaked in light sugar syrup. Originating from Kolkata, it is one of India's most beloved sweets.",
+    "description_hi": "रसगुल्ला छेना (पनीर) की नरम, स्पंजी गेंद है जो हल्की चीनी की चाशनी में भीगी होती है। कोलकाता से उत्पन्न यह भारत की सबसे प्रिय मिठाइयों में से एक है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rasgulla.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.065Z",
+    "likesCount": 1453,
+    "viewCount": 7650
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5645",
+    "stateId": "6a9c1807a4512c419e9f5639",
+    "name_en": "Hilsa Fish Curry",
+    "name_hi": "हिलसा मछली करी",
+    "description_en": "Hilsa (Ilish) is the national fish of Bangladesh and the pride of Bengal. Mustard-marinated Hilsa cooked in mustard oil is the quintessential Bengali meal, especially during the monsoon.",
+    "description_hi": "हिलसा (इलिश) बांग्लादेश की राष्ट्रीय मछली और बंगाल की शान है। सरसों के तेल में पकाई सरसों में लपेटी हिलसा विशिष्ट बंगाली भोजन है, विशेष रूप से मानसून में।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ilish_bhapa.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.065Z",
+    "likesCount": 1324,
+    "viewCount": 5885
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5655",
+    "stateId": "6a9c1807a4512c419e9f564a",
+    "name_en": "Bisi Bele Bath",
+    "name_hi": "बिसी बेले बाथ",
+    "description_en": "Bisi Bele Bath (hot lentil rice) is a hearty one-pot dish of rice, lentils and vegetables cooked together with a special spice powder and finished with ghee and cashews.",
+    "description_hi": "बिसी बेले बाथ (गर्म दाल चावल) चावल, दाल और सब्जियों को विशेष मसाला पाउडर के साथ पकाया गया हार्दिक एक-बर्तन व्यंजन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bisi_bele_bath.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.076Z",
+    "likesCount": 613,
+    "viewCount": 3098
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5656",
+    "stateId": "6a9c1807a4512c419e9f564a",
+    "name_en": "Mangalorean Fish Curry",
+    "name_hi": "मंगलोरियन मछली करी",
+    "description_en": "This coconut milk-based fish curry from Mangalore uses red Byadagi chillies, raw mango and kokum to create a tangy, spicy and aromatic coastal curry best eaten with rice or neer dosa.",
+    "description_hi": "मंगलोर की यह नारियल दूध आधारित मछली करी लाल बयाडगी मिर्च, कच्चे आम और कोकम से खट्टी, मसालेदार और सुगंधित तटीय करी बनाती है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mangalorean_fish_curry.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.076Z",
+    "likesCount": 1276,
+    "viewCount": 5993
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5666",
+    "stateId": "6a9c1807a4512c419e9f565b",
+    "name_en": "Bhutte ka Kees",
+    "name_hi": "भुट्टे का कीस",
+    "description_en": "Bhutte ka Kees is a street snack of grated corn cooked with milk, mustard, chilli and turmeric, popular in Indore and Ujjain during the monsoon corn season.",
+    "description_hi": "भुट्टे का कीस दूध, राई, मिर्च और हल्दी के साथ पकाए कद्दूकस किए मकई का स्ट्रीट स्नैक है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bhutte_ka_kees.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.087Z",
+    "likesCount": 1796,
+    "viewCount": 8394
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5667",
+    "stateId": "6a9c1807a4512c419e9f565b",
+    "name_en": "Dal Bafla",
+    "name_hi": "दाल बाफला",
+    "description_en": "Dal Bafla is the Madhya Pradesh cousin of Rajasthani Dal Baati — dough balls are first boiled, then dipped in ghee and baked, served with five-lentil dal and churma.",
+    "description_hi": "दाल बाफला राजस्थानी दाल बाटी का मध्य प्रदेशी संस्करण है — आटे की गेंदों को पहले उबाला जाता है, फिर घी में डुबोकर बेक किया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dal_bafla.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.087Z",
+    "likesCount": 1307,
+    "viewCount": 6812
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5677",
+    "stateId": "6a9c1807a4512c419e9f566c",
+    "name_en": "Amritsari Kulcha",
+    "name_hi": "अमृतसरी कुलचा",
+    "description_en": "Amritsari Kulcha is a stuffed bread baked in a tandoor, filled with spiced mashed potato and paneer. Served with chole (spiced chickpeas) and lassi, it is the signature dish of Amritsar.",
+    "description_hi": "अमृतसरी कुलचा तंदूर में पका मसालेदार मसले हुए आलू और पनीर से भरा ब्रेड है। छोले और लस्सी के साथ परोसा यह अमृतसर का विशिष्ट व्यंजन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Amritsari_kulcha.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.097Z",
+    "likesCount": 721,
+    "viewCount": 5550
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5678",
+    "stateId": "6a9c1807a4512c419e9f566c",
+    "name_en": "Sarson da Saag with Makki di Roti",
+    "name_hi": "सरसों का साग मक्की की रोटी",
+    "description_en": "This winter dish of slow-cooked mustard greens (sarson da saag) with cornmeal bread (makki di roti), topped with a dollop of white butter, is the quintessential winter meal of Punjab.",
+    "description_hi": "धीरे पकाई सरसों के साग और मक्के की रोटी पर मक्खन के साथ यह शीतकालीन व्यंजन पंजाब का विशिष्ट शीतकालीन भोजन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sarson_da_saag.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.097Z",
+    "likesCount": 1944,
+    "viewCount": 9348
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5688",
+    "stateId": "6a9c1807a4512c419e9f567d",
+    "name_en": "Dalma",
+    "name_hi": "दालमा",
+    "description_en": "Dalma is the staple dish of Odisha — a lentil preparation cooked with raw jackfruit, raw papaya, yam or plantain and seasoned with panch phutan (five spice mix). It is offered as prasad in the Jagannath Temple.",
+    "description_hi": "दालमा ओडिशा का मुख्य व्यंजन है — कच्चे कटहल, कच्चे पपीते, सूरन या कच्चे केले के साथ पकाई दाल जिसे पंच फुटान से सुगंधित किया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dalma_odisha.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.106Z",
+    "likesCount": 1254,
+    "viewCount": 9157
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5689",
+    "stateId": "6a9c1807a4512c419e9f567d",
+    "name_en": "Chhena Poda",
+    "name_hi": "छेना पोड़",
+    "description_en": "Chhena Poda (\"burnt cheese\") is Odisha's most beloved sweet — a baked cottage cheese dessert with sugar and cardamom, caramelised on the outside. Legend says Lord Jagannath himself is a fan.",
+    "description_hi": "छेना पोड़ (\"जला हुआ पनीर\") ओडिशा की सबसे प्रिय मिठाई है — चीनी और इलायची के साथ बेक किया हुआ पनीर मिठाई, बाहर से कारमेलाइज़ड।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chhena_poda.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.106Z",
+    "likesCount": 309,
+    "viewCount": 2088
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5698",
+    "stateId": "6a9c1807a4512c419e9f568e",
+    "name_en": "Himachali Dham",
+    "name_hi": "हिमाचली धाम",
+    "description_en": "A traditional festive vegetarian feast cooked by special hereditary chefs (Botis) in brass vessels, featuring Madra, Mah ki Dal, and Khatta.",
+    "description_hi": "विशेष पारंपरिक रसोइयों (बोटी) द्वारा पीतल के बर्तनों में तैयार की जाने वाली दावत, जिसमें मदरा, माह की दाल और खट्टा शामिल हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Himachali_Dham_Thali.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.116Z",
+    "likesCount": 866,
+    "viewCount": 6513
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5699",
+    "stateId": "6a9c1807a4512c419e9f568e",
+    "name_en": "Siddu",
+    "name_hi": "सिड्डू",
+    "description_en": "A fermented wheat flour steamed bread stuffed with a paste of crushed walnuts, poppy seeds, spices, and served steaming hot with pure desi ghee.",
+    "description_hi": "अखरोट, खसखस और मसालों के भरावन वाली खमीरी भाप में पकाई गई रोटी, जिसे शुद्ध देसी घी के साथ परोसा जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Siddu_Himachal_Dish.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.116Z",
+    "likesCount": 1416,
+    "viewCount": 6711
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56a7",
+    "stateId": "6a9c1807a4512c419e9f569e",
+    "name_en": "Goan Fish Curry",
+    "name_hi": "गोअन फिश करी",
+    "description_en": "A flavorful staple made with fresh kingfish or pomfret simmered in fresh coconut milk, Kashmiri red chillies, and tangy dried kokum fruit.",
+    "description_hi": "ताजे नारियल के दूध, लाल मिर्च और खट्टे कोकम में पकाई जाने वाली गोवा की प्रसिद्ध मछली की करी।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Goan_Fish_Curry.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.125Z",
+    "likesCount": 1110,
+    "viewCount": 7606
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56a8",
+    "stateId": "6a9c1807a4512c419e9f569e",
+    "name_en": "Bebinca",
+    "name_hi": "बेबिन्का",
+    "description_en": "The \"Queen of Goan Desserts\" — a rich 7 to 16-layered pudding baked with coconut milk, egg yolks, flour, sugar, and fragrant nutmeg.",
+    "description_hi": "गोवा की पारंपरिक मिठाई — नारियल के दूध, अंडे और जायफल से बनाई जाने वाली 7 से 16 परतों वाली स्वादिष्ट पुडिंग।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bebinca_Goan_Dessert.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.125Z",
+    "likesCount": 237,
+    "viewCount": 1181
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56b7",
+    "stateId": "6a9c1807a4512c419e9f56ad",
+    "name_en": "Rogan Josh (Wazwan)",
+    "name_hi": "रोग़न जोश",
+    "description_en": "The centerpiece of the royal 36-course Wazwan feast — tender lamb braised in an aromatic gravy of Kashmiri dried chillies, fennel, and maval flowers.",
+    "description_hi": "कश्मीरी वाज़वान का मुख्य व्यंजन — कश्मीरी लाल मिर्च, सौंफ और खुशबूदार मसालों में धीमी आंच पर पकाया गया मटन।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rogan_Josh_Kashmiri.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.136Z",
+    "likesCount": 2075,
+    "viewCount": 9479
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56b8",
+    "stateId": "6a9c1807a4512c419e9f56ad",
+    "name_en": "Kashmiri Kahwa",
+    "name_hi": "कश्मीरी कहवा",
+    "description_en": "An invigorating green tea brewed in a copper samovar with crushed saffron strands, cinnamon, green cardamom pods, and slivered almonds.",
+    "description_hi": "तांबे के समोवार में केसर, दालचीनी, इलायची और बादाम के साथ तैयार की जाने वाली कश्मीरी हरी चाय।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kashmiri_Kahwa_Tea.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.136Z",
+    "likesCount": 1063,
+    "viewCount": 5842
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56c7",
+    "stateId": "6a9c1807a4512c419e9f56bd",
+    "name_en": "Kafuli",
+    "name_hi": "काफुली",
+    "description_en": "A nutritious thick Pahadi green curry cooked with spinach and fenugreek leaves, slow-cooked in iron kadhais and tempered with garlic, rice paste, and Jakhiya seeds.",
+    "description_hi": "पालक और मेथी के पत्तों से लोहे की कड़ाही में धीमी आंच पर पकाई जाने वाली पारंपरिक पौष्टिक पहाड़ी कढ़ी, जिसमें जख्या का तड़का लगता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kafuli_Uttarakhand_Dish.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.145Z",
+    "likesCount": 821,
+    "viewCount": 3948
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56c8",
+    "stateId": "6a9c1807a4512c419e9f56bd",
+    "name_en": "Bal Mithai & Singori",
+    "name_hi": "बाल मिठाई और सिंगोरी",
+    "description_en": "Iconic Almora roasted brown khoya fudge coated in sugar balls (Bal Mithai) and sweetened khoya wrapped in fresh Maalu leaves (Singori).",
+    "description_hi": "अल्मोड़ा की प्रसिद्ध भुनी हुई खोए की मिठाई जिस पर चीनी की छोटी गोलियां लिपटी होती हैं (बाल मिठाई), और मालू के पत्तों में लिपटी सिंगोरी।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bal_Mithai_Almora.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.145Z",
+    "likesCount": 1739,
+    "viewCount": 8739
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56d7",
+    "stateId": "6a9c1807a4512c419e9f56cd",
+    "name_en": "Litti Chokha",
+    "name_hi": "लिट्टी चोखा",
+    "description_en": "Traditional wood-fired whole wheat balls stuffed with spiced roasted gram flour (sattu) and herbs, roasted on cow-dung fire and served soaked in pure ghee alongside charred baingan-tomato chokha.",
+    "description_hi": "सत्तू और मसालों से भरी आटे की गोलियां, जिन्हें उपलों की आग पर सेंककर देसी घी में डुबोया जाता है और बैंगन-टमाटर के चोखे के साथ खाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Litti_Chokha_Dish.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.154Z",
+    "likesCount": 980,
+    "viewCount": 5479
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56d8",
+    "stateId": "6a9c1807a4512c419e9f56cd",
+    "name_en": "Silao Khaja",
+    "name_hi": "सिलाव का खाजा",
+    "description_en": "A multi-layered crispy sweet pastry originating from the ancient village of Silao between Nalanda and Rajgir, holding GI status.",
+    "description_hi": "नालंदा और राजगीर के बीच सिलाव का प्रसिद्ध बहुपरतीय कुरकुरा मीठा व्यंजन, जिसे जीआई टैग प्राप्त है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Silao_Khaja_Sweet.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.154Z",
+    "likesCount": 650,
+    "viewCount": 4253
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56e7",
+    "stateId": "6a9c1807a4512c419e9f56dd",
+    "name_en": "Masor Tenga",
+    "name_hi": "माछोर टेंगा",
+    "description_en": "A refreshing, light and tangy freshwater fish curry flavored with Ou Tenga (elephant apple) or tomatoes, tempered with mustard oil and fenugreek seeds.",
+    "description_hi": "असम का अत्यंत लोकप्रिय हल्का और खट्टा मछली का झोल, जिसे टमाटर या हाथी सेब (ओउ टेंगा) के साथ पकाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Masor_Tenga_Assam.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.162Z",
+    "likesCount": 1736,
+    "viewCount": 8153
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56e8",
+    "stateId": "6a9c1807a4512c419e9f56dd",
+    "name_en": "Assam Khaar",
+    "name_hi": "असमिया खार",
+    "description_en": "A signature introductory dish made with an alkaline extract filtered from charred sun-dried banana peels, cooked with raw papaya and pulses.",
+    "description_hi": "केले के छिलकों की राख से तैयार किए गए प्राकृतिक क्षारीय जल (खार) में कच्चे पपीते और दाल के साथ बनाया जाने वाला पारंपरिक व्यंजन।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Assam_Khaar_Dish.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.162Z",
+    "likesCount": 504,
+    "viewCount": 2391
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56f7",
+    "stateId": "6a9c1807a4512c419e9f56ed",
+    "name_en": "Hyderabadi Dum Biryani",
+    "name_hi": "हैदराबादी दम बिरयानी",
+    "description_en": "The undisputed king of rice dishes — fragrant aged Basmati rice layered with spiced marinated meat, saffron milk, and fried onions, slow-cooked in a dough-sealed handi.",
+    "description_hi": "खुशबूदार बासमती चावल, मसालों में पके मांस, केसर और तले हुए प्याज़ को आटे से सील की गई हांडी में धीमी आँच पर दम देकर बनाया जाने वाला शाही व्यंजन।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hyderabadi_Dum_Biryani.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.170Z",
+    "likesCount": 1176,
+    "viewCount": 6326
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f56f8",
+    "stateId": "6a9c1807a4512c419e9f56ed",
+    "name_en": "Double Ka Meetha",
+    "name_hi": "डबल का मीठा",
+    "description_en": "A decadent royal Hyderabadi bread pudding fried in ghee, steeped in saffron-cardamom syrup, soaked in rich rabri, and garnished with slivered pistachios and silver varq.",
+    "description_hi": "घी में तली हुई ब्रेड, केसर-इलायची की चाशनी और गाढ़ी रबड़ी से बनी पारंपरिक लजीज हैदराबादी मिठाई।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Double_Ka_Meetha_Sweet.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.170Z",
+    "likesCount": 1684,
+    "viewCount": 9203
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5707",
+    "stateId": "6a9c1807a4512c419e9f56fd",
+    "name_en": "Andhra Gongura Pachadi & Thali",
+    "name_hi": "आंध्र गोंगुरा पचड़ी और थाली",
+    "description_en": "The culinary pride of Andhra — tangy sorrel leaves (Gongura) ground with red chillies, garlic, and mustard seeds, served over steaming rice with desi ghee.",
+    "description_hi": "आंध्र भोजन का गौरव — खट्टी गोंगुरा (अम्बाडी) के पत्तों, तीखी लाल मिर्च, लहसुन और राई से बनी स्वादिष्ट चटनी, जिसे गरम चावल और देसी घी के साथ खाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Andhra_Gongura_Pachadi.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.178Z",
+    "likesCount": 652,
+    "viewCount": 5303
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5708",
+    "stateId": "6a9c1807a4512c419e9f56fd",
+    "name_en": "Atreyapuram Pootharekulu",
+    "name_hi": "आत्रेयपुरम पूथारेकुलु (पेपर स्वीट)",
+    "description_en": "The famous \"paper sweet\" made from ultra-thin wafer rice-starch sheets rolled with powdered sugar, pure ghee, and finely chopped cashew nuts and dry fruits.",
+    "description_hi": "कागज जैसी पतली चावल की परतों में पिसी चीनी, शुद्ध घी और काजू-बादाम भरकर बनाई जाने वाली आत्रेयपुरम की प्रसिद्ध जीआई मिठाई।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pootharekulu_Sweet_Andhra.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.178Z",
+    "likesCount": 1295,
+    "viewCount": 6577
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5717",
+    "stateId": "6a9c1807a4512c419e9f570d",
+    "name_en": "Sikkimese Momos & Thukpa",
+    "name_hi": "सिक्किमी मोमोज और थुकपा",
+    "description_en": "Authentic steamed dumplings stuffed with spiced cottage cheese or minced meat, accompanied by fiery Dalle Khursani chili chutney and hot comforting noodle broth (Thukpa).",
+    "description_hi": "गर्मागर्म भाप में पके मोमोज जिन्हें तीखी डल्ले खुर्सानी मिर्च की चटनी और गर्मागर्म नूडल सूप (थुकपा) के साथ परोसा जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sikkim_Momos_Thukpa.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.187Z",
+    "likesCount": 403,
+    "viewCount": 2690
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5718",
+    "stateId": "6a9c1807a4512c419e9f570d",
+    "name_en": "Gundruk & Sinki",
+    "name_hi": "गुंद्रुक और सिंकी",
+    "description_en": "A traditional indigenous fermented leafy vegetable soup made from sun-dried mustard and radish leaves, delivering an appetizing earthy tang high in minerals.",
+    "description_hi": "सरसों और मूली के पत्तों को धूप में खमीरीकृत करके तैयार किया जाने वाला पारंपरिक स्वास्थ्यवर्धक और स्वादिष्ट पहाड़ी सूप।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Gundruk_Soup_Sikkim.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.187Z",
+    "likesCount": 832,
+    "viewCount": 3498
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5728",
+    "stateId": "6a9c1807a4512c419e9f571d",
+    "name_en": "Thukpa",
+    "name_hi": "थुकपा",
+    "description_en": "Thukpa is a hearty noodle soup made with hand-rolled wheat noodles, broth, vegetables and meat, perfect for Arunachal's cold mountain climate.",
+    "description_hi": "थुकपा हाथ से बेले गेहूँ के नूडल्स, शोरबे, सब्जियों और मांस से बना गरमागरम सूप है, जो अरुणाचल की ठंडी पहाड़ी जलवायु के लिए आदर्श है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Thukpa_soup.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.199Z",
+    "likesCount": 1287,
+    "viewCount": 5648
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5729",
+    "stateId": "6a9c1807a4512c419e9f571d",
+    "name_en": "Apong (Rice Beer)",
+    "name_hi": "अपोंग (चावल की बीयर)",
+    "description_en": "Apong is the traditional rice beer of Arunachal Pradesh, brewed by various tribal communities. Each tribe has its own recipe — Adi tribes brew it in bamboo cylinders.",
+    "description_hi": "अपोंग अरुणाचल प्रदेश की पारंपरिक चावल की बीयर है, जिसे विभिन्न जनजातीय समुदाय बनाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Apong_rice_beer.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.199Z",
+    "likesCount": 1860,
+    "viewCount": 8987
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5739",
+    "stateId": "6a9c1807a4512c419e9f572e",
+    "name_en": "Chila",
+    "name_hi": "चीला",
+    "description_en": "Chila is a thin rice-flour crepe popular across Chhattisgarh, served with chutneys and vegetable curries — a light, gluten-free staple of tribal households.",
+    "description_hi": "चीला छत्तीसगढ़ में लोकप्रिय चावल के आटे का पतला पैनकेक है, जिसे चटनी और सब्जी करी के साथ परोसा जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chila_rice_crepe.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.208Z",
+    "likesCount": 1652,
+    "viewCount": 8260
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f573a",
+    "stateId": "6a9c1807a4512c419e9f572e",
+    "name_en": "Bafauri",
+    "name_hi": "बफौरी",
+    "description_en": "Bafauri are steamed chana dal dumplings tempered with mustard seeds, curry leaves and dried red chillies — a healthy, traditional Chhattisgarhi snack.",
+    "description_hi": "बफौरी भाप में पकी चना दाल की पकौड़ियाँ हैं जिन्हें राई, करी पत्ता और लाल मिर्च से तड़का लगाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bafauri_Chhattisgarh.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.208Z",
+    "likesCount": 580,
+    "viewCount": 4005
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5748",
+    "stateId": "6a9c1807a4512c419e9f573f",
+    "name_en": "Bajra Khichdi",
+    "name_hi": "बाजरे की खिचड़ी",
+    "description_en": "Bajra Khichdi made from pearl millet and lentils is a winter staple of Haryana, eaten with generous ghee, curd and pickles — hearty and nutritious farmer's food.",
+    "description_hi": "बाजरे की खिचड़ी मोटे अनाज और दाल से बना हरियाणा का शीतकालीन मुख्य व्यंजन है, जिसे देसी घी, दही और अचार के साथ खाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bajra_Khichdi.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.217Z",
+    "likesCount": 623,
+    "viewCount": 4363
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5749",
+    "stateId": "6a9c1807a4512c419e9f573f",
+    "name_en": "Hara Dhania Cholia",
+    "name_hi": "हरा धनिया चोलिया",
+    "description_en": "Fresh green chickpeas (cholia) cooked with coriander (dhania), mustard seeds and spices is a popular winter delicacy in Haryana, eaten with makki ki roti.",
+    "description_hi": "हरे छोले धनिया, राई और मसालों के साथ पकाए जाते हैं — हरियाणा की लोकप्रिय शीतकालीन विशेषता जिसे मक्की की रोटी के साथ खाते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hara_dhania_cholia.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.217Z",
+    "likesCount": 782,
+    "viewCount": 4629
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5757",
+    "stateId": "6a9c1807a4512c419e9f574e",
+    "name_en": "Handia (Rice Beer)",
+    "name_hi": "हांडिया (चावल की बीयर)",
+    "description_en": "Handia is a traditional fermented rice beverage of Jharkhand's tribal communities, brewed in clay pots and consumed during festivals and community gatherings.",
+    "description_hi": "हांडिया झारखंड की जनजातीय संस्कृति का पारंपरिक किण्वित चावल पेय है, जो मिट्टी के बर्तनों में बनाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Handia_rice_beer.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.225Z",
+    "likesCount": 1455,
+    "viewCount": 7066
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5758",
+    "stateId": "6a9c1807a4512c419e9f574e",
+    "name_en": "Rugda (Mushroom Curry)",
+    "name_hi": "रुगड़ा (मशरूम करी)",
+    "description_en": "Rugda is a wild forest mushroom unique to the Chota Nagpur Plateau. Cooked simply with onion, garlic, green chilli and turmeric, it is a seasonal delicacy during monsoon.",
+    "description_hi": "रुगड़ा छोटा नागपुर पठार का विशेष जंगली मशरूम है। प्याज़, लहसुन, हरी मिर्च और हल्दी के साथ पकाया यह मानसून की मौसमी विशेषता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rugda_mushroom_Jharkhand.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.225Z",
+    "likesCount": 806,
+    "viewCount": 5565
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5767",
+    "stateId": "6a9c1807a4512c419e9f575d",
+    "name_en": "Eromba",
+    "name_hi": "एरोम्बा",
+    "description_en": "Eromba is a traditional Manipuri dish of mashed fermented fish (ngari) mixed with boiled vegetables like potatoes, bamboo shoot and chillies — intensely flavourful.",
+    "description_hi": "एरोम्बा किण्वित मछली (नगारी) और उबली सब्जियों जैसे आलू, बाँस की कोपल और मिर्च से बना पारंपरिक मणिपुरी व्यंजन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Eromba_Manipur.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.235Z",
+    "likesCount": 533,
+    "viewCount": 2402
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5776",
+    "stateId": "6a9c1807a4512c419e9f576c",
+    "name_en": "Jadoh (Khasi Rice-Pork)",
+    "name_hi": "जडोह",
+    "description_en": "Jadoh is the Khasi tribal staple — red rice slow-cooked with pork blood, turmeric and ginger inside bamboo tubes. The flavour is smoky, earthy and deeply satisfying.",
+    "description_hi": "जडोह खासी जनजाति का प्रमुख भोजन है — लाल चावल को बाँस की नलियों में सूअर के रक्त, हल्दी और अदरक के साथ धीमी आँच पर पकाया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Jadoh_Meghalaya.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.244Z",
+    "likesCount": 1952,
+    "viewCount": 8997
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5784",
+    "stateId": "6a9c1807a4512c419e9f577b",
+    "name_en": "Smoked Pork with Bamboo Shoot",
+    "name_hi": "स्मोक्ड पोर्क और बाँस की कोपल",
+    "description_en": "Smoked pork slow-cooked with fermented bamboo shoots and dried chillies is the soul food of Nagaland — intensely smoky, sour and deeply savoury.",
+    "description_hi": "किण्वित बाँस की कोपलों और सूखी मिर्चों के साथ धीमी आँच पर पका स्मोक्ड पोर्क नागालैंड का मूल व्यंजन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Smoked_pork_bamboo_Nagaland.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.252Z",
+    "likesCount": 529,
+    "viewCount": 2291
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5785",
+    "stateId": "6a9c1807a4512c419e9f577b",
+    "name_en": "Axone (Fermented Soybean)",
+    "name_hi": "एक्सोन (किण्वित सोयाबीन)",
+    "description_en": "Axone is a fermented soybean paste with a pungent aroma and umami-rich flavour, used as base in multiple Naga dishes including pork, chicken and fish preparations.",
+    "description_hi": "एक्सोन किण्वित सोयाबीन पेस्ट है जिसकी तीखी सुगंध और उमामी-समृद्ध स्वाद है, जिसे कई नागा व्यंजनों में आधार के रूप में उपयोग किया जाता है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Axone_Nagaland.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.252Z",
+    "likesCount": 1025,
+    "viewCount": 7831
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f5792",
+    "stateId": "6a9c1807a4512c419e9f578a",
+    "name_en": "Bai (Mizo Vegetable Stew)",
+    "name_hi": "बाई (मिज़ो सब्जी सूप)",
+    "description_en": "Bai is a traditional Mizo stew of leafy greens, pumpkins and beans boiled with fermented soybean paste (bekang) and dried chillies — healthy and hearty.",
+    "description_hi": "बाई किण्वित सोयाबीन पेस्ट (बेकांग) और सूखी मिर्चों के साथ उबली हरी पत्तेदार सब्जियों, कद्दू और बीन्स का पारंपरिक मिज़ो स्टू है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bai_stew_Mizoram.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.261Z",
+    "likesCount": 1257,
+    "viewCount": 5990
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f579f",
+    "stateId": "6a9c1807a4512c419e9f5797",
+    "name_en": "Mui Borok (Traditional Tripuri Thali)",
+    "name_hi": "मुई बोरोक",
+    "description_en": "Mui Borok is Tripura's traditional cuisine — a wholesome meal of fermented fish chutney (berma), steamed vegetables, bamboo-shoot curry and rice, reflecting the land's abundance.",
+    "description_hi": "मुई बोरोक त्रिपुरा का पारंपरिक व्यंजन है — किण्वित मछली चटनी (बेर्मा), उबली सब्जियाँ, बाँस की कोपल करी और चावल का संपूर्ण भोजन।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Mui_Borok_Tripura.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.269Z",
+    "likesCount": 1839,
+    "viewCount": 9337
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57ae",
+    "stateId": "6a9c1807a4512c419e9f57a4",
+    "name_en": "Thukpa & Tsampa",
+    "name_hi": "थुकपा और त्सम्पा",
+    "description_en": "Thukpa (hearty noodle soup) and Tsampa (roasted barley flour mixed with butter tea) are the daily staples of Ladakhi life — high-calorie, warming foods perfect for the cold altitude.",
+    "description_hi": "थुकपा (गरमागरम नूडल सूप) और त्सम्पा (मक्खन चाय के साथ भुने जौ का आटा) लद्दाखी दैनिक जीवन के प्रमुख खाद्य हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Thukpa_soup.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.280Z",
+    "likesCount": 939,
+    "viewCount": 4432
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57af",
+    "stateId": "6a9c1807a4512c419e9f57a4",
+    "name_en": "Butter Tea (Gur Gur Chai)",
+    "name_hi": "मक्खन चाय (गुर गुर चाय)",
+    "description_en": "Ladakhi butter tea is churned with yak butter, rock salt and milk — a caloric and warming drink essential for surviving Ladakh's extreme altitude and cold.",
+    "description_hi": "लद्दाखी मक्खन चाय याक मक्खन, चट्टानी नमक और दूध के साथ मथी जाती है — लद्दाख की अत्यधिक ऊँचाई और ठंड में जीवित रहने के लिए आवश्यक गर्माहट देने वाला पेय।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Butter_tea_Ladakh.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.280Z",
+    "likesCount": 768,
+    "viewCount": 3256
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57bd",
+    "stateId": "6a9c1807a4512c419e9f57b4",
+    "name_en": "Grilled Lobster & Fish Curry",
+    "name_hi": "ग्रिल्ड लॉबस्टर और मछली करी",
+    "description_en": "Fresh-caught lobster, prawns, crab and Andaman fish prepared with coconut, tamarind and local spices are the gastronomic highlights of the islands.",
+    "description_hi": "ताज़ी पकड़ी लॉबस्टर, झींगे, केकड़े और अंडमान मछली नारियल, इमली और स्थानीय मसालों के साथ द्वीप के सबसे स्वादिष्ट व्यंजन हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Lobster_Andaman.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.289Z",
+    "likesCount": 1073,
+    "viewCount": 5264
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57ca",
+    "stateId": "6a9c1807a4512c419e9f57c2",
+    "name_en": "Tuna Fish Preparations",
+    "name_hi": "टूना मछली व्यंजन",
+    "description_en": "Tuna — smoked, dried, curried and raw — is the staple protein of Lakshadweep, prepared with fresh coconut, chilli and local spices. Mas curry and smoked tuna (vallameen) are highlights.",
+    "description_hi": "टूना — स्मोक्ड, सुखाया, करी और कच्चा — ताज़े नारियल, मिर्च और स्थानीय मसालों के साथ लक्षद्वीप का मुख्य प्रोटीन है।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tuna_Lakshadweep.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.298Z",
+    "likesCount": 216,
+    "viewCount": 1707
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57d8",
+    "stateId": "6a9c1807a4512c419e9f57cf",
+    "name_en": "French-Tamil Fusion Cuisine",
+    "name_hi": "फ्रेंच-तमिल फ्यूज़न व्यंजन",
+    "description_en": "Pondicherry's cafes serve a unique fusion of French baguettes with coconut sambar, crepes with Tamil fillings and the famous Pondicherry filter coffee alongside croissants.",
+    "description_hi": "पांडिचेरी के कैफे नारियल सांभर के साथ फ्रेंच बागेट, तमिल भराई के साथ क्रेप और क्रोइसेंट के साथ पांडिचेरी फिल्टर कॉफी का अनूठा फ्यूज़न परोसते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pondicherry_cafe.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.311Z",
+    "likesCount": 1552,
+    "viewCount": 9189
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57e5",
+    "stateId": "6a9c1807a4512c419e9f57dd",
+    "name_en": "Punjabi Dhaba Food",
+    "name_hi": "पंजाबी ढाबा खाना",
+    "description_en": "Chandigarh's iconic Sector 17 and 22 dhabas serve rich butter chicken, dal makhani, tandoori naan and lassi that define Punjabi culinary greatness.",
+    "description_hi": "चंडीगढ़ के सेक्टर 17 और 22 के प्रतिष्ठित ढाबे समृद्ध बटर चिकन, दाल मखनी, तंदूरी नान और लस्सी परोसते हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Punjabi_dhaba_food.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.319Z",
+    "likesCount": 435,
+    "viewCount": 3158
+  },
+  {
+    "_id": "6a9c1807a4512c419e9f57f2",
+    "stateId": "6a9c1807a4512c419e9f57ea",
+    "name_en": "Portuguese-Influenced Seafood",
+    "name_hi": "पुर्तगाली प्रभावित समुद्री भोजन",
+    "description_en": "Daman and Diu's cuisine blends Gujarati vegetarian traditions with Portuguese-influenced seafood — prawn balchao, fish xacuti and calamari are local specialties.",
+    "description_hi": "दमण और दीव का व्यंजन गुजराती शाकाहारी परंपराओं को पुर्तगाली प्रभावित समुद्री भोजन के साथ मिलाता है — झींगा बालचाओ, मछली जाकुटी और कैलामारी स्थानीय विशेषताएँ हैं।",
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Daman_Diu_seafood.jpg?width=1200"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=XvG6V27G6OE",
+    "__v": 0,
+    "createdAt": "2026-09-05T13:24:23.327Z",
+    "likesCount": 630,
+    "viewCount": 2879
+  }
+]
