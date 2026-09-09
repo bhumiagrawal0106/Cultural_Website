@@ -3,8 +3,15 @@ import * as THREE from 'three';
 import { Html } from '@react-three/drei';
 import { project } from '../../utils/geo';
 
-const ORANGE = '#FF9933';
-const GREEN = '#138808';
+const FLAG_SAFFRON = '#FF671F';
+const FLAG_WHITE = '#FFFFFF';
+const FLAG_GREEN = '#138808';
+
+function getFlagColor(y) {
+  if (y >= 1.2) return FLAG_SAFFRON;
+  if (y >= -2.5) return FLAG_WHITE;
+  return FLAG_GREEN;
+}
 
 // Rough outline of India used as a backdrop when the GeoJSON file is not available.
 const OUTLINE = [
@@ -31,13 +38,19 @@ function OutlinePlate() {
   return (
     <mesh position={[0, 0, -0.02]} receiveShadow>
       <shapeGeometry args={[shape]} />
-      <meshStandardMaterial color="#FFF4E5" roughness={1} />
+      <meshStandardMaterial color="#F8FAFC" roughness={1} />
     </mesh>
   );
 }
 
 function Tile({ position, label, onSelect, onHover }) {
   const [hover, setHover] = useState(false);
+  const baseColor = getFlagColor(position[1]);
+  const isWhite = baseColor === FLAG_WHITE;
+  const tileColor = hover
+    ? (isWhite ? '#E0E7FF' : baseColor === FLAG_SAFFRON ? '#FFA366' : '#22C55E')
+    : baseColor;
+
   return (
     <group position={position}>
       <mesh
@@ -61,7 +74,7 @@ function Tile({ position, label, onSelect, onHover }) {
         }}
       >
         <cylinderGeometry args={[1.05, 1.05, 0.6, 6]} />
-        <meshStandardMaterial color={hover ? GREEN : ORANGE} roughness={0.5} />
+        <meshStandardMaterial color={tileColor} roughness={0.5} />
       </mesh>
       <Html position={[0, 0, 1.1]} center distanceFactor={16} style={{ pointerEvents: 'none' }}>
         <span className="whitespace-nowrap rounded-full bg-white/95 px-2 py-0.5 text-[11px] font-semibold text-india-navy shadow">

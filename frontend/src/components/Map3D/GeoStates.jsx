@@ -5,10 +5,18 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { buildExtrudedGeometry, featureCentroid } from '../../utils/geo';
 import { slugForFeature } from '../../utils/stateSlugMap';
 
-const ORANGE = '#FF9933';
-const GREEN = '#138808';
+// Indian National Flag Palette
+const FLAG_SAFFRON = '#FF671F'; // Upper part: Northern states
+const FLAG_WHITE = '#FFFFFF';   // Middle part: Central states
+const FLAG_GREEN = '#138808';   // Bottom part: Southern states
 const INACTIVE = '#D1D5DB';
-const HOVER_EMISSIVE = '#FF9933';
+
+// Determine flag tricolour band based on projected latitude (Y-axis)
+function getFlagColor(y) {
+  if (y >= 1.2) return FLAG_SAFFRON; // Upper part
+  if (y >= -2.5) return FLAG_WHITE;  // Middle part
+  return FLAG_GREEN;                 // Bottom part
+}
 
 function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover }) {
   const [hover, setHover] = useState(false);
@@ -19,6 +27,10 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
   useEffect(() => {
     invalidate();
   }, [hover, invalidate]);
+
+  const baseColor = !active ? INACTIVE : getFlagColor(centroid[1]);
+  const isWhite = baseColor === FLAG_WHITE;
+  const hoverEmissive = isWhite ? '#06038D' : '#FFD700';
 
   // Smoothly animate emissive glow on hover
   useFrame((_, delta) => {
@@ -31,8 +43,12 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
     }
   });
 
-  const color = !active ? INACTIVE : hover ? GREEN : ORANGE;
+  const color = hover && active
+    ? (isWhite ? '#E0E7FF' : baseColor === FLAG_SAFFRON ? '#FFA366' : '#22C55E')
+    : baseColor;
   const liftY = hover && active ? 0.3 : 0;
+  const edgeColor = isWhite ? '#06038D' : '#ffffff';
+  const edgeOpacity = isWhite ? 0.4 : 0.85;
 
   return (
     <group position={[0, 0, liftY]}>
@@ -63,14 +79,14 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
           metalness={0.08}
           clearcoat={0.2}
           clearcoatRoughness={0.3}
-          emissive={HOVER_EMISSIVE}
+          emissive={hoverEmissive}
           emissiveIntensity={0}
         />
       </mesh>
 
       {/* State border edges */}
       <lineSegments geometry={edges}>
-        <lineBasicMaterial color="#ffffff" transparent opacity={0.85} />
+        <lineBasicMaterial color={edgeColor} transparent opacity={edgeOpacity} />
       </lineSegments>
 
       {/* Floating label for active states — uses Billboard (always faces camera) */}
