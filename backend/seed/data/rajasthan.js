@@ -22,7 +22,6 @@ module.exports = {
       description_hi:
         'हवा महल जयपुर में 1799 में बना पाँच मंज़िला गुलाबी महल है। इसकी 953 छोटी खिड़कियों से ठंडी हवा अंदर आती है, इसलिए इसे हवाओं का महल कहते हैं।',
       images: [img('Hawa_Mahal_2011.jpg')],
-      videoUrl: 'https://www.youtube.com/watch?v=0kF6l4eK76Q',
       coordinates: { lat: 26.9239, lng: 75.8267 },
       bestTimeToVisit: 'October to March',
       tags: ['jaipur', 'palace', 'pink city', 'unesco'],
@@ -30,13 +29,12 @@ module.exports = {
     {
       name_en: 'Amer Fort',
       name_hi: 'आमेर किला',
-      type: 'fort',
+      type: 'monument',
       description_en:
         'Amer Fort sits on a hill near Jaipur and was built in the 16th century. It is known for the Sheesh Mahal, a hall covered with thousands of tiny mirrors.',
       description_hi:
         'आमेर किला जयपुर के पास एक पहाड़ी पर स्थित है और 16वीं सदी में बना था। यह शीश महल के लिए प्रसिद्ध है, जो हज़ारों छोटे दर्पणों से सजा हुआ है।',
       images: [img('Amer_Fort_Jaipur.jpg')],
-      videoUrl: 'https://www.youtube.com/watch?v=kYJvY9F_v24',
       coordinates: { lat: 26.9855, lng: 75.8513 },
       bestTimeToVisit: 'October to March',
       tags: ['jaipur', 'fort', 'unesco', 'sheesh mahal'],

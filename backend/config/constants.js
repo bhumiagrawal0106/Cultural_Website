@@ -6,7 +6,7 @@ module.exports = {
   RATE_LIMIT_MAX: process.env.NODE_ENV === 'test' ? 10000 : 100,
   DEFAULT_PAGE_SIZE: 12,
   MAX_PAGE_SIZE: 50,
-  PLACE_TYPES: ['monument', 'fort', 'temple', 'gurudwara', 'dargah', 'church', 'haunted', 'tourism', 'heritage', 'culture', 'other'],
+  PLACE_TYPES: ['monument', 'temple', 'dargah', 'church', 'haunted', 'tourism', 'other'],
   FEEDBACK_KINDS: ['general', 'report'],
   ESCALATION_KEYWORDS: [
     'agent',

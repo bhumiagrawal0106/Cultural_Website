@@ -14,18 +14,7 @@ app.set('trust proxy', 1);
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 app.use(
   cors({
-    origin: function (origin, callback) {
-      // Allow no-origin (curl, Postman, mobile apps)
-      if (!origin) return callback(null, true);
-      // Always allow localhost dev
-      if (origin.includes('localhost') || origin.includes('127.0.0.1')) return callback(null, true);
-      // Allow all localtunnel subdomains
-      if (origin.endsWith('.loca.lt')) return callback(null, true);
-      // Allow configured origins
-      const allowed = (process.env.CLIENT_URL || '').split(',').map((s) => s.trim());
-      if (allowed.includes(origin)) return callback(null, true);
-      callback(new Error(`CORS: origin ${origin} not allowed`));
-    },
+    origin: (process.env.CLIENT_URL || 'http://localhost:5173').split(',').map((s) => s.trim()),
     credentials: true,
   })
 );
@@ -62,8 +51,6 @@ app.use('/api/chatbot', require('./routes/chatbotRoutes'));
 app.use('/api/user', require('./routes/userRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
 app.use('/api/config', require('./routes/configRoutes'));
-app.use('/api/video', require('./routes/videoRoutes'));
-app.use('/api/interactions', require('./routes/interactionRoutes'));
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found' });

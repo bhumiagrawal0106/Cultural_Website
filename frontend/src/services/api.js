@@ -1,4 +1,4 @@
-const BASE_URL = (import.meta.env.VITE_API_URL !== undefined ? import.meta.env.VITE_API_URL : '').replace(/\/$/, '');
+const BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
 const TOKEN_KEY = 'bd_token';
 
 let authToken = localStorage.getItem(TOKEN_KEY);
@@ -32,8 +32,6 @@ export async function request(path, { method = 'GET', body, headers = {} } = {})
     headers: {
       ...(body ? { 'Content-Type': 'application/json' } : {}),
       ...(authToken ? { Authorization: `Bearer ${authToken}` } : {}),
-      // Required by localtunnel to bypass the interstitial warning page
-      'bypass-tunnel-reminder': '1',
       ...headers,
     },
   };

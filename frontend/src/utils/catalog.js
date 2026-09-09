@@ -1,14 +1,10 @@
 // Shared catalogue of content types used by StatePage tiles, cards and search results.
 
 export const PLACE_TYPES = [
-  { type: 'monument', label: ['Monuments', 'स्मारक'], icon: '🏛️' },
-  { type: 'fort', label: ['Forts', 'किले'], icon: '🏰' },
+  { type: 'monument', label: ['Monuments', 'स्मारक'], icon: '🏰' },
   { type: 'temple', label: ['Temples', 'मंदिर'], icon: '🛕' },
-  { type: 'gurudwara', label: ['Gurudwaras', 'गुरुद्वारे'], icon: '🔯' },
   { type: 'dargah', label: ['Dargahs', 'दरगाह'], icon: '🕌' },
   { type: 'church', label: ['Churches', 'गिरजाघर'], icon: '⛪' },
-  { type: 'heritage', label: ['Heritage Sites', 'विरासत स्थल'], icon: '🏺' },
-  { type: 'culture', label: ['Culture & Art', 'संस्कृति व कला'], icon: '🎭' },
   { type: 'haunted', label: ['Haunted Places', 'रहस्यमयी स्थान'], icon: '👻' },
   { type: 'tourism', label: ['Tourism Spots', 'पर्यटन स्थल'], icon: '🌄' },
 ];
@@ -56,6 +52,5 @@ export function itemLink(collection, id) {
 }
 
 export function placeholderImage(text = 'Bharat Darshan') {
-  // Use a more visually appealing gradient placeholder from Placehold.co
-  return `https://placehold.co/800x600/1a1a2e/FFD700?font=playfair-display&text=${encodeURIComponent(text)}`;
+  return `https://placehold.co/800x600/F8F9FA/06038D?text=${encodeURIComponent(text)}`;
 }

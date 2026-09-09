@@ -66,43 +66,31 @@ export default function ChatWidget() {
 
   return (
     <>
-      {/* Floating action button with pulse ring */}
-      <div className="fixed bottom-5 right-5 z-50">
-        {/* Pulse ring (only when closed) */}
-        {!open && (
-          <span
-            aria-hidden="true"
-            className="absolute inset-0 rounded-full bg-india-orange animate-pulse-ring"
-          />
+      {/* Floating bubble */}
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-label={open ? ui('chatClose') : ui('chatOpen')}
+        aria-expanded={open}
+        className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-india-orange text-india-text shadow-lg transition hover:scale-105 hover:bg-orange-400 focus:outline-none focus-visible:ring-4 focus-visible:ring-india-navy/40"
+      >
+        {open ? (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <path d="M6 6l12 12M18 6 6 18" />
+          </svg>
+        ) : (
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8Z" />
+            <path d="M8 12h.01M12 12h.01M16 12h.01" />
+          </svg>
         )}
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          aria-label={open ? ui('chatClose') : ui('chatOpen')}
-          aria-expanded={open}
-          className="relative flex h-14 w-14 items-center justify-center rounded-full bg-india-orange text-india-text shadow-glow transition-all duration-300 hover:scale-110 hover:bg-india-saffron focus:outline-none focus-visible:ring-4 focus-visible:ring-india-navy/40"
-        >
-          <span className={`transition-transform duration-300 ${open ? 'rotate-90' : 'rotate-0'}`}>
-            {open ? (
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M6 6l12 12M18 6 6 18" />
-              </svg>
-            ) : (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8Z" />
-                <path d="M8 12h.01M12 12h.01M16 12h.01" />
-              </svg>
-            )}
-          </span>
-        </button>
-      </div>
+      </button>
 
-      {/* Chat window — glassmorphism */}
+      {/* Chat window */}
       {open && (
         <section
           aria-label={ui('chatTitle')}
-          className="fixed bottom-24 right-0 z-50 flex h-[70vh] max-h-[560px] w-full flex-col overflow-hidden shadow-glow-navy sm:right-5 sm:w-[380px] sm:rounded-2xl animate-fade-slide-up"
-          style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.5)' }}
+          className="fixed bottom-24 right-0 z-50 flex h-[70vh] max-h-[560px] w-full flex-col overflow-hidden bg-white shadow-2xl sm:right-5 sm:w-[380px] sm:rounded-2xl animate-fade-up"
         >
           <header className="flex items-center gap-3 bg-india-orange px-4 py-3 text-india-text">
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-lg" aria-hidden="true">
@@ -173,10 +161,10 @@ export default function ChatWidget() {
 
             {sending && (
               <div className="flex justify-start">
-                <div className="flex items-center gap-1.5 rounded-2xl rounded-bl-sm border border-gray-100 bg-white/80 px-4 py-3 shadow-sm">
-                  <span className="typing-dot text-gray-400" />
-                  <span className="typing-dot text-gray-400" />
-                  <span className="typing-dot text-gray-400" />
+                <div className="flex items-center gap-1 rounded-2xl rounded-bl-sm border border-gray-100 bg-white px-3 py-2.5 shadow-sm">
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.2s]" />
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.1s]" />
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-gray-400" />
                 </div>
               </div>
             )}
