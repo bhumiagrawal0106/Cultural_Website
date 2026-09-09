@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SafeImage from '../SafeImage';
+import SocialEngagement from '../SocialEngagement';
 import { useLanguage } from '../../context/LanguageContext';
 import { COLLECTION_LABEL, itemLink, typeIcon, typeLabel } from '../../utils/catalog';
 
@@ -18,7 +19,7 @@ export default function PlaceCard({ item, collection = 'places', action }) {
   const stateName = item.stateId && item.stateId.name_en ? pick(item.stateId, 'name') : '';
 
   return (
-    <article className="card group flex h-full flex-col transition hover:-translate-y-1 hover:shadow-lg">
+    <article className="card card-tilt stagger-item group flex h-full flex-col">
       <Link to={itemLink(collection, item._id)} className="block">
         <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
           <SafeImage
@@ -31,6 +32,11 @@ export default function PlaceCard({ item, collection = 'places', action }) {
             {icon && <span className="mr-1" aria-hidden="true">{icon}</span>}
             {pickTuple(badge)}
           </span>
+          {item.videoUrl && (
+            <span className="chip absolute right-3 top-3 bg-red-600/90 text-white shadow-sm flex items-center gap-1 text-[11px] font-semibold">
+              <span aria-hidden="true">▶</span> Video
+            </span>
+          )}
         </div>
       </Link>
       <div className="flex flex-1 flex-col p-4">
@@ -40,7 +46,9 @@ export default function PlaceCard({ item, collection = 'places', action }) {
         {stateName && <p className="mt-0.5 text-xs font-medium uppercase tracking-wide text-india-green">{stateName}</p>}
         <p className="mt-2 line-clamp-3 flex-1 text-sm text-gray-600">{description}</p>
         {action && <div className="mt-4">{action}</div>}
+        <SocialEngagement item={item} collection={collection} variant="card" className="mt-4" />
       </div>
     </article>
   );
 }
+

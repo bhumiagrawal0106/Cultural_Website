@@ -1,20 +1,43 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
-import { Html } from '@react-three/drei';
+import { Billboard, Text } from '@react-three/drei';
+import { useFrame, useThree } from '@react-three/fiber';
 import { buildExtrudedGeometry, featureCentroid } from '../../utils/geo';
 import { slugForFeature } from '../../utils/stateSlugMap';
 
 const ORANGE = '#FF9933';
 const GREEN = '#138808';
-const INACTIVE = '#E5E7EB';
+const INACTIVE = '#D1D5DB';
+const HOVER_EMISSIVE = '#FF9933';
 
 function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover }) {
   const [hover, setHover] = useState(false);
+  const meshRef = useRef();
+  const emissiveIntensityRef = useRef(0);
+  const { invalidate } = useThree();
+
+  useEffect(() => {
+    invalidate();
+  }, [hover, invalidate]);
+
+  // Smoothly animate emissive glow on hover
+  useFrame((_, delta) => {
+    if (!meshRef.current) return;
+    const target = hover && active ? 0.35 : 0;
+    if (Math.abs(emissiveIntensityRef.current - target) > 0.01) {
+      emissiveIntensityRef.current += (target - emissiveIntensityRef.current) * Math.min(delta * 10, 1);
+      meshRef.current.material.emissiveIntensity = emissiveIntensityRef.current;
+      invalidate();
+    }
+  });
+
   const color = !active ? INACTIVE : hover ? GREEN : ORANGE;
+  const liftY = hover && active ? 0.3 : 0;
 
   return (
-    <group position={[0, 0, hover && active ? 0.25 : 0]}>
+    <group position={[0, 0, liftY]}>
       <mesh
+        ref={meshRef}
         geometry={geometry}
         castShadow
         receiveShadow
@@ -34,17 +57,42 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
           document.body.style.cursor = 'default';
         }}
       >
-        <meshStandardMaterial color={color} roughness={0.55} metalness={0.05} />
+        <meshPhysicalMaterial
+          color={color}
+          roughness={0.45}
+          metalness={0.08}
+          clearcoat={0.2}
+          clearcoatRoughness={0.3}
+          emissive={HOVER_EMISSIVE}
+          emissiveIntensity={0}
+        />
       </mesh>
+
+      {/* State border edges */}
       <lineSegments geometry={edges}>
-        <lineBasicMaterial color="#ffffff" transparent opacity={0.9} />
+        <lineBasicMaterial color="#ffffff" transparent opacity={0.85} />
       </lineSegments>
+
+      {/* Floating label for active states — uses Billboard (always faces camera) */}
       {active && (
-        <Html position={[centroid[0], centroid[1], 0.6]} center distanceFactor={16} style={{ pointerEvents: 'none' }}>
-          <span className="whitespace-nowrap rounded-full bg-white/90 px-2 py-0.5 text-[11px] font-semibold text-india-navy shadow">
+        <Billboard
+          position={[centroid[0], centroid[1], 0.55]}
+          follow={true}
+          lockX={false}
+          lockY={false}
+        >
+          <Text
+            fontSize={0.28}
+            color="#06038D"
+            anchorX="center"
+            anchorY="middle"
+            font={undefined}
+            outlineWidth={0.02}
+            outlineColor="#ffffff"
+          >
             {label}
-          </span>
-        </Html>
+          </Text>
+        </Billboard>
       )}
     </group>
   );
@@ -56,7 +104,7 @@ export default function GeoStates({ geo, bySlug, pick, onHover, onSelect }) {
     const warned = [];
     (geo.features || []).forEach((feature, index) => {
       const { name, slug, mapped } = slugForFeature(feature.properties || {});
-      const geometry = buildExtrudedGeometry(feature, 0.35);
+      const geometry = buildExtrudedGeometry(feature, 0.28);
       if (!geometry) return;
       if (!mapped) warned.push(name);
       out.push({
@@ -70,7 +118,9 @@ export default function GeoStates({ geo, bySlug, pick, onHover, onSelect }) {
       });
     });
     if (warned.length) {
-      console.warn(`[Map3D] No slug mapping for GeoJSON state(s): ${warned.join(', ')}. Add them to src/utils/stateSlugMap.js`);
+      console.warn(
+        `[Map3D] No slug mapping for GeoJSON state(s): ${warned.join(', ')}. Add them to src/utils/stateSlugMap.js`
+      );
     }
     return out;
   }, [geo, bySlug]);

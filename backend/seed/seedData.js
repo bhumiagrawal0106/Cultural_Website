@@ -11,12 +11,47 @@ const Tradition = require('../models/Tradition');
 const Food = require('../models/Food');
 const User = require('../models/User');
 
+// ─── 28 States + 8 Union Territories = 36 total ──────────────────────────────
 const STATES = [
+  // Original 21 states
   require('./data/rajasthan'),
   require('./data/uttarPradesh'),
   require('./data/tamilNadu'),
   require('./data/kerala'),
   require('./data/delhi'),
+  require('./data/maharashtra'),
+  require('./data/gujarat'),
+  require('./data/westBengal'),
+  require('./data/karnataka'),
+  require('./data/madhyaPradesh'),
+  require('./data/punjab'),
+  require('./data/odisha'),
+  require('./data/himachalPradesh'),
+  require('./data/goa'),
+  require('./data/jammuKashmir'),
+  require('./data/uttarakhand'),
+  require('./data/bihar'),
+  require('./data/assam'),
+  require('./data/telangana'),
+  require('./data/andhraPradesh'),
+  require('./data/sikkim'),
+  // 7 additional states
+  require('./data/arunachalPradesh'),
+  require('./data/chhattisgarh'),
+  require('./data/haryana'),
+  require('./data/jharkhand'),
+  require('./data/manipur'),
+  require('./data/meghalaya'),
+  require('./data/nagaland'),
+  require('./data/mizoram'),
+  require('./data/tripura'),
+  // 6 additional UTs (Delhi & J&K already above)
+  require('./data/ladakh'),
+  require('./data/andamanNicobar'),
+  require('./data/lakshadweep'),
+  require('./data/puducherry'),
+  require('./data/chandigarh'),
+  require('./data/dadraAndNagarHaveliAndDamanAndDiu'),
 ];
 
 async function run() {
@@ -46,7 +81,7 @@ async function run() {
       traditions: totals.traditions + traditions.length,
       food: totals.food + food.length,
     };
-    console.log(`  seeded ${state.name_en}`);
+    console.log(`  ✓ ${state.name_en}  [${places.length}pl ${crafts.length}cr ${traditions.length}tr ${food.length}fo]`);
   }
 
   const adminEmail = (process.env.ADMIN_EMAIL || 'admin@bharatdarshan.local').toLowerCase();

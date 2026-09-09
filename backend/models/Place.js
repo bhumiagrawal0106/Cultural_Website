@@ -12,6 +12,8 @@ const placeSchema = new mongoose.Schema(
     images: { type: [String], default: [] },
     // Optional glb/gltf URL. Frontend falls back to the image carousel when empty.
     model3D: { type: String, default: '' },
+    // Optional YouTube or video documentary URL
+    videoUrl: { type: String, default: '' },
     coordinates: {
       lat: { type: Number },
       lng: { type: Number },
@@ -19,6 +21,7 @@ const placeSchema = new mongoose.Schema(
     bestTimeToVisit: { type: String, default: '' },
     tags: { type: [String], default: [] },
     viewCount: { type: Number, default: 0 },
+    likesCount: { type: Number, default: 0 },
   },
   { timestamps: { createdAt: true, updatedAt: false } }
 );

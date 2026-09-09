@@ -29,7 +29,13 @@ module.exports = function cultureController(Model, label) {
     },
 
     async getById(req, res) {
-      const item = await Model.findById(req.params.id).populate('stateId', 'name_en name_hi slug').lean();
+      const item = await Model.findByIdAndUpdate(
+        req.params.id,
+        { $inc: { viewCount: 1 } },
+        { new: true }
+      )
+        .populate('stateId', 'name_en name_hi slug')
+        .lean();
       if (!item) return res.status(404).json({ error: `${label} not found` });
       res.json({ data: item });
     },

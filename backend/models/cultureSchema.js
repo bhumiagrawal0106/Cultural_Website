@@ -13,6 +13,9 @@ function createCultureModel(modelName, collectionName) {
       description_en: { type: String, default: '' },
       description_hi: { type: String, default: '' },
       images: { type: [String], default: [] },
+      videoUrl: { type: String, default: '' },
+      viewCount: { type: Number, default: 0 },
+      likesCount: { type: Number, default: 0 },
     },
     { timestamps: { createdAt: true, updatedAt: false } }
   );

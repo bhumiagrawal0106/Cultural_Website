@@ -7,12 +7,27 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { COLLECTIONS, COLLECTION_LABEL, typeIcon, typeLabel } from '../utils/catalog';
 import ImageCarousel from '../components/ImageCarousel';
+import MapLibreMap from '../components/MapLibreMap';
 import PlaceCard from '../components/PlaceCard/PlaceCard';
 import Spinner from '../components/Spinner/Spinner';
 import ErrorState from '../components/ErrorState/ErrorState';
 import NotFound from './NotFound';
+import WikidataKnowledgeCard from '../components/WikidataKnowledgeCard';
+import WikimediaCommonsGallery from '../components/WikimediaCommonsGallery';
+import InheritageSection from '../components/InheritageSection';
+import VirtualTourPlayer from '../components/VirtualTourPlayer';
+import SocialEngagement from '../components/SocialEngagement';
 
 const ModelViewer = lazy(() => import('../components/ModelViewer'));
+
+function getEmbedUrl(url) {
+  if (!url) return null;
+  const ytMatch = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+  if (ytMatch && ytMatch[1]) {
+    return `https://www.youtube.com/embed/${ytMatch[1]}`;
+  }
+  return url;
+}
 
 export default function ItemDetail() {
   const { collection, id } = useParams();
@@ -41,10 +56,9 @@ export default function ItemDetail() {
   const name = pick(item, 'name');
   const description = pick(item, 'description');
   const hasCoords = isPlace && item.coordinates && typeof item.coordinates.lat === 'number';
-  const mapEmbed = hasCoords
-    ? `https://maps.google.com/maps?q=${item.coordinates.lat},${item.coordinates.lng}&z=14&output=embed`
+  const mapLink = hasCoords
+    ? `https://www.openstreetmap.org/?mlat=${item.coordinates.lat}&mlon=${item.coordinates.lng}&zoom=14`
     : null;
-  const mapLink = hasCoords ? `https://www.google.com/maps?q=${item.coordinates.lat},${item.coordinates.lng}` : null;
   const fav = isPlace && isFavorite(item._id);
 
   const onToggleFav = async () => {
@@ -137,6 +151,14 @@ export default function ItemDetail() {
             {description}
           </p>
 
+          {/* Social Media Engagement (Live Views & Interactive Likes) */}
+          <SocialEngagement
+            item={item}
+            collection={collection}
+            variant="detail"
+            className="mt-6"
+          />
+
           {/* Actions */}
           <div className="mt-6 flex flex-wrap gap-2">
             {speech.supported && (
@@ -195,30 +217,57 @@ export default function ItemDetail() {
               {ui('reportInfo')}
             </Link>
           )}
+
+          {/* Wikidata Knowledge Card */}
+          <div className="mt-6">
+            <WikidataKnowledgeCard name={name} stateName={state ? pick(state, 'name') : ''} />
+          </div>
         </div>
       </div>
 
-      {/* Map */}
-      {mapEmbed && (
+      {/* Video Documentary & 4K Virtual Tour */}
+      <VirtualTourPlayer
+        item={item}
+        name={name}
+        stateName={state ? pick(state, 'name') : ''}
+        collection={collection}
+      />
+
+      {/* Map — MapLibre GL JS (free, OpenStreetMap tiles, no API key) */}
+      {hasCoords && (
         <section className="mt-10">
           <div className="flex items-center justify-between">
             <h2 className="section-title">{ui('location')}</h2>
-            <a href={mapLink} target="_blank" rel="noreferrer" className="text-sm font-semibold text-india-navy hover:underline">
+            <a
+              href={mapLink}
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm font-semibold text-india-navy hover:underline"
+            >
               {ui('openInMaps')} ↗
             </a>
           </div>
-          <div className="card mt-4 aspect-[16/7] min-h-[260px]">
-            <iframe
-              title={`${name} map`}
-              src={mapEmbed}
-              className="h-full w-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
+          <div className="card mt-4 min-h-[280px] overflow-hidden" style={{ height: '320px' }}>
+            <MapLibreMap
+              lat={item.coordinates.lat}
+              lng={item.coordinates.lng}
+              name={name}
+              zoom={13}
             />
           </div>
         </section>
       )}
+
+      {/* Wikimedia Commons Archival Photography Gallery */}
+      <WikimediaCommonsGallery query={name} />
+
+      {/* Inheritage Foundation Open Registry & CC BY Citation */}
+      <InheritageSection
+        name={name}
+        slug={item.slug || name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}
+        item={item}
+        state={state}
+      />
 
       {/* More from state */}
       {state && more.length > 0 && (
