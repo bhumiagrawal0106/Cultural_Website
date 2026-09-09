@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 import usePageMeta from '../hooks/usePageMeta';
@@ -18,10 +18,18 @@ export default function StatePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const { ui, pick, pickTuple, isHindi } = useLanguage();
 
+  const [dataVersion, setDataVersion] = useState(0);
+
+  useEffect(() => {
+    const handleUpdate = () => setDataVersion((v) => v + 1);
+    window.addEventListener('cultural-data-updated', handleUpdate);
+    return () => window.removeEventListener('cultural-data-updated', handleUpdate);
+  }, []);
+
   const { data: stateRes, loading, error, refetch } = useFetch(`/api/states/${slug}`);
-  const fallbackState = useMemo(() => fallbackCatalog.find((s) => s.slug === slug) || null, [slug]);
+  const fallbackState = useMemo(() => fallbackCatalog.find((s) => s.slug === slug) || null, [slug, dataVersion]);
   const rawState = (stateRes && stateRes.data) || fallbackState;
-  const state = useMemo(() => applyOverrides(rawState), [rawState]);
+  const state = useMemo(() => applyOverrides(rawState), [rawState, dataVersion]);
 
   const activeKey = TABS.some((t) => t.key === searchParams.get('tab')) ? searchParams.get('tab') : TABS[0].key;
   const tab = TABS.find((t) => t.key === activeKey);
@@ -36,10 +44,10 @@ export default function StatePage() {
 
   const fallbackItems = useMemo(() => {
     return getCatalogForTab(tab?.key || 'fort', slug);
-  }, [tab, slug]);
+  }, [tab, slug, dataVersion]);
 
   const rawItems = (listRes && listRes.data && listRes.data.length > 0) ? listRes.data : fallbackItems;
-  const items = useMemo(() => rawItems.map((it) => applyOverrides(it)), [rawItems]);
+  const items = useMemo(() => rawItems.map((it) => applyOverrides(it)), [rawItems, dataVersion]);
 
   usePageMeta(state ? pick(state, 'name') : ui('loading'), state ? pick(state, 'description') : undefined);
 

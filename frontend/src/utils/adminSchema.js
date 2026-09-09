@@ -99,15 +99,43 @@ export function setPath(obj, path, value) {
   cur[keys[keys.length - 1]] = value;
 }
 
+export function normalizeWikipediaImageUrl(url) {
+  if (!url || typeof url !== 'string') return url;
+  const trimmed = url.trim();
+  // Extract filename from Wikipedia / Wikimedia File: URLs
+  // Handles: https://commons.wikimedia.org/wiki/File:Agra_Fort.jpg
+  //          https://en.wikipedia.org/wiki/Agra_Fort#/media/File:Agra_Fort_in_Agra,_India.jpg
+  const fileMatch = trimmed.match(/(?:wikipedia\.org|wikimedia\.org).*(?:File:|Datei:|Fichier:)([^#?&]+)/i);
+  if (fileMatch && fileMatch[1]) {
+    const rawFileName = decodeURIComponent(fileMatch[1]).replace(/_/g, ' ').trim();
+    return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(rawFileName)}?width=1200`;
+  }
+  if (trimmed.includes('Special:FilePath') && !trimmed.includes('width=')) {
+    return trimmed.includes('?') ? `${trimmed}&width=1200` : `${trimmed}?width=1200`;
+  }
+  return trimmed;
+}
+
 /** Converts an API document into flat string form values. */
 export function itemToForm(fields, item) {
   const values = {};
   fields.forEach((f) => {
     let v = item ? getPath(item, f.name) : undefined;
-    if (f.type === 'state' && v && typeof v === 'object') v = v._id;
-    if (f.type === 'list') v = Array.isArray(v) ? v.join('\n') : '';
-    else if (f.type === 'tags') v = Array.isArray(v) ? v.join(', ') : '';
-    else if (v === undefined || v === null) v = '';
+    if (f.type === 'state' && v && typeof v === 'object') {
+      v = v._id || v.slug || '';
+    }
+    if (f.type === 'list') {
+      if (f.name === 'images' && (!v || (Array.isArray(v) && v.length === 0)) && item && (item.image || item.thumbnail)) {
+        v = [item.image || item.thumbnail];
+      }
+      v = Array.isArray(v) ? v.join('\n') : '';
+    } else if (f.type === 'tags') {
+      v = Array.isArray(v) ? v.join(', ') : '';
+    } else if (f.name === 'thumbnail' && !v && item && (item.image || (item.images && item.images[0]))) {
+      v = item.image || item.images[0];
+    } else if (v === undefined || v === null) {
+      v = '';
+    }
     values[f.name] = String(v);
   });
   return values;
@@ -119,10 +147,21 @@ export function formToPayload(fields, values) {
   fields.forEach((f) => {
     const raw = String(values[f.name] || '').trim();
     let v;
-    if (f.type === 'list') v = raw.split('\n').map((s) => s.trim()).filter(Boolean);
-    else if (f.type === 'tags') v = raw.split(',').map((s) => s.trim()).filter(Boolean);
-    else if (f.type === 'number') v = raw === '' ? undefined : Number(raw);
-    else v = raw;
+    if (f.type === 'list') {
+      v = raw
+        .split('\n')
+        .map((s) => s.trim())
+        .filter(Boolean)
+        .map((url) => normalizeWikipediaImageUrl(url));
+    } else if (f.type === 'tags') {
+      v = raw.split(',').map((s) => s.trim()).filter(Boolean);
+    } else if (f.type === 'number') {
+      v = raw === '' ? undefined : Number(raw);
+    } else if (f.name === 'thumbnail' || f.name === 'image') {
+      v = normalizeWikipediaImageUrl(raw);
+    } else {
+      v = raw;
+    }
     if (v !== undefined) setPath(payload, f.name, v);
   });
   return payload;

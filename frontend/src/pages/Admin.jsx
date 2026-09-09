@@ -31,17 +31,25 @@ export default function Admin() {
   const listPath = isFeedback ? null : collection.listPath(collection.hasStateFilter ? stateFilter : '');
   const list = useFetch(listPath);
 
+  const [dataVersion, setDataVersion] = useState(0);
+
+  useEffect(() => {
+    const handleUpdate = () => setDataVersion((v) => v + 1);
+    window.addEventListener('cultural-data-updated', handleUpdate);
+    return () => window.removeEventListener('cultural-data-updated', handleUpdate);
+  }, []);
+
   const localCatalogItems = useMemo(() => {
     if (isFeedback) return [];
     return getCatalogForTab(collection.key, stateFilter);
-  }, [collection.key, stateFilter, isFeedback]);
+  }, [collection.key, stateFilter, isFeedback, dataVersion]);
 
   const items = useMemo(() => {
     if (list.data && list.data.data && list.data.data.length > 0) {
       return list.data.data.map(applyOverrides);
     }
     return localCatalogItems;
-  }, [list.data, localCatalogItems]);
+  }, [list.data, localCatalogItems, dataVersion]);
 
   const [editing, setEditing] = useState(null); // null = closed, {} = new, doc = edit
   const [deleting, setDeleting] = useState(null);
@@ -69,6 +77,7 @@ export default function Admin() {
   };
 
   const afterChange = () => {
+    setDataVersion((v) => v + 1);
     list.refetch();
     if (collection.key === 'states') refetchStates();
   };

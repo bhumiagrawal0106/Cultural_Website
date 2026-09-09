@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useMemo } from 'react';
+import { lazy, Suspense, useState, useMemo, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 import usePageMeta from '../hooks/usePageMeta';
@@ -40,6 +40,14 @@ export default function ItemDetail() {
   const [favBusy, setFavBusy] = useState(false);
   const [copied, setCopied] = useState(false);
 
+  const [dataVersion, setDataVersion] = useState(0);
+
+  useEffect(() => {
+    const handleUpdate = () => setDataVersion((v) => v + 1);
+    window.addEventListener('cultural-data-updated', handleUpdate);
+    return () => window.removeEventListener('cultural-data-updated', handleUpdate);
+  }, []);
+
   const validCollection = COLLECTIONS.includes(collection);
   const { data: res, loading, error, refetch } = useFetch(validCollection ? `/api/${collection}/${id}` : null);
 
@@ -55,10 +63,10 @@ export default function ItemDetail() {
       }
     }
     return null;
-  }, [collection, id]);
+  }, [collection, id, dataVersion]);
 
   const rawItem = (res && res.data) || fallbackItem;
-  const item = useMemo(() => applyOverrides(rawItem), [rawItem]);
+  const item = useMemo(() => applyOverrides(rawItem), [rawItem, dataVersion]);
   const state = item && item.stateId && item.stateId.slug ? item.stateId : null;
 
   const { data: moreRes } = useFetch(state ? `/api/${collection}?state=${state.slug}&limit=6` : null);

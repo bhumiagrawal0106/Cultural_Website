@@ -3,7 +3,7 @@ import api from '../../services/api';
 import { useLanguage } from '../../context/LanguageContext';
 import FormField, { FormError, TextInput } from '../FormField';
 import SafeImage from '../SafeImage';
-import { formToPayload, itemToForm, validateForm } from '../../utils/adminSchema';
+import { formToPayload, itemToForm, validateForm, normalizeWikipediaImageUrl } from '../../utils/adminSchema';
 import { saveOverride } from '../../utils/culturalStorage';
 
 /** Create / edit form for one document, driven by the collection's field schema. */
@@ -25,7 +25,10 @@ export default function AdminForm({ collection, item, states, onSaved, onCancel 
     e.preventDefault();
     const next = validateForm(collection.fields, values);
     setErrors(next);
-    if (Object.keys(next).length) return;
+    if (Object.keys(next).length) {
+      setServerError(`Please check required fields: ${Object.keys(next).join(', ')}`);
+      return;
+    }
 
     setBusy(true);
     setServerError('');
@@ -35,6 +38,19 @@ export default function AdminForm({ collection, item, states, onSaved, onCancel 
         payload.type = collection.placeType;
       }
 
+      // Ensure stateId is populated with object metadata
+      if (payload.stateId && states && states.length > 0) {
+        const matched = states.find((s) => s._id === payload.stateId || s.slug === payload.stateId);
+        if (matched) {
+          payload.stateId = {
+            _id: matched._id || matched.slug,
+            slug: matched.slug,
+            name_en: matched.name_en,
+            name_hi: matched.name_hi,
+          };
+        }
+      }
+
       // Always save to client override store so changes reflect immediately!
       const finalDoc = {
         ...item,
@@ -42,6 +58,16 @@ export default function AdminForm({ collection, item, states, onSaved, onCancel 
         _id: item?._id || `custom-${Date.now()}`,
         slug: item?.slug || payload.slug || payload.name_en?.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
       };
+
+      if (payload.images && payload.images.length > 0) {
+        finalDoc.image = payload.images[0];
+        finalDoc.images = payload.images;
+      }
+      if (payload.thumbnail) {
+        finalDoc.thumbnail = payload.thumbnail;
+        if (!finalDoc.image) finalDoc.image = payload.thumbnail;
+      }
+
       saveOverride(finalDoc);
 
       // Also persist to backend API if available
@@ -63,10 +89,10 @@ export default function AdminForm({ collection, item, states, onSaved, onCancel 
   };
 
   const getImagePreview = () => {
-    if (values.thumbnail) return values.thumbnail.trim();
+    if (values.thumbnail) return normalizeWikipediaImageUrl(values.thumbnail.trim());
     if (values.images) {
       const first = values.images.split('\n')[0];
-      if (first) return first.trim();
+      if (first) return normalizeWikipediaImageUrl(first.trim());
     }
     return null;
   };
