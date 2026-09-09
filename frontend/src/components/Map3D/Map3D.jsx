@@ -41,22 +41,17 @@ function ViewToggle({ view, onChange, label }) {
 
 function Legend({ ui }) {
   return (
-    <ul
-      className="pointer-events-none absolute left-3 top-3 flex flex-col gap-1 text-[11px] text-gray-600"
+    <div
+      className="pointer-events-none absolute left-3 top-3 flex items-center gap-2 rounded-full glass px-3 py-1 shadow-sm text-xs text-gray-700"
       aria-hidden="true"
     >
-      <li className="flex items-center gap-1.5 rounded-full glass px-2 py-0.5 shadow-sm">
-        <span className="inline-flex h-3 w-4 flex-col overflow-hidden rounded-xs border border-gray-200 shadow-2xs">
-          <span className="flex-1 bg-[#FF671F]" />
-          <span className="flex-1 bg-white" />
-          <span className="flex-1 bg-[#138808]" />
-        </span>
-        <span className="font-medium text-gray-700">{ui('legendActive')}</span>
-      </li>
-      <li className="flex items-center gap-1.5 rounded-full glass px-2 py-0.5 shadow-sm">
-        <span className="inline-block h-2.5 w-2.5 rounded-sm bg-gray-300" /> {ui('legendComingSoon')}
-      </li>
-    </ul>
+      <span className="inline-flex h-3 w-4 flex-col overflow-hidden rounded-xs border border-gray-300 shadow-2xs">
+        <span className="flex-1 bg-[#FF671F]" />
+        <span className="flex-1 bg-white" />
+        <span className="flex-1 bg-[#138808]" />
+      </span>
+      <span className="font-semibold text-india-navy">{ui('brand')}</span>
+    </div>
   );
 }
 
@@ -288,9 +283,7 @@ export default function Map3D() {
               }`}
               aria-live="polite"
             >
-              {hovered
-                ? `${hovered.label} · ${hovered.active ? ui('clickToExplore') : ui('comingSoon')}`
-                : ''}
+              {hovered ? `${hovered.label} · ${ui('clickToExplore')}` : ''}
             </div>
 
             <p className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full glass px-3 py-1 text-xs text-gray-600 shadow-sm">

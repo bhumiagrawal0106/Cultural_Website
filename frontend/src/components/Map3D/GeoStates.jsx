@@ -18,7 +18,7 @@ function getFlagColor(y) {
   return FLAG_GREEN;                 // Bottom part
 }
 
-function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover }) {
+function StateMesh({ geometry, edges, label, centroid, onSelect, onHover }) {
   const [hover, setHover] = useState(false);
   const meshRef = useRef();
   const emissiveIntensityRef = useRef(0);
@@ -28,14 +28,14 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
     invalidate();
   }, [hover, invalidate]);
 
-  const baseColor = !active ? INACTIVE : getFlagColor(centroid[1]);
+  const baseColor = getFlagColor(centroid[1]);
   const isWhite = baseColor === FLAG_WHITE;
   const hoverEmissive = isWhite ? '#06038D' : '#FFD700';
 
   // Smoothly animate emissive glow on hover
   useFrame((_, delta) => {
     if (!meshRef.current) return;
-    const target = hover && active ? 0.35 : 0;
+    const target = hover ? 0.35 : 0;
     if (Math.abs(emissiveIntensityRef.current - target) > 0.01) {
       emissiveIntensityRef.current += (target - emissiveIntensityRef.current) * Math.min(delta * 10, 1);
       meshRef.current.material.emissiveIntensity = emissiveIntensityRef.current;
@@ -43,10 +43,10 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
     }
   });
 
-  const color = hover && active
+  const color = hover
     ? (isWhite ? '#E0E7FF' : baseColor === FLAG_SAFFRON ? '#FFA366' : '#22C55E')
     : baseColor;
-  const liftY = hover && active ? 0.3 : 0;
+  const liftY = hover ? 0.3 : 0;
   const edgeColor = isWhite ? '#06038D' : '#ffffff';
   const edgeOpacity = isWhite ? 0.4 : 0.85;
 
@@ -59,13 +59,13 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
         receiveShadow
         onClick={(e) => {
           e.stopPropagation();
-          if (active) onSelect();
+          onSelect();
         }}
         onPointerOver={(e) => {
           e.stopPropagation();
           setHover(true);
-          onHover({ label, active });
-          document.body.style.cursor = active ? 'pointer' : 'default';
+          onHover({ label, active: true });
+          document.body.style.cursor = 'pointer';
         }}
         onPointerOut={() => {
           setHover(false);
@@ -89,27 +89,25 @@ function StateMesh({ geometry, edges, label, active, centroid, onSelect, onHover
         <lineBasicMaterial color={edgeColor} transparent opacity={edgeOpacity} />
       </lineSegments>
 
-      {/* Floating label for active states — uses Billboard (always faces camera) */}
-      {active && (
-        <Billboard
-          position={[centroid[0], centroid[1], 0.55]}
-          follow={true}
-          lockX={false}
-          lockY={false}
+      {/* Floating label for all states — uses Billboard (always faces camera) */}
+      <Billboard
+        position={[centroid[0], centroid[1], 0.55]}
+        follow={true}
+        lockX={false}
+        lockY={false}
+      >
+        <Text
+          fontSize={0.28}
+          color="#06038D"
+          anchorX="center"
+          anchorY="middle"
+          font={undefined}
+          outlineWidth={0.02}
+          outlineColor="#ffffff"
         >
-          <Text
-            fontSize={0.28}
-            color="#06038D"
-            anchorX="center"
-            anchorY="middle"
-            font={undefined}
-            outlineWidth={0.02}
-            outlineColor="#ffffff"
-          >
-            {label}
-          </Text>
-        </Billboard>
-      )}
+          {label}
+        </Text>
+      </Billboard>
     </group>
   );
 }
@@ -158,7 +156,6 @@ export default function GeoStates({ geo, bySlug, pick, onHover, onSelect }) {
       edges={item.edges}
       centroid={item.centroid}
       label={item.state ? pick(item.state, 'name') : item.name}
-      active={Boolean(item.state)}
       onSelect={() => onSelect(item.slug)}
       onHover={onHover}
     />
