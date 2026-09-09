@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense, useState, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 import usePageMeta from '../hooks/usePageMeta';
@@ -29,6 +29,9 @@ function getEmbedUrl(url) {
   return url;
 }
 
+import fallbackCatalog from '../data/fallbackCatalog.json';
+import { applyOverrides } from '../utils/culturalStorage';
+
 export default function ItemDetail() {
   const { collection, id } = useParams();
   const { ui, pick, pickTuple, lang, isHindi } = useLanguage();
@@ -39,18 +42,47 @@ export default function ItemDetail() {
 
   const validCollection = COLLECTIONS.includes(collection);
   const { data: res, loading, error, refetch } = useFetch(validCollection ? `/api/${collection}/${id}` : null);
-  const item = res && res.data;
+
+  const fallbackItem = useMemo(() => {
+    if (!id) return null;
+    for (const st of fallbackCatalog) {
+      if (collection === 'places') {
+        const p = (st.places || []).find((x) => x._id === id || x.slug === id);
+        if (p) return { ...p, stateId: { slug: st.slug, name_en: st.name_en, name_hi: st.name_hi } };
+      } else if (st[collection]) {
+        const it = st[collection].find((x) => x._id === id || x.slug === id);
+        if (it) return { ...it, stateId: { slug: st.slug, name_en: st.name_en, name_hi: st.name_hi } };
+      }
+    }
+    return null;
+  }, [collection, id]);
+
+  const rawItem = (res && res.data) || fallbackItem;
+  const item = useMemo(() => applyOverrides(rawItem), [rawItem]);
   const state = item && item.stateId && item.stateId.slug ? item.stateId : null;
 
   const { data: moreRes } = useFetch(state ? `/api/${collection}?state=${state.slug}&limit=6` : null);
-  const more = ((moreRes && moreRes.data) || []).filter((m) => m._id !== id).slice(0, 3);
+  const fallbackMore = useMemo(() => {
+    if (!state) return [];
+    const st = fallbackCatalog.find((s) => s.slug === state.slug);
+    if (!st) return [];
+    const list = collection === 'places' ? (st.places || []) : (st[collection] || []);
+    return list.filter((m) => m._id !== id).slice(0, 3);
+  }, [state, collection, id]);
+
+  const rawMore = (moreRes && moreRes.data && moreRes.data.length > 0) ? moreRes.data : fallbackMore;
+  const more = rawMore
+    .filter((m) => m._id !== id)
+    .slice(0, 3)
+    .map((m) => applyOverrides(m));
 
   usePageMeta(item ? pick(item, 'name') : ui('loading'), item ? pick(item, 'description') : undefined);
 
   if (!validCollection) return <NotFound />;
-  if (loading) return <Spinner className="min-h-[50vh]" />;
-  if (error && error.status === 404) return <NotFound />;
-  if (error) return <ErrorState error={error} onRetry={refetch} className="mt-10" />;
+  if (loading && !rawItem) return <Spinner className="min-h-[50vh]" />;
+  if (error && !rawItem && error.status === 404) return <NotFound />;
+  if (error && !rawItem) return <ErrorState error={error} onRetry={refetch} className="mt-10" />;
+  if (!item) return <NotFound />;
 
   const isPlace = collection === 'places';
   const name = pick(item, 'name');

@@ -28,7 +28,44 @@ function culture(key, singular, label, icon) {
   };
 }
 
+function placeCategory(type, singular, label, icon) {
+  return {
+    key: type,
+    placeType: type,
+    backendKey: 'places',
+    singular,
+    label,
+    icon,
+    hasStateFilter: true,
+    listPath: (state) => `/api/places?type=${type}&limit=50${state ? `&state=${encodeURIComponent(state)}` : ''}`,
+    publicLink: (item) => `/item/places/${item._id}`,
+    fields: [
+      STATE_REF,
+      NAME_EN,
+      NAME_HI,
+      DESC_EN,
+      DESC_HI,
+      IMAGES,
+      { name: 'bestTimeToVisit', label: 'Best time to visit', type: 'text', placeholder: 'October to March' },
+      { name: 'tags', label: 'Tags (comma separated)', type: 'tags', placeholder: 'history, architecture, unesco' },
+    ],
+  };
+}
+
 export const ADMIN_COLLECTIONS = [
+  placeCategory('fort', 'Fort', ['Forts', 'किले'], '🏰'),
+  placeCategory('monument', 'Monument', ['Monuments', 'स्मारक'], '🏛️'),
+  placeCategory('temple', 'Temple', ['Temples', 'मंदिर'], '🛕'),
+  placeCategory('gurudwara', 'Gurudwara', ['Gurudwaras', 'गुरुद्वारे'], '🔯'),
+  placeCategory('dargah', 'Dargah', ['Dargahs', 'दरगाह'], '🕌'),
+  placeCategory('church', 'Church', ['Churches', 'गिरजाघर'], '⛪'),
+  placeCategory('heritage', 'Heritage Site', ['Heritage Sites', 'विरासत स्थल'], '🏺'),
+  placeCategory('culture', 'Culture & Art', ['Culture & Art', 'संस्कृति व कला'], '🎭'),
+  placeCategory('haunted', 'Haunted Place', ['Haunted Places', 'रहस्यमयी स्थान'], '👻'),
+  placeCategory('tourism', 'Tourism Spot', ['Tourism Spots', 'पर्यटन स्थल'], '🌄'),
+  culture('crafts', 'Craft', ['Crafts', 'शिल्प'], '🎨'),
+  culture('traditions', 'Tradition', ['Traditions', 'परंपराएँ'], '🪔'),
+  culture('food', 'Dish', ['Food', 'भोजन'], '🍛'),
   {
     key: 'states',
     singular: 'State',
@@ -40,47 +77,12 @@ export const ADMIN_COLLECTIONS = [
     fields: [
       NAME_EN,
       NAME_HI,
-      { name: 'slug', label: 'Slug', type: 'text', required: true, hint: 'lowercase-with-dashes, must match src/utils/stateSlugMap.js' },
-      { name: 'geoJsonName', label: 'GeoJSON name', type: 'text', hint: 'Exact feature name in india-states.geojson' },
-      { name: 'mapCoordinates.lat', label: 'Map latitude', type: 'number', required: true },
-      { name: 'mapCoordinates.lng', label: 'Map longitude', type: 'number', required: true },
+      { name: 'slug', label: 'Slug', type: 'text', required: true, hint: 'lowercase-with-dashes, must match stateSlugMap' },
       { name: 'thumbnail', label: 'Thumbnail URL', type: 'text' },
       DESC_EN,
       DESC_HI,
     ],
   },
-  {
-    key: 'places',
-    singular: 'Place',
-    label: ['Places', 'स्थान'],
-    icon: '🏰',
-    hasStateFilter: true,
-    listPath: (state) => `/api/places?limit=50${state ? `&state=${encodeURIComponent(state)}` : ''}`,
-    publicLink: (item) => `/item/places/${item._id}`,
-    fields: [
-      STATE_REF,
-      {
-        name: 'type',
-        label: 'Type',
-        type: 'select',
-        required: true,
-        options: [...PLACE_TYPES.map((t) => ({ value: t.type, label: `${t.icon} ${t.label[0]}` })), { value: 'other', label: 'Other' }],
-      },
-      NAME_EN,
-      NAME_HI,
-      DESC_EN,
-      DESC_HI,
-      IMAGES,
-      { name: 'model3D', label: '3D model URL (.glb / .gltf, optional)', type: 'text' },
-      { name: 'coordinates.lat', label: 'Latitude', type: 'number' },
-      { name: 'coordinates.lng', label: 'Longitude', type: 'number' },
-      { name: 'bestTimeToVisit', label: 'Best time to visit', type: 'text', placeholder: 'October to March' },
-      { name: 'tags', label: 'Tags (comma separated)', type: 'tags', placeholder: 'jaipur, palace, unesco' },
-    ],
-  },
-  culture('crafts', 'Craft', ['Crafts', 'शिल्प'], '🎨'),
-  culture('traditions', 'Tradition', ['Traditions', 'परंपराएँ'], '🪔'),
-  culture('food', 'Dish', ['Food', 'भोजन'], '🍛'),
 ];
 
 export function getPath(obj, path) {

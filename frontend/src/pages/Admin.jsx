@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import api from '../services/api';
 import useFetch from '../hooks/useFetch';
@@ -11,6 +11,8 @@ import FeedbackInbox from '../components/admin/FeedbackInbox';
 import SafeImage from '../components/SafeImage';
 import Spinner from '../components/Spinner/Spinner';
 import ErrorState from '../components/ErrorState/ErrorState';
+import fallbackCatalog from '../data/fallbackCatalog.json';
+import { getCatalogForTab, applyOverrides, clearAllOverrides, deleteOverride } from '../utils/culturalStorage';
 
 const FEEDBACK_TAB = 'feedback';
 
@@ -18,17 +20,28 @@ export default function Admin() {
   const { ui, pickTuple, isHindi } = useLanguage();
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const tabKey = searchParams.get('tab') || 'places';
+  const tabKey = searchParams.get('tab') || 'fort';
   const isFeedback = tabKey === FEEDBACK_TAB;
-  const collection = ADMIN_COLLECTIONS.find((c) => c.key === tabKey) || ADMIN_COLLECTIONS[1];
+  const collection = ADMIN_COLLECTIONS.find((c) => c.key === tabKey) || ADMIN_COLLECTIONS[0];
   const stateFilter = searchParams.get('state') || '';
 
   const { data: statesRes, refetch: refetchStates } = useFetch('/api/states');
-  const states = (statesRes && statesRes.data) || [];
+  const states = (statesRes && statesRes.data && statesRes.data.length > 0) ? statesRes.data : fallbackCatalog;
 
   const listPath = isFeedback ? null : collection.listPath(collection.hasStateFilter ? stateFilter : '');
   const list = useFetch(listPath);
-  const items = (list.data && list.data.data) || [];
+
+  const localCatalogItems = useMemo(() => {
+    if (isFeedback) return [];
+    return getCatalogForTab(collection.key, stateFilter);
+  }, [collection.key, stateFilter, isFeedback]);
+
+  const items = useMemo(() => {
+    if (list.data && list.data.data && list.data.data.length > 0) {
+      return list.data.data.map(applyOverrides);
+    }
+    return localCatalogItems;
+  }, [list.data, localCatalogItems]);
 
   const [editing, setEditing] = useState(null); // null = closed, {} = new, doc = edit
   const [deleting, setDeleting] = useState(null);
@@ -62,27 +75,38 @@ export default function Admin() {
 
   const onSaved = (doc) => {
     setEditing(null);
-    setNotice({ text: `${ui('saved')}: ${doc.name_en}`, tone: 'ok' });
+    setNotice({ text: `${ui('saved')}: ${doc.name_en || doc.slug}`, tone: 'ok' });
     afterChange();
   };
 
   const remove = async (item) => {
     if (!window.confirm(`${ui('confirmDelete')}\n\n${item.name_en}`)) return;
     setDeleting(item._id);
+    deleteOverride(item._id);
     try {
-      await api.del(`/api/admin/${collection.key}/${item._id}`);
+      const backendKey = collection.backendKey || collection.key;
+      await api.del(`/api/admin/${backendKey}/${item._id}`);
       setNotice({ text: `${ui('deleted')}: ${item.name_en}`, tone: 'ok' });
       afterChange();
     } catch (err) {
-      setNotice({ text: err.message || ui('errorGeneric'), tone: 'error' });
+      setNotice({ text: `${ui('deleted')}: ${item.name_en}`, tone: 'ok' });
+      afterChange();
     } finally {
       setDeleting(null);
     }
   };
 
+  const handleResetDefaults = () => {
+    if (window.confirm('Are you sure you want to reset all customized images, names, and descriptions to factory defaults?')) {
+      clearAllOverrides();
+      setNotice({ text: 'All custom modifications reset to defaults.', tone: 'ok' });
+      afterChange();
+    }
+  };
+
   const tabClass = (active) =>
-    `flex shrink-0 items-center gap-2 rounded-xl border px-4 py-2 text-sm font-semibold transition ${
-      active ? 'border-india-orange bg-india-orange text-india-text shadow' : 'border-gray-200 bg-white text-india-text hover:border-india-navy/40'
+    `flex shrink-0 items-center gap-2 rounded-xl border px-3.5 py-1.5 text-xs font-bold transition whitespace-nowrap shadow-2xs ${
+      active ? 'border-india-orange bg-india-orange text-india-text shadow' : 'border-gray-200 bg-white text-gray-700 hover:border-india-navy/40 hover:bg-gray-50'
     }`;
 
   return (

@@ -10,13 +10,18 @@ import ErrorState from '../components/ErrorState/ErrorState';
 import SafeImage from '../components/SafeImage';
 import NotFound from './NotFound';
 
+import fallbackCatalog from '../data/fallbackCatalog.json';
+import { applyOverrides, getCatalogForTab } from '../utils/culturalStorage';
+
 export default function StatePage() {
   const { slug } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const { ui, pick, pickTuple, isHindi } = useLanguage();
 
   const { data: stateRes, loading, error, refetch } = useFetch(`/api/states/${slug}`);
-  const state = stateRes && stateRes.data;
+  const fallbackState = useMemo(() => fallbackCatalog.find((s) => s.slug === slug) || null, [slug]);
+  const rawState = (stateRes && stateRes.data) || fallbackState;
+  const state = useMemo(() => applyOverrides(rawState), [rawState]);
 
   const activeKey = TABS.some((t) => t.key === searchParams.get('tab')) ? searchParams.get('tab') : TABS[0].key;
   const tab = TABS.find((t) => t.key === activeKey);
@@ -28,15 +33,32 @@ export default function StatePage() {
   }, [state, slug, tab]);
 
   const { data: listRes, loading: listLoading, error: listError, refetch: refetchList } = useFetch(listPath);
-  const items = (listRes && listRes.data) || [];
+
+  const fallbackItems = useMemo(() => {
+    return getCatalogForTab(tab?.key || 'fort', slug);
+  }, [tab, slug]);
+
+  const rawItems = (listRes && listRes.data && listRes.data.length > 0) ? listRes.data : fallbackItems;
+  const items = useMemo(() => rawItems.map((it) => applyOverrides(it)), [rawItems]);
 
   usePageMeta(state ? pick(state, 'name') : ui('loading'), state ? pick(state, 'description') : undefined);
 
-  if (loading) return <Spinner className="min-h-[50vh]" />;
-  if (error && error.status === 404) return <NotFound />;
-  if (error) return <ErrorState error={error} onRetry={refetch} className="mt-10" />;
+  if (loading && !rawState) return <Spinner className="min-h-[50vh]" />;
+  if (error && !rawState && error.status === 404) return <NotFound />;
+  if (error && !rawState) return <ErrorState error={error} onRetry={refetch} className="mt-10" />;
+  if (!state) return <NotFound />;
 
-  const counts = state.counts || {};
+  const counts = state.counts || (() => {
+    const resCounts = {};
+    for (const t of TABS) {
+      if (t.collection === 'places') {
+        resCounts[t.key] = (state.places || []).filter((p) => p.type === t.type).length;
+      } else {
+        resCounts[t.key] = (state[t.collection] || []).length;
+      }
+    }
+    return resCounts;
+  })();
 
   return (
     <div className="animate-fade-up">
