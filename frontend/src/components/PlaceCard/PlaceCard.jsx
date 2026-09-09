@@ -25,7 +25,7 @@ export default function PlaceCard({ item, collection = 'places', action }) {
           <SafeImage
             src={image}
             alt={name}
-            fallbackText={name}
+            fallbackText={`${name} ${item.type || ''} ${collection || ''} ${stateName}`}
             className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
           />
           <span className="chip absolute left-3 top-3 bg-white/95 text-india-navy shadow-sm">

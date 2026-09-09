@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import SafeImage from './SafeImage';
 
-export default function ImageCarousel({ images = [], alt = '' }) {
+export default function ImageCarousel({ images = [], alt = '', fallbackText = '' }) {
   const list = images.length ? images : [null];
   const [index, setIndex] = useState(0);
 
@@ -12,7 +12,7 @@ export default function ImageCarousel({ images = [], alt = '' }) {
 
   return (
     <div className="card relative aspect-[16/10] w-full bg-gray-100 sm:aspect-[16/9]">
-      <SafeImage key={index} src={list[index]} alt={alt} fallbackText={alt} className="h-full w-full object-cover" />
+      <SafeImage key={index} src={list[index]} alt={alt} fallbackText={fallbackText || alt} className="h-full w-full object-cover" />
       {list.length > 1 && (
         <>
           <button

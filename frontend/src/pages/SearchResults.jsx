@@ -55,7 +55,7 @@ export default function SearchResults() {
                       <SafeImage
                         src={r.image}
                         alt=""
-                        fallbackText={pick(r, 'name')}
+                        fallbackText={`${pick(r, 'name')} ${r.resultType || ''} ${r.state ? pick(r.state, 'name') : ''}`}
                         className="h-20 w-24 shrink-0 rounded-lg object-cover"
                       />
                       <div className="min-w-0">

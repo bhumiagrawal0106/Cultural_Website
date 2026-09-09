@@ -109,10 +109,23 @@ export default function ItemDetail() {
         <div className="lg:col-span-3">
           {isPlace && item.model3D ? (
             <Suspense fallback={<Spinner className="card h-72 sm:h-96" />}>
-              <ModelViewer url={item.model3D} fallback={<ImageCarousel images={item.images} alt={name} />} />
+              <ModelViewer
+                url={item.model3D}
+                fallback={
+                  <ImageCarousel
+                    images={item.images}
+                    alt={name}
+                    fallbackText={`${name} ${isPlace ? item.type : collection} ${state?.name_en || ''}`}
+                  />
+                }
+              />
             </Suspense>
           ) : (
-            <ImageCarousel images={item.images} alt={name} />
+            <ImageCarousel
+              images={item.images}
+              alt={name}
+              fallbackText={`${name} ${isPlace ? item.type : collection} ${state?.name_en || ''}`}
+            />
           )}
         </div>
 
