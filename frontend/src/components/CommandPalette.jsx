@@ -2,23 +2,24 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { itemLink } from '../utils/catalog';
+import fallbackCatalog from '../data/fallbackCatalog.json';
 
 export default function CommandPalette({ isOpen, onClose }) {
   const { isHindi } = useLanguage();
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
-  const [states, setStates] = useState([]);
+  const [states, setStates] = useState(fallbackCatalog);
   const [loading, setLoading] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef(null);
 
-  // Load states once on mount for instant state jumps
+  // Load live states once on mount
   useEffect(() => {
     fetch('/api/states')
       .then((r) => (r.ok ? r.json() : { data: [] }))
       .then((res) => {
-        if (res.data) setStates(res.data);
+        if (res.data && res.data.length > 0) setStates(res.data);
       })
       .catch(() => {});
   }, []);
@@ -39,7 +40,7 @@ export default function CommandPalette({ isOpen, onClose }) {
 
     if (!q) {
       // Default recommended quick shortcuts
-      const quickStates = states.slice(0, 5).map((s) => ({
+      const quickStates = states.slice(0, 6).map((s) => ({
         type: 'state',
         title: s.name_en,
         subtitle: `${s.type === 'ut' ? 'Union Territory' : 'State'} • Capital: ${s.capital || 'India'}`,
@@ -63,7 +64,7 @@ export default function CommandPalette({ isOpen, onClose }) {
 
     // 1. Filter local states
     const matchedStates = states
-      .filter((s) => s.name_en?.toLowerCase().includes(q) || s.name_hi?.toLowerCase().includes(q))
+      .filter((s) => s.name_en?.toLowerCase().includes(q) || s.name_hi?.toLowerCase().includes(q) || s.slug?.includes(q))
       .map((s) => ({
         type: 'state',
         title: s.name_en,
@@ -72,7 +73,35 @@ export default function CommandPalette({ isOpen, onClose }) {
         icon: '🗺️',
       }));
 
-    // 2. Fetch search results from backend
+    // 2. Filter local items from fallbackCatalog
+    const localItems = [];
+    fallbackCatalog.forEach((st) => {
+      ['places', 'crafts', 'food', 'traditions'].forEach((col) => {
+        (st[col] || []).forEach((item) => {
+          if (
+            item.name_en?.toLowerCase().includes(q) ||
+            item.name_hi?.toLowerCase().includes(q) ||
+            item.type?.toLowerCase().includes(q) ||
+            item.description_en?.toLowerCase().includes(q)
+          ) {
+            const iconMap = { places: '🏛️', crafts: '🎨', traditions: '🎭', food: '🍛' };
+            localItems.push({
+              type: col,
+              title: item.name_en,
+              subtitle: `${st.name_en} • ${col.toUpperCase()}`,
+              url: `/state/${st.slug}?tab=${item.type || col}`,
+              icon: iconMap[col] || '📍',
+            });
+          }
+        });
+      });
+    });
+
+    const combinedLocal = [...matchedStates, ...localItems].slice(0, 12);
+    setResults(combinedLocal);
+    setSelectedIndex(0);
+
+    // 3. Fetch search results from backend to merge live data if available
     fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal: controller.signal })
       .then((r) => (r.ok ? r.json() : null))
       .then((data) => {
@@ -93,14 +122,13 @@ export default function CommandPalette({ isOpen, onClose }) {
             }
           });
         }
-        setResults([...matchedStates, ...itemResults].slice(0, 10));
-        setSelectedIndex(0);
+        if (itemResults.length > 0) {
+          setResults([...matchedStates, ...itemResults].slice(0, 12));
+        }
         setLoading(false);
       })
       .catch((err) => {
         if (err.name !== 'AbortError') {
-          setResults(matchedStates.slice(0, 10));
-          setSelectedIndex(0);
           setLoading(false);
         }
       });

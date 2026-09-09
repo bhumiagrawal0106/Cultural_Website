@@ -91,14 +91,14 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => window.dispatchEvent(new CustomEvent('open-command-palette'))}
-          className="hidden md:flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50/90 px-3.5 py-1.5 text-xs text-gray-500 hover:border-gray-300 hover:bg-gray-100 transition shadow-2xs"
+          className="flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50/90 px-2.5 py-1.5 sm:px-3.5 text-xs text-gray-600 hover:border-gray-300 hover:bg-gray-100 transition shadow-2xs"
           title="Open Omnisearch (Ctrl+K)"
         >
-          <svg className="h-3.5 w-3.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="h-3.5 w-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
-          <span className="hidden lg:inline">{isHindi ? 'खोजें (Ctrl+K)...' : 'Omnisearch...'}</span>
-          <kbd className="rounded border border-gray-200 bg-white px-1.5 py-0.5 text-[10px] font-semibold text-gray-400 shadow-2xs">
+          <span className="hidden sm:inline font-medium">{isHindi ? 'खोजें (Ctrl+K)...' : 'Omnisearch...'}</span>
+          <kbd className="hidden md:inline rounded border border-gray-200 bg-white px-1.5 py-0.5 text-[10px] font-semibold text-gray-400 shadow-2xs">
             ⌘K
           </kbd>
         </button>
@@ -196,6 +196,14 @@ export default function Navbar() {
           <div className="mt-3 flex flex-col gap-1">
             <NavLink to="/" end className={linkClass}>
               {ui('home')}
+            </NavLink>
+            <NavLink to="/compare" className={linkClass}>
+              <span className="mr-1">⚖️</span>
+              <span>{isHindi ? 'तुलना' : 'Compare'}</span>
+            </NavLink>
+            <NavLink to="/map3d" className={linkClass}>
+              <span className="mr-1">🌐</span>
+              <span>{isHindi ? '3D मानचित्र' : '3D Map'}</span>
             </NavLink>
             <NavLink to="/feedback" className={linkClass}>
               {ui('feedback')}

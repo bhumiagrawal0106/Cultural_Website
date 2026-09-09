@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
-import { Billboard, Text } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
 import { buildExtrudedGeometry, featureCentroid } from '../../utils/geo';
 import { slugForFeature } from '../../utils/stateSlugMap';
@@ -89,25 +89,25 @@ function StateMesh({ geometry, edges, label, centroid, onSelect, onHover }) {
         <lineBasicMaterial color={edgeColor} transparent opacity={edgeOpacity} />
       </lineSegments>
 
-      {/* Floating label for all states — uses Billboard (always faces camera) */}
-      <Billboard
-        position={[centroid[0], centroid[1], 0.55]}
-        follow={true}
-        lockX={false}
-        lockY={false}
+      {/* Crisp HTML label badge pinned to state centroid */}
+      <Html
+        position={[centroid[0], centroid[1], 0.4]}
+        center
+        distanceFactor={20}
+        style={{ pointerEvents: 'none' }}
       >
-        <Text
-          fontSize={0.28}
-          color="#06038D"
-          anchorX="center"
-          anchorY="middle"
-          font={undefined}
-          outlineWidth={0.02}
-          outlineColor="#ffffff"
+        <span
+          className={`pointer-events-none select-none whitespace-nowrap rounded-md px-1.5 py-0.5 text-[9px] sm:text-[10px] font-extrabold tracking-tight transition-all duration-200 shadow-md ${
+            hover
+              ? 'scale-130 bg-india-navy text-amber-300 ring-2 ring-india-orange z-50 shadow-2xl'
+              : isWhite
+                ? 'bg-india-navy/95 text-white border border-white/40 shadow-sm'
+                : 'bg-white/95 text-india-navy border border-black/15 shadow-sm'
+          }`}
         >
           {label}
-        </Text>
-      </Billboard>
+        </span>
+      </Html>
     </group>
   );
 }

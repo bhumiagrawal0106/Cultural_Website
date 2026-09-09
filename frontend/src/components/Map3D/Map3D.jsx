@@ -276,14 +276,17 @@ export default function Map3D() {
 
             {ready && geo && <Legend ui={ui} />}
 
-            {/* Hover tooltip — glassmorphism pill */}
+            {/* Hover tooltip — prominent, clear state banner */}
             <div
-              className={`pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 rounded-full glass-dark px-4 py-1.5 text-sm font-semibold text-white shadow-glow-navy transition-all duration-200 ${
-                hovered ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+              className={`pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 flex items-center gap-2.5 rounded-full border border-white/25 bg-india-navy/95 px-5 py-2 text-sm font-bold text-white shadow-2xl backdrop-blur-md transition-all duration-200 ${
+                hovered ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 -translate-y-2 scale-95'
               }`}
               aria-live="polite"
             >
-              {hovered ? `${hovered.label} · ${ui('clickToExplore')}` : ''}
+              <span className="flex h-2.5 w-2.5 rounded-full bg-india-orange animate-pulse" />
+              <span className="text-base font-extrabold text-amber-300">{hovered?.label}</span>
+              <span className="text-xs text-gray-300 font-normal">·</span>
+              <span className="text-xs text-emerald-300 font-medium">🇮🇳 {ui('clickToExplore')}</span>
             </div>
 
             <p className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full glass px-3 py-1 text-xs text-gray-600 shadow-sm">

@@ -2,13 +2,20 @@ import { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import usePageMeta from '../hooks/usePageMeta';
+import fallbackCatalog from '../data/fallbackCatalog.json';
 
 export default function ComparePage() {
   const { isHindi, pick } = useLanguage();
   const [searchParams, setSearchParams] = useSearchParams();
-  const [states, setStates] = useState([]);
-  const [stateAId, setStateAId] = useState('');
-  const [stateBId, setStateBId] = useState('');
+  const [states, setStates] = useState(fallbackCatalog);
+
+  const aSlug = searchParams.get('a');
+  const bSlug = searchParams.get('b');
+  const defaultA = fallbackCatalog.find((s) => s.slug === (aSlug || 'rajasthan')) || fallbackCatalog[0];
+  const defaultB = fallbackCatalog.find((s) => s.slug === (bSlug || 'kerala')) || fallbackCatalog[1];
+
+  const [stateAId, setStateAId] = useState(defaultA._id);
+  const [stateBId, setStateBId] = useState(defaultB._id);
   const [stateAData, setStateAData] = useState(null);
   const [stateBData, setStateBData] = useState(null);
   const [loadingA, setLoadingA] = useState(false);
@@ -25,40 +32,49 @@ export default function ComparePage() {
       .then((res) => {
         if (res.data && res.data.length > 0) {
           setStates(res.data);
-          const aSlug = searchParams.get('a');
-          const bSlug = searchParams.get('b');
-
           const sA = aSlug ? res.data.find((s) => s.slug === aSlug) : res.data.find((s) => s.slug === 'rajasthan') || res.data[0];
           const sB = bSlug ? res.data.find((s) => s.slug === bSlug) : res.data.find((s) => s.slug === 'kerala') || res.data[1];
-
-          setStateAId(sA?._id || res.data[0]._id);
-          setStateBId(sB?._id || res.data[1]._id);
+          if (sA) setStateAId(sA._id);
+          if (sB) setStateBId(sB._id);
         }
-      });
+      })
+      .catch(() => {});
   }, [searchParams]);
 
   // Fetch full details for State A
   useEffect(() => {
     if (!stateAId || states.length === 0) return;
-    const st = states.find((s) => s._id === stateAId);
+    const st = states.find((s) => s._id === stateAId) || fallbackCatalog.find((s) => s._id === stateAId || s.slug === stateAId);
     if (!st) return;
-    setLoadingA(true);
 
+    // Immediately display rich local data
+    setStateAData({
+      state: st,
+      placesCount: st.places?.length || 0,
+      places: st.places || [],
+      crafts: st.crafts || [],
+      food: st.food || [],
+      traditions: st.traditions || [],
+    });
+
+    setLoadingA(true);
     Promise.all([
-      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => r.json()),
-      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => r.json()),
+      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ])
       .then(([p, c, f, t]) => {
-        setStateAData({
-          state: st,
-          placesCount: p.total || p.data?.length || 0,
-          places: p.data || [],
-          crafts: c.data || [],
-          food: f.data || [],
-          traditions: t.data || [],
-        });
+        if (p || c || f || t) {
+          setStateAData({
+            state: st,
+            placesCount: p?.total || p?.data?.length || st.places?.length || 0,
+            places: p?.data && p.data.length ? p.data : st.places || [],
+            crafts: c?.data && c.data.length ? c.data : st.crafts || [],
+            food: f?.data && f.data.length ? f.data : st.food || [],
+            traditions: t?.data && t.data.length ? t.data : st.traditions || [],
+          });
+        }
         setLoadingA(false);
       })
       .catch(() => setLoadingA(false));
@@ -67,25 +83,37 @@ export default function ComparePage() {
   // Fetch full details for State B
   useEffect(() => {
     if (!stateBId || states.length === 0) return;
-    const st = states.find((s) => s._id === stateBId);
+    const st = states.find((s) => s._id === stateBId) || fallbackCatalog.find((s) => s._id === stateBId || s.slug === stateBId);
     if (!st) return;
-    setLoadingB(true);
 
+    // Immediately display rich local data
+    setStateBData({
+      state: st,
+      placesCount: st.places?.length || 0,
+      places: st.places || [],
+      crafts: st.crafts || [],
+      food: st.food || [],
+      traditions: st.traditions || [],
+    });
+
+    setLoadingB(true);
     Promise.all([
-      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => r.json()),
-      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => r.json()),
+      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ])
       .then(([p, c, f, t]) => {
-        setStateBData({
-          state: st,
-          placesCount: p.total || p.data?.length || 0,
-          places: p.data || [],
-          crafts: c.data || [],
-          food: f.data || [],
-          traditions: t.data || [],
-        });
+        if (p || c || f || t) {
+          setStateBData({
+            state: st,
+            placesCount: p?.total || p?.data?.length || st.places?.length || 0,
+            places: p?.data && p.data.length ? p.data : st.places || [],
+            crafts: c?.data && c.data.length ? c.data : st.crafts || [],
+            food: f?.data && f.data.length ? f.data : st.food || [],
+            traditions: t?.data && t.data.length ? t.data : st.traditions || [],
+          });
+        }
         setLoadingB(false);
       })
       .catch(() => setLoadingB(false));

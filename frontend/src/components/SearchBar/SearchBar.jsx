@@ -3,6 +3,48 @@ import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import { useLanguage } from '../../context/LanguageContext';
 import { RESULT_TYPE_LABEL } from '../../utils/catalog';
+import fallbackCatalog from '../../data/fallbackCatalog.json';
+
+function searchLocalCatalog(q) {
+  const lower = q.toLowerCase();
+  const list = [];
+  for (const s of fallbackCatalog) {
+    if (s.name_en?.toLowerCase().includes(lower) || s.name_hi?.toLowerCase().includes(lower)) {
+      list.push({
+        _id: s._id,
+        resultType: 'state',
+        name_en: s.name_en,
+        name_hi: s.name_hi,
+        description_en: s.description_en,
+        description_hi: s.description_hi,
+        linkTo: `/state/${s.slug}`,
+      });
+    }
+  }
+  for (const s of fallbackCatalog) {
+    for (const col of ['places', 'crafts', 'food', 'traditions']) {
+      for (const item of s[col] || []) {
+        if (
+          item.name_en?.toLowerCase().includes(lower) ||
+          item.name_hi?.toLowerCase().includes(lower) ||
+          item.type?.toLowerCase().includes(lower)
+        ) {
+          const singular = col === 'places' ? 'place' : col === 'crafts' ? 'craft' : col === 'traditions' ? 'tradition' : 'food';
+          list.push({
+            _id: item._id,
+            resultType: singular,
+            name_en: item.name_en,
+            name_hi: item.name_hi,
+            description_en: item.description_en,
+            description_hi: item.description_hi,
+            linkTo: `/state/${s.slug}?tab=${item.type || col}`,
+          });
+        }
+      }
+    }
+  }
+  return list.slice(0, 8);
+}
 
 export default function SearchBar({ size = 'md', autoFocus = false, onNavigate }) {
   const { ui, pick, pickTuple } = useLanguage();
@@ -27,10 +69,18 @@ export default function SearchBar({ size = 'md', autoFocus = false, onNavigate }
       api
         .get(`/api/search?q=${encodeURIComponent(q)}`)
         .then((res) => {
-          setResults((res.data || []).slice(0, 8));
+          if (res.data && res.data.length > 0) {
+            setResults(res.data.slice(0, 8));
+          } else {
+            setResults(searchLocalCatalog(q));
+          }
           setOpen(true);
         })
-        .catch(() => setResults([]))
+        .catch(() => {
+          const local = searchLocalCatalog(q);
+          setResults(local);
+          if (local.length > 0) setOpen(true);
+        })
         .finally(() => setLoading(false));
     }, 300);
     return () => clearTimeout(handle);

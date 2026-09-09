@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import fallbackCatalog from '../data/fallbackCatalog.json';
 
 export default function StateCompareModal({ isOpen, onClose }) {
   const { isHindi } = useLanguage();
-  const [states, setStates] = useState([]);
-  const [stateAId, setStateAId] = useState('');
-  const [stateBId, setStateBId] = useState('');
+  const [states, setStates] = useState(fallbackCatalog);
+  const defaultRaj = fallbackCatalog.find((s) => s.slug === 'rajasthan') || fallbackCatalog[0];
+  const defaultKer = fallbackCatalog.find((s) => s.slug === 'kerala') || fallbackCatalog[1];
+  const [stateAId, setStateAId] = useState(defaultRaj._id);
+  const [stateBId, setStateBId] = useState(defaultKer._id);
   const [stateAData, setStateAData] = useState(null);
   const [stateBData, setStateBData] = useState(null);
   const [loadingA, setLoadingA] = useState(false);
@@ -18,36 +21,47 @@ export default function StateCompareModal({ isOpen, onClose }) {
       .then((res) => {
         if (res.data && res.data.length > 0) {
           setStates(res.data);
-          // Set sensible defaults (e.g. Rajasthan vs Kerala)
           const raj = res.data.find((s) => s.slug === 'rajasthan') || res.data[0];
           const ker = res.data.find((s) => s.slug === 'kerala') || res.data[1];
-          setStateAId(raj._id);
-          setStateBId(ker._id);
+          if (raj) setStateAId(raj._id);
+          if (ker) setStateBId(ker._id);
         }
-      });
+      })
+      .catch(() => {});
   }, []);
 
   // Fetch full details for State A
   useEffect(() => {
     if (!stateAId) return;
-    const st = states.find((s) => s._id === stateAId);
+    const st = states.find((s) => s._id === stateAId) || fallbackCatalog.find((s) => s._id === stateAId || s.slug === stateAId);
     if (!st) return;
-    setLoadingA(true);
 
+    // Display rich data immediately
+    setStateAData({
+      state: st,
+      placesCount: st.places?.length || 0,
+      crafts: st.crafts || [],
+      food: st.food || [],
+      traditions: st.traditions || [],
+    });
+
+    setLoadingA(true);
     Promise.all([
-      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => r.json()),
-      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => r.json()),
+      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ])
       .then(([p, c, f, t]) => {
-        setStateAData({
-          state: st,
-          placesCount: p.total || p.data?.length || 0,
-          crafts: c.data || [],
-          food: f.data || [],
-          traditions: t.data || [],
-        });
+        if (p || c || f || t) {
+          setStateAData({
+            state: st,
+            placesCount: p?.total || p?.data?.length || st.places?.length || 0,
+            crafts: c?.data && c.data.length ? c.data : st.crafts || [],
+            food: f?.data && f.data.length ? f.data : st.food || [],
+            traditions: t?.data && t.data.length ? t.data : st.traditions || [],
+          });
+        }
         setLoadingA(false);
       })
       .catch(() => setLoadingA(false));
@@ -56,24 +70,35 @@ export default function StateCompareModal({ isOpen, onClose }) {
   // Fetch full details for State B
   useEffect(() => {
     if (!stateBId) return;
-    const st = states.find((s) => s._id === stateBId);
+    const st = states.find((s) => s._id === stateBId) || fallbackCatalog.find((s) => s._id === stateBId || s.slug === stateBId);
     if (!st) return;
-    setLoadingB(true);
 
+    // Display rich data immediately
+    setStateBData({
+      state: st,
+      placesCount: st.places?.length || 0,
+      crafts: st.crafts || [],
+      food: st.food || [],
+      traditions: st.traditions || [],
+    });
+
+    setLoadingB(true);
     Promise.all([
-      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => r.json()),
-      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => r.json()),
-      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => r.json()),
+      fetch(`/api/places?state=${st.slug}&limit=50`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/crafts?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/food?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`/api/traditions?state=${st.slug}&limit=20`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ])
       .then(([p, c, f, t]) => {
-        setStateBData({
-          state: st,
-          placesCount: p.total || p.data?.length || 0,
-          crafts: c.data || [],
-          food: f.data || [],
-          traditions: t.data || [],
-        });
+        if (p || c || f || t) {
+          setStateBData({
+            state: st,
+            placesCount: p?.total || p?.data?.length || st.places?.length || 0,
+            crafts: c?.data && c.data.length ? c.data : st.crafts || [],
+            food: f?.data && f.data.length ? f.data : st.food || [],
+            traditions: t?.data && t.data.length ? t.data : st.traditions || [],
+          });
+        }
         setLoadingB(false);
       })
       .catch(() => setLoadingB(false));
