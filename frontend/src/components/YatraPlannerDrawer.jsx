@@ -7,6 +7,7 @@ import {
   MAJOR_HUBS,
   calculateHaversineDistance,
   getTransitRecommendations,
+  getDirectBookingPortals,
 } from '../utils/transitPlanner';
 
 export default function YatraPlannerDrawer() {
@@ -227,8 +228,105 @@ export default function YatraPlannerDrawer() {
                   <p className="text-[11px] opacity-85 mt-2 leading-relaxed">
                     {isHindi
                       ? `${userCity} से प्रारंभ होकर ${yatra.length} ऐतिहासिक स्थलों तक ट्रेन, बस और हवाई जहाज यात्रा विकल्प उपलब्ध हैं।`
-                      : `Starting from ${userCity} across ${yatra.length} heritage destinations with verified train, bus, and flight connections.`}
+                      : `Starting from ${userCity} across ${yatra.length} heritage destinations with verified train, bus, flight, and cab connections.`}
                   </p>
+                </div>
+
+                {/* Direct Booking Hub (RedBus, IRCTC, Flight, Uber, Ola) */}
+                <div className="rounded-2xl border border-gray-200 bg-white p-3.5 shadow-2xs space-y-2.5">
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-xs font-black text-india-navy flex items-center gap-1.5">
+                      <span>🎫</span>
+                      <span>{isHindi ? 'सीधे टिकट व कैब बुकिंग (Direct Booking)' : 'Direct Booking Portals'}</span>
+                    </h4>
+                    <span className="text-[10px] text-gray-500 font-semibold">Official & Instant</span>
+                  </div>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    {/* RedBus */}
+                    <a
+                      href={yatra.length > 0 ? `https://www.redbus.in/bus-tickets/${encodeURIComponent(userCity.toLowerCase())}-to-${encodeURIComponent((yatra[0].stateName || yatra[0].name_en).toLowerCase())}` : 'https://www.redbus.in/'}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-xl border border-red-200 bg-red-50/80 p-2 text-left hover:bg-red-100 hover:border-red-300 transition group"
+                    >
+                      <span className="text-xl">🚌</span>
+                      <div className="min-w-0">
+                        <p className="text-[11px] font-bold text-red-700 truncate group-hover:underline">RedBus</p>
+                        <p className="text-[9px] text-gray-500 truncate">Book Bus ↗</p>
+                      </div>
+                    </a>
+
+                    {/* IRCTC */}
+                    <a
+                      href="https://www.irctc.co.in/nget/train-search"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-xl border border-blue-200 bg-blue-50/80 p-2 text-left hover:bg-blue-100 hover:border-blue-300 transition group"
+                    >
+                      <span className="text-xl">🚆</span>
+                      <div className="min-w-0">
+                        <p className="text-[11px] font-bold text-blue-800 truncate group-hover:underline">IRCTC Train</p>
+                        <p className="text-[9px] text-gray-500 truncate">Official Railways ↗</p>
+                      </div>
+                    </a>
+
+                    {/* Flights */}
+                    <a
+                      href={yatra.length > 0 ? `https://www.google.com/travel/flights?q=flights+from+${encodeURIComponent(userCity)}+to+${encodeURIComponent(yatra[0].stateName || yatra[0].name_en)}` : 'https://www.makemytrip.com/flights/'}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-xl border border-sky-200 bg-sky-50/80 p-2 text-left hover:bg-sky-100 hover:border-sky-300 transition group"
+                    >
+                      <span className="text-xl">✈️</span>
+                      <div className="min-w-0">
+                        <p className="text-[11px] font-bold text-sky-800 truncate group-hover:underline">Book Flights</p>
+                        <p className="text-[9px] text-gray-500 truncate">MakeMyTrip / Google ↗</p>
+                      </div>
+                    </a>
+
+                    {/* Uber */}
+                    <a
+                      href={yatra.length > 0 ? `https://m.uber.com/looking?dropoff[formatted_address]=${encodeURIComponent((yatra[0].name_en + ', ' + yatra[0].stateName) + ', India')}` : 'https://m.uber.com/'}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-xl border border-gray-300 bg-gray-50 p-2 text-left hover:bg-gray-100 hover:border-gray-400 transition group"
+                    >
+                      <span className="text-xl">🚕</span>
+                      <div className="min-w-0">
+                        <p className="text-[11px] font-bold text-gray-900 truncate group-hover:underline">Uber Cab</p>
+                        <p className="text-[9px] text-gray-500 truncate">Book Uber ↗</p>
+                      </div>
+                    </a>
+
+                    {/* Ola */}
+                    <a
+                      href={yatra.length > 0 ? `https://book.olacabs.com/?drop_name=${encodeURIComponent(yatra[0].name_en + ', ' + yatra[0].stateName)}` : 'https://book.olacabs.com/'}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50/80 p-2 text-left hover:bg-emerald-100 hover:border-emerald-300 transition group"
+                    >
+                      <span className="text-xl">🚖</span>
+                      <div className="min-w-0">
+                        <p className="text-[11px] font-bold text-emerald-800 truncate group-hover:underline">Ola Cabs</p>
+                        <p className="text-[9px] text-gray-500 truncate">Book Ola / Auto ↗</p>
+                      </div>
+                    </a>
+
+                    {/* Route Maps */}
+                    <a
+                      href={gmapsRouteUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-xl border border-amber-200 bg-amber-50/80 p-2 text-left hover:bg-amber-100 hover:border-amber-300 transition group"
+                    >
+                      <span className="text-xl">🗺️</span>
+                      <div className="min-w-0">
+                        <p className="text-[11px] font-bold text-amber-900 truncate group-hover:underline">Route Maps</p>
+                        <p className="text-[9px] text-gray-500 truncate">Multi-Stop ↗</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
 
                 {/* Timeline with Transit Legs */}
@@ -294,38 +392,85 @@ export default function YatraPlannerDrawer() {
                             {idx + 1}
                           </span>
 
-                          <div className="rounded-xl border border-gray-200 bg-white p-3.5 shadow-xs hover:border-amber-300 transition flex gap-3 items-center">
-                            {stop.image && (
-                              <img
-                                src={stop.image}
-                                alt={stop.name_en}
-                                className="h-14 w-14 rounded-lg object-cover bg-gray-100 flex-shrink-0"
-                              />
-                            )}
-                            <div className="flex-1 min-w-0">
-                              <Link
-                                to={itemLink(stop.collection, stop._id)}
-                                onClick={() => setIsDrawerOpen(false)}
-                                className="block font-bold text-xs text-gray-900 hover:text-india-navy truncate"
+                          <div className="rounded-xl border border-gray-200 bg-white p-3.5 shadow-xs hover:border-amber-300 transition space-y-2.5">
+                            <div className="flex gap-3 items-center">
+                              {stop.image && (
+                                <img
+                                  src={stop.image}
+                                  alt={stop.name_en}
+                                  className="h-14 w-14 rounded-lg object-cover bg-gray-100 flex-shrink-0"
+                                />
+                              )}
+                              <div className="flex-1 min-w-0">
+                                <Link
+                                  to={itemLink(stop.collection, stop._id)}
+                                  onClick={() => setIsDrawerOpen(false)}
+                                  className="block font-bold text-xs text-gray-900 hover:text-india-navy truncate"
+                                >
+                                  {stop.name_en}
+                                </Link>
+                                <p className="text-[11px] text-gray-500 truncate">
+                                  {stop.stateName} • <span className="capitalize">{stop.type}</span>
+                                </p>
+                                <p className="text-[10px] text-emerald-600 font-semibold mt-0.5">
+                                  ⏱️ ~2–3 hrs visit time
+                                </p>
+                              </div>
+
+                              <button
+                                type="button"
+                                onClick={() => removeFromYatra(stop._id)}
+                                className="text-gray-400 hover:text-red-500 p-1.5 transition"
+                                title="Remove stop"
                               >
-                                {stop.name_en}
-                              </Link>
-                              <p className="text-[11px] text-gray-500 truncate">
-                                {stop.stateName} • <span className="capitalize">{stop.type}</span>
-                              </p>
-                              <p className="text-[10px] text-emerald-600 font-semibold mt-0.5">
-                                ⏱️ ~2–3 hrs visit time
-                              </p>
+                                ✕
+                              </button>
                             </div>
 
-                            <button
-                              type="button"
-                              onClick={() => removeFromYatra(stop._id)}
-                              className="text-gray-400 hover:text-red-500 p-1.5 transition"
-                              title="Remove stop"
-                            >
-                              ✕
-                            </button>
+                            {/* Direct Booking Action Chips for this Stop */}
+                            <div className="flex flex-wrap items-center gap-1.5 pt-2 border-t border-gray-100">
+                              <span className="text-[9px] font-bold uppercase tracking-wider text-gray-400 mr-1">Book:</span>
+                              <a
+                                href={`https://m.uber.com/looking?dropoff[formatted_address]=${encodeURIComponent((stop.name_en + ', ' + stop.stateName) + ', India')}`}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-1 rounded-lg bg-neutral-900 text-white px-2 py-1 text-[10px] font-bold hover:bg-black transition shadow-2xs"
+                              >
+                                <span>🚕</span> Uber
+                              </a>
+                              <a
+                                href={`https://book.olacabs.com/?drop_name=${encodeURIComponent(stop.name_en + ', ' + stop.stateName)}`}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-1 rounded-lg bg-emerald-700 text-white px-2 py-1 text-[10px] font-bold hover:bg-emerald-800 transition shadow-2xs"
+                              >
+                                <span>🚖</span> Ola
+                              </a>
+                              <a
+                                href={`https://www.redbus.in/bus-tickets/${encodeURIComponent(userCity.toLowerCase())}-to-${encodeURIComponent((stop.stateName || stop.name_en).toLowerCase())}`}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-1 rounded-lg bg-red-600 text-white px-2 py-1 text-[10px] font-bold hover:bg-red-700 transition shadow-2xs"
+                              >
+                                <span>🚌</span> RedBus
+                              </a>
+                              <a
+                                href="https://www.irctc.co.in/nget/train-search"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-1 rounded-lg bg-blue-800 text-white px-2 py-1 text-[10px] font-bold hover:bg-blue-900 transition shadow-2xs"
+                              >
+                                <span>🚆</span> IRCTC
+                              </a>
+                              <a
+                                href={`https://www.google.com/travel/flights?q=flights+from+${encodeURIComponent(userCity)}+to+${encodeURIComponent(stop.stateName || stop.name_en)}`}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-1 rounded-lg bg-sky-600 text-white px-2 py-1 text-[10px] font-bold hover:bg-sky-700 transition shadow-2xs"
+                              >
+                                <span>✈️</span> Flight
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>

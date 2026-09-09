@@ -41,7 +41,76 @@ export function calculateHaversineDistance(lat1, lon1, lat2, lon2) {
 }
 
 /**
- * Generates comprehensive multi-modal transit recommendation (Train, Bus, Flight)
+ * Direct booking portals for RedBus, IRCTC, Flights, Uber, and Ola
+ */
+export function getDirectBookingPortals(originCity = '', destinationCity = '') {
+  const cleanOrigin = (originCity || '').trim();
+  const cleanDest = (destinationCity || '').trim();
+
+  return {
+    redbus: {
+      id: 'redbus',
+      name: 'RedBus',
+      type: 'Bus',
+      icon: '🚌',
+      tag: 'Official Bus Booking',
+      label: 'Book on RedBus ↗',
+      url: cleanOrigin && cleanDest
+        ? `https://www.redbus.in/bus-tickets/${encodeURIComponent(cleanOrigin.toLowerCase())}-to-${encodeURIComponent(cleanDest.toLowerCase())}`
+        : 'https://www.redbus.in/',
+      color: 'bg-red-600 hover:bg-red-700 text-white',
+    },
+    irctc: {
+      id: 'irctc',
+      name: 'IRCTC',
+      type: 'Train',
+      icon: '🚆',
+      tag: 'Official Indian Railways',
+      label: 'Book on IRCTC ↗',
+      url: 'https://www.irctc.co.in/nget/train-search',
+      color: 'bg-blue-800 hover:bg-blue-900 text-white',
+    },
+    flights: {
+      id: 'flights',
+      name: 'Flights',
+      type: 'Airlines',
+      icon: '✈️',
+      tag: 'MakeMyTrip & Google Flights',
+      label: 'Book Flight Tickets ↗',
+      url: cleanOrigin && cleanDest
+        ? `https://www.google.com/travel/flights?q=flights+from+${encodeURIComponent(cleanOrigin)}+to+${encodeURIComponent(cleanDest)}`
+        : 'https://www.makemytrip.com/flights/',
+      color: 'bg-sky-600 hover:bg-sky-700 text-white',
+    },
+    uber: {
+      id: 'uber',
+      name: 'Uber',
+      type: 'Cab / Taxi',
+      icon: '🚕',
+      tag: 'Direct City Ride & Cab',
+      label: 'Book Uber Cab ↗',
+      url: cleanDest
+        ? `https://m.uber.com/looking?dropoff[formatted_address]=${encodeURIComponent(cleanDest + ', India')}`
+        : 'https://m.uber.com/',
+      color: 'bg-neutral-900 hover:bg-black text-white',
+    },
+    ola: {
+      id: 'ola',
+      name: 'Ola Cabs',
+      type: 'Cab / Auto',
+      icon: '🚖',
+      tag: 'Direct Taxi & Auto Ride',
+      label: 'Book Ola Cab ↗',
+      url: cleanDest
+        ? `https://book.olacabs.com/?drop_name=${encodeURIComponent(cleanDest)}`
+        : 'https://book.olacabs.com/',
+      color: 'bg-emerald-700 hover:bg-emerald-800 text-white',
+    },
+  };
+}
+
+/**
+ * Generates comprehensive multi-modal transit recommendation (Train, Bus, Flight, Cab)
  */
 export function getTransitRecommendations(originCity, destinationCity, distanceKm) {
   const cleanOrigin = originCity.trim();
@@ -50,36 +119,61 @@ export function getTransitRecommendations(originCity, destinationCity, distanceK
 
   // External live booking & schedule links
   const flightUrl = `https://www.google.com/travel/flights?q=flights+from+${encodeURIComponent(cleanOrigin)}+to+${encodeURIComponent(cleanDest)}`;
-  const trainUrl = `https://www.confirmtkt.com/train-between-stations/${encodeURIComponent(cleanOrigin.toLowerCase())}-to-${encodeURIComponent(cleanDest.toLowerCase())}`;
+  const irctcUrl = 'https://www.irctc.co.in/nget/train-search';
+  const confirmTktUrl = `https://www.confirmtkt.com/train-between-stations/${encodeURIComponent(cleanOrigin.toLowerCase())}-to-${encodeURIComponent(cleanDest.toLowerCase())}`;
   const busUrl = `https://www.redbus.in/bus-tickets/${encodeURIComponent(cleanOrigin.toLowerCase())}-to-${encodeURIComponent(cleanDest.toLowerCase())}`;
+  const uberUrl = `https://m.uber.com/looking?dropoff[formatted_address]=${encodeURIComponent(cleanDest + ', India')}`;
+  const olaUrl = `https://book.olacabs.com/?drop_name=${encodeURIComponent(cleanDest)}`;
   const mapsTransitUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(cleanOrigin + ' India')}&destination=${encodeURIComponent(cleanDest + ' India')}&travelmode=transit`;
 
+  const portals = getDirectBookingPortals(cleanOrigin, cleanDest);
+
   if (dist < 350) {
-    // Short Distance: Bus and Express Trains
+    // Short Distance: Bus, Express Trains, and Local Cabs
     const busHours = (dist / 55).toFixed(1);
     const trainHours = (dist / 75).toFixed(1);
 
     return {
       primaryMode: 'bus',
-      summary: `Distance: ~${dist} km • Recommended: Bus or Express Train`,
+      summary: `Distance: ~${dist} km • Recommended: RedBus, IRCTC Train, or Direct Cab`,
+      portals,
       modes: [
         {
           type: 'bus',
           icon: '🚌',
-          name: 'State Roadways / AC Volvo Bus',
+          name: 'RedBus AC Volvo / Express',
           duration: `~${busHours} hrs`,
-          details: 'Direct intercity express bus service',
+          details: 'Direct intercity express bus tickets via RedBus',
           bookUrl: busUrl,
-          bookLabel: 'Check Buses on RedBus ↗',
+          bookLabel: 'Book on RedBus ↗',
         },
         {
           type: 'train',
           icon: '🚆',
-          name: 'Vande Bharat / Intercity Express',
+          name: 'IRCTC Vande Bharat / Express',
           duration: `~${trainHours} hrs`,
-          details: 'Daily train connections via IRCTC',
-          bookUrl: trainUrl,
-          bookLabel: 'Check Trains on ConfirmTkt ↗',
+          details: 'Official Indian Railways reservations on IRCTC',
+          bookUrl: irctcUrl,
+          altUrl: confirmTktUrl,
+          bookLabel: 'Book on IRCTC ↗',
+        },
+        {
+          type: 'cab',
+          icon: '🚕',
+          name: 'Uber Intercity / Local Cab',
+          duration: `~${(dist / 60).toFixed(1)} hrs`,
+          details: 'Direct doorstep cab pickup to destination',
+          bookUrl: uberUrl,
+          bookLabel: 'Book Uber ↗',
+        },
+        {
+          type: 'cab',
+          icon: '🚖',
+          name: 'Ola Outstation / City Ride',
+          duration: `~${(dist / 60).toFixed(1)} hrs`,
+          details: 'Comfortable one-way or roundtrip cab via Ola',
+          bookUrl: olaUrl,
+          bookLabel: 'Book Ola ↗',
         },
       ],
       mapsUrl: mapsTransitUrl,
@@ -87,71 +181,102 @@ export function getTransitRecommendations(originCity, destinationCity, distanceK
   }
 
   if (dist < 900) {
-    // Medium Distance: Superfast Train, Vande Bharat, or Flight
+    // Medium Distance: IRCTC Superfast Train, Flight, or RedBus
     const trainHours = (dist / 80).toFixed(1);
     const flightHours = '1.2–1.8 hrs';
 
     return {
       primaryMode: 'train',
-      summary: `Distance: ~${dist} km • Recommended: Superfast Train or Flight`,
+      summary: `Distance: ~${dist} km • Recommended: IRCTC Train, Domestic Flight, or RedBus`,
+      portals,
       modes: [
         {
           type: 'train',
           icon: '🚆',
-          name: 'Superfast Express / Vande Bharat',
+          name: 'IRCTC Superfast / Vande Bharat',
           duration: `~${trainHours} hrs`,
-          details: 'Recommended comfortable overland rail route',
-          bookUrl: trainUrl,
-          bookLabel: 'Search Trains (IRCTC) ↗',
+          details: 'Recommended comfortable overland rail route on IRCTC',
+          bookUrl: irctcUrl,
+          altUrl: confirmTktUrl,
+          bookLabel: 'Book on IRCTC ↗',
         },
         {
           type: 'flight',
           icon: '✈️',
-          name: 'Domestic Flight',
+          name: 'Domestic Flight (MakeMyTrip)',
           duration: flightHours,
-          details: 'Fastest connection between regional airports',
+          details: 'Fastest regional air connection across India',
           bookUrl: flightUrl,
-          bookLabel: 'Search Google Flights ↗',
+          bookLabel: 'Search Flights ↗',
         },
         {
           type: 'bus',
           icon: '🚌',
-          name: 'Overnight Sleeper Bus',
+          name: 'RedBus Overnight Sleeper',
           duration: `~${(dist / 50).toFixed(1)} hrs`,
-          details: 'Comfortable overnight sleeper option',
+          details: 'Comfortable overnight sleeper bus via RedBus',
           bookUrl: busUrl,
-          bookLabel: 'View Buses ↗',
+          bookLabel: 'Book on RedBus ↗',
+        },
+        {
+          type: 'cab',
+          icon: '🚕',
+          name: 'Uber / Ola Outstation',
+          duration: `~${(dist / 60).toFixed(1)} hrs`,
+          details: 'Dedicated private outstation cab service',
+          bookUrl: uberUrl,
+          bookLabel: 'Check Uber/Ola ↗',
         },
       ],
       mapsUrl: mapsTransitUrl,
     };
   }
 
-  // Long Distance: Domestic Flight is strongly recommended
+  // Long Distance: Domestic Flight or IRCTC Rajdhani Train
   const flightHours = '2.0–3.0 hrs';
   const trainHours = (dist / 75).toFixed(1);
 
   return {
     primaryMode: 'flight',
-    summary: `Distance: ~${dist} km • Recommended: Flight (Fastest) or Rajdhani Train`,
+    summary: `Distance: ~${dist} km • Recommended: Flight (Fastest) or IRCTC Rajdhani Train`,
+    portals,
     modes: [
       {
         type: 'flight',
         icon: '✈️',
-        name: 'Non-stop / Connecting Flight',
+        name: 'Domestic Flight (MakeMyTrip / Google)',
         duration: flightHours,
         details: 'Fastest travel option for long distance heritage yatra',
         bookUrl: flightUrl,
-        bookLabel: 'Search Flights on Google Flights ↗',
+        bookLabel: 'Book Flights ↗',
       },
       {
         type: 'train',
         icon: '🚆',
-        name: 'Rajdhani / Duronto / Superfast Express',
+        name: 'IRCTC Rajdhani / Duronto Express',
         duration: `~${trainHours} hrs`,
-        details: 'Scenic long-distance overland journey across India',
-        bookUrl: trainUrl,
-        bookLabel: 'Search Trains on ConfirmTkt ↗',
+        details: 'Official Indian Railways reservations on IRCTC',
+        bookUrl: irctcUrl,
+        altUrl: confirmTktUrl,
+        bookLabel: 'Book on IRCTC ↗',
+      },
+      {
+        type: 'bus',
+        icon: '🚌',
+        name: 'RedBus Inter-State Service',
+        duration: `~${(dist / 50).toFixed(1)} hrs`,
+        details: 'Long-distance inter-state Volvo buses via RedBus',
+        bookUrl: busUrl,
+        bookLabel: 'Check RedBus ↗',
+      },
+      {
+        type: 'cab',
+        icon: '🚕',
+        name: 'Uber Airport / Local Cab',
+        duration: 'On-demand',
+        details: 'Local airport transfers and city rides',
+        bookUrl: uberUrl,
+        bookLabel: 'Book Uber ↗',
       },
     ],
     mapsUrl: mapsTransitUrl,

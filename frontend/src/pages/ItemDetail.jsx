@@ -300,6 +300,63 @@ export default function ItemDetail() {
               zoom={13}
             />
           </div>
+
+          {/* Direct Travel & Cab Booking Bar */}
+          <div className="mt-3 rounded-xl border border-amber-200/80 bg-gradient-to-r from-amber-50/70 via-orange-50/50 to-amber-50/70 p-3.5 shadow-2xs">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <p className="text-xs font-bold text-india-navy flex items-center gap-1.5">
+                  <span>🚀</span>
+                  <span>{isHindi ? 'सीधे टिकट व कैब बुक करें (Direct Travel Booking):' : 'Book Direct Travel & Cabs to this Site:'}</span>
+                </p>
+                <p className="text-[11px] text-gray-500">
+                  {isHindi ? 'उबर, ओला, रेडबस, आईआरसीटीसी या फ्लाइट द्वारा तुरंत पहुंचें' : 'Direct booking links for Uber, Ola, RedBus, IRCTC, and Flights'}
+                </p>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <a
+                  href={`https://m.uber.com/looking?dropoff[formatted_address]=${encodeURIComponent(name + (state ? ', ' + pick(state, 'name') : '') + ', India')}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 rounded-lg bg-black text-white px-2.5 py-1.5 text-xs font-bold hover:bg-neutral-800 transition shadow-2xs"
+                >
+                  <span>🚕</span> Uber
+                </a>
+                <a
+                  href={`https://book.olacabs.com/?drop_name=${encodeURIComponent(name + (state ? ', ' + pick(state, 'name') : ''))}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 rounded-lg bg-emerald-700 text-white px-2.5 py-1.5 text-xs font-bold hover:bg-emerald-800 transition shadow-2xs"
+                >
+                  <span>🚖</span> Ola
+                </a>
+                <a
+                  href={`https://www.redbus.in/bus-tickets/${encodeURIComponent(state ? pick(state, 'name').toLowerCase() : 'delhi')}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 rounded-lg bg-red-600 text-white px-2.5 py-1.5 text-xs font-bold hover:bg-red-700 transition shadow-2xs"
+                >
+                  <span>🚌</span> RedBus
+                </a>
+                <a
+                  href="https://www.irctc.co.in/nget/train-search"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 rounded-lg bg-blue-800 text-white px-2.5 py-1.5 text-xs font-bold hover:bg-blue-900 transition shadow-2xs"
+                >
+                  <span>🚆</span> IRCTC
+                </a>
+                <a
+                  href={`https://www.google.com/travel/flights?q=flights+to+${encodeURIComponent(state ? pick(state, 'name') : name)}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 rounded-lg bg-sky-600 text-white px-2.5 py-1.5 text-xs font-bold hover:bg-sky-700 transition shadow-2xs"
+                >
+                  <span>✈️</span> Flight
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
       )}
 
